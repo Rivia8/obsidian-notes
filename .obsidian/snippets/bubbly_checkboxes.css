@@ -1,0 +1,25 @@
+/* Round checkboxes */
+input[type=checkbox] {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    border: 1px solid var(--text-muted);
+    width: 1.2em;
+    height: 1.2em;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Checked state - turns green (or your accent color) with a checkmark */
+input[type=checkbox]:checked {
+    background-color: var(--interactive-accent);
+    border-color: var(--interactive-accent);
+}
+
+/* Strike-through the text when checked */
+.markdown-preview-view ul > li.task-list-item.is-checked,
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"] {
+    text-decoration: line-through;
+    color: var(--text-muted);
+    opacity: 0.8;
+}

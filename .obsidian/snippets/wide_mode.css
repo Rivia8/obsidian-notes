@@ -1,0 +1,13 @@
+/* Force the note to use 100% of the pane width */
+.wide-mode {
+  --file-line-width: 100% !important; 
+  --line-width: 100% !important;
+}
+
+/* Ensure the editor and preview modes respect the full width */
+.wide-mode .markdown-source-view.mod-cm6 .cm-sizer,
+.wide-mode .markdown-preview-view .markdown-preview-sizer {
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}

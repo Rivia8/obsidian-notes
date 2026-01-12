@@ -1,0 +1,12 @@
+{
+  "matches": [
+    {
+      "path": "Programming Languages and Frameworks",
+      "scope": "Read & Edit",
+      "classes": [
+        "max"
+      ]
+    }
+  ],
+  "version": "2.3.0"
+}

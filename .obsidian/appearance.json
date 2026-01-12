@@ -1,0 +1,15 @@
+{
+  "cssTheme": "Minimal",
+  "accentColor": "#7e0030",
+  "theme": "obsidian",
+  "baseFontSize": 16,
+  "enabledCssSnippets": [
+    "highlightr",
+    "mathsize",
+    "invert_colours",
+    "invert_colours_2",
+    "clean_striped_tables",
+    "bubbly_checkboxes",
+    "center_images"
+  ]
+}

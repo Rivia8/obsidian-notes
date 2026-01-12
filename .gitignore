@@ -1,0 +1,8 @@
+# Ignore Obsidian workspace state (layout, open files)
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Ignore system files
+.DS_Store
+Thumbs.db

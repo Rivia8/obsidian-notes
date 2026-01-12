@@ -1,0 +1,7 @@
+/* Center all images in Live Preview and Reading Mode */
+.markdown-source-view img, 
+.markdown-preview-view img {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
