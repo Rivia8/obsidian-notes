@@ -61,3 +61,5 @@ You can have **inference during search**: instead of blindly guessing values and
 	- **The Catch (Inconsistency):** Forward Checking stops here. It says, "I successfully removed the bad values from the neighbors. Good job!" It **fails to notice** that NT and SA (who are neighbors) are now forced to be the _same_ color (Blue), which is impossible.
 
 2. Level 2: **MAC (Maintaining Arc Consitency)**
+
+	This is stronger and the "recursive" version of inference
