@@ -24,7 +24,7 @@ How the Algorithm Works (Figure 5.5):
 
 ## Variable and Value Ordering:
 
-![[Pasted image 20260112182046.png#invert]]
+![[Pasted image 20260112183358.png#invert]]
 
 
 How to make the Backtracking Search Algorithm efficient:
