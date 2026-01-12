@@ -6,3 +6,9 @@
 # Ignore system files
 .DS_Store
 Thumbs.db
+*.pdf
+*.pptx
+*.docx
+*.zip
+*.mov
+*.mp4
