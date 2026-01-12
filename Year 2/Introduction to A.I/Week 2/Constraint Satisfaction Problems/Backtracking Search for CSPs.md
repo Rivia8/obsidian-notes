@@ -24,9 +24,6 @@ How the Algorithm Works (Figure 5.5):
 
 ## Variable and Value Ordering:
 
-![[Pasted image 20260112183358.png#invert]]
-
-
 How to make the Backtracking Search Algorithm efficient:
 If you pick variables and values randomly, the computer spends ages exploring dead ends. By using smart heuristics, you can guide the search to find the solution thousands of times faster.
 
@@ -62,4 +59,10 @@ You can have **inference during search**: instead of blindly guessing values and
 
 2. Level 2: **MAC (Maintaining Arc Consitency)**
 
-	This is stronger and the "recursive" version of inference
+	This is stronger and the "recursive" version of inference. It detects the error that Forward Checking Missed. Whenever you assign a variable, you don't just check neighbours once. You run the full **AC-3** algorithm. If a neighbour's domain shrinks, MAC checks *that* neighbour's neighbour and so on. It propagates the change through the whole graph.
+
+|**Feature**|**Forward Checking**|**MAC (Maintaining Arc Consistency)**|
+|---|---|---|
+|**Scope**|Checks only immediate neighbors of the current variable.|Checks neighbors, then neighbors of neighbors (recursive).|
+|**Power**|Weak. Misses "secondary" conflicts (like the NT vs SA triangle).|Strong. Detects almost all conflicts early.|
+|**Speed**|Fast execution per step.|Slower execution per step (runs AC-3), but drastically reduces search tree size.|
