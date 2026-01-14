@@ -1,6 +1,6 @@
 13-10-2025 15:37
 
-Tags: [[Databases]]
+Tags: [[Database Systems]]
 
 # Databases
 

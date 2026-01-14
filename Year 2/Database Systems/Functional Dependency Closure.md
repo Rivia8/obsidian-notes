@@ -12,4 +12,4 @@ By determining the closure of $F$, we can design normalised databases.
 ![[Pasted image 20251020143031.png#invert|800]]
 
 
-You can almost never calculate the *entire* closure, but the idea of it is critical for database [[Normalisation|normalisation.
+You can almost never calculate the *entire* closure, but the idea of it is critical for database [[Normalisation|normalisation.]]
