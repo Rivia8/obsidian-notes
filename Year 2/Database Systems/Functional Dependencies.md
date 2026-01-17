@@ -54,7 +54,7 @@ If $A \to B$ and $B \to C$ are both valid dependencies, then $A \to C$ is also v
 
 **Non-Trivial FD:** if $X \to Y$ and $Y$ is **not a subset** of $X$.
 
-**Multivalued FD:** if $X \to \{Y,Z\}$ and  $Y$ and $Z$ are not dependent one ach other.
+**Multivalued FD:** if $X \to \{Y,Z\}$ and  $Y$ and $Z$ are not dependent one each other.
 
 **Transitive FD:** if $X \to Y$ and $Y \to Z$, then $X \to Z$ (as per transitivity rule).
 
