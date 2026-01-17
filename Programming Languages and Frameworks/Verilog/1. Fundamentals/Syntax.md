@@ -34,7 +34,7 @@ For combinatorial logic, the block executes whenever any signal in the sensitivi
 For sequential logic, the block typically triggers on clock edges, updating state variables (like flip-flops or registers) based on the clock's edge.
 
 **Example of combinatorial logic:**
-```
+```Verilog
 always @ (a or b) begin
     c = a & b;  // AND operation between a and b
 end
@@ -42,7 +42,7 @@ end
 	This block updates c whenever a or b changes
 
 **Example of Sequential Logic:**
-```
+``` Verilog
 always @ (posedge clk) begin
     q <= d;  // Capture the value of d at the rising edge of clk
 end

@@ -19,7 +19,7 @@ The assignment you use depends on the type of circuit you are defining and how y
 ### Continuous Assignments:
 These are used to model combinatorial logic in a concise way. The expression on the right-hand side is continuously evaluated and the result is assigned to the left-hand side, e.g.:
 
-```
+```Verilog
 assign <variable> = <logical statement>
 
 #actual example:
@@ -45,7 +45,7 @@ Continuous assignments are performed in the body of a module. They are not perfo
 ### Blocking Assignment:
 Blocking assignments occur sequentially, where they start in order of top to bottom.
 
-```
+```Verilog
 always @ (a or b) begin
     c = a + b;
     d = c + 1; // This uses the new value of c
@@ -70,7 +70,7 @@ Blocking assignments are used for assigning variables in test ('stimulus') files
 
 ### Non-blocking Assignment:
 These execute concurrently, allowing for simultaneous updates. These are commonly used for modelling synchronous (clocked) logic e.g.:
-```
+```Verilog
 always @ (posedge clk) begin
     a <= b + c;   // Schedule a = b + c for the next time step
     d <= a + e;   // Schedule d = current value of a + e

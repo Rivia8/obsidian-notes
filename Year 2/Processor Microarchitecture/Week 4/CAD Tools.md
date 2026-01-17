@@ -15,7 +15,7 @@ The phases development are generally:
 - Electrical Checking
 
 But why do we need CAD Tools?
-Modern **VLSI (Very Lage Scale Integration)** chips are remarkably complex, they have billions of transistors, millions of logic gates for computation and control, big blocks of memory and contain embedded blocks.
+0Modern **VLSI (Very Large Scale Integration)** chips are remarkably complex, they have billions of transistors, millions of logic gates for computation and control, big blocks of memory and contain embedded blocks.
 
 ***A sequence of CAD tools takes an abstract description of the chip, and refines it step-wise to a final design.***
 

@@ -6,7 +6,7 @@ Tags: [[Computer Engineering]]
 
 # Sequential Systems and D-Type flip flops
 
-The logic circuits we have looked at so fart are called ***Combinatorial Circuits***, the output signal depends on the values of the input signals to the circuit at any particular instance in time.
+The logic circuits we have looked at so far are called ***Combinatorial Circuits***, the output signal depends on the values of the input signals to the circuit at any particular instance in time.
 Most digital systems are implementing some form of algorithm as a sequence of steps.
 Most digital systems are sequential in nature and constructed using flip-flops and gates:
 - 'Events' are sequenced to an external clock
