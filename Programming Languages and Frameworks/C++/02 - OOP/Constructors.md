@@ -21,6 +21,17 @@ public:
 	}
 ```
 
-There is a better way to initialise object and this is through an initialisation list.
+There is a **better way** to initialise object and this is through an initialisation list.
+This gives values to member variables before the object is "officially created".
+It has less boilerplate and can initialise const, refs and the base class.
+
+```C++
+...
+
+public:
+	Circle(double x, double y, double r):
+		x{x}, y{x}, r{r} {};
+
+```
 
 
