@@ -27,11 +27,8 @@ It has less boilerplate and can initialise const, refs and the base class.
 
 ```C++
 ...
-
 public:
 	Circle(double x, double y, double r):
 		x{x}, y{x}, r{r} {};
-
 ```
-
 
