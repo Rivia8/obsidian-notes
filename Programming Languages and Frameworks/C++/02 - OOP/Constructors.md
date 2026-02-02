@@ -12,9 +12,15 @@ We use the `this` keyword to prevent ambiguity when assigning variables within t
 
 ```C++
 public:
-	Circle()
+	Circle(double x, double y, double r) {
+		
+		this->x = x;
+		this->y = y;
+		this->r = r;
+	
+	}
 ```
 
-
+There is a better way to initialise object and this is through an initialisation list.
 
 
