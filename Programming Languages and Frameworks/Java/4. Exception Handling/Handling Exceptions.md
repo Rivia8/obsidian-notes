@@ -4,7 +4,7 @@ Tags: [[Java]]
 
 # Handling Exceptions
 
-When it comes to [[Exceptions#Runtime and IO|exception errors]] we need to be able to **handle** them appropriately.
+When it comes to [[Programming Languages and Frameworks/Java/4. Exception Handling/Exceptions#Runtime and IO|exception errors]] we need to be able to **handle** them appropriately.
 They should be implemented when:
 - You expect a possible error,
 - You want to prevent app crashes,
