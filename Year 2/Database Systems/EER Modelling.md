@@ -26,7 +26,7 @@ This is an example of a conceptual model , from here we go to a logical model:
 An ER model has 3 main concepts:
 
 1. **Entities**,
-These are the things you want to store data about, typically they are nouns.
+These are the things you want to store data about, typically they are nouns. They are a set of related attributes.
 
 2. **Attributes**,
 These are the properties or characteries of an entity, they are specific details you want to save.
