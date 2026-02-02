@@ -28,5 +28,25 @@ What they differ in is:
 
 They are technically the same but they offer different **conventions** (coding styles). This is how we signal intent to other programmers.
 
-We use `struct` when the object is **POD** (plain old data).
+We use `struct` when the object is **POD** (plain old data) and classes for **encapsulated objects**.
+
+Here is an example, the two produce identical code:
+
+```C++
+// Option A: Using struct
+struct Player {
+private:
+    int health;
+public:
+    Player() { health = 100; }
+};
+
+// Option B: Using class
+class Player {
+    int health; // private is implied
+public:
+    Player() { health = 100; }
+};
+```
+
 
