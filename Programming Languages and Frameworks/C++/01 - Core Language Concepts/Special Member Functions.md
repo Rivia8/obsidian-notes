@@ -11,6 +11,7 @@ These are functions that are 'special' because if you **don't write them yoursel
 
 `Circle()`
 This creates an object with no arguments
+If another constructor is defined, it is not auto-generated.
 
 - **Destructor**
 
