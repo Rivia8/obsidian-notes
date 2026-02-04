@@ -22,6 +22,9 @@ This cleans up when the object dies.
 `Class(const Class&)` 
 This creates a new object as a clone of an existing one.
 
+- **Copy Assignment**
+
+`operator=(const Class&)`
 
 
 
