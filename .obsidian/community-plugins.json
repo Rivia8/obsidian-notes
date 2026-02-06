@@ -8,5 +8,6 @@
   "homepage",
   "obsidian-linter",
   "auto-class",
-  "obsidian-git"
+  "obsidian-git",
+  "text-extractor"
 ]
