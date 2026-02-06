@@ -19,13 +19,9 @@ When you are accessing data from memory you usually retrieve a 'word' of bits. I
 
 ## Alignment
 
-If you have a 32-bit (4-byte) system, your memory isn't one column of bytes. It is physically for parallel columns.
+If you have a 64-bit (8-byte) system, your memory isn't one column of bytes. It is physically comprised parallel columns.
 
-**Row 0 (address 0 to 3):** 0, 4, 8, 12
-**Row 1 (addresses 4 to 7):** 1, 5, 9, 13
-**Row 2 (addresses 8 to 11):** 2, 6 ,10, 14
-
-When you want to read address 4. The CPU will activate 'Row 1' and reads 
+Looking at the example above
 
 
 
