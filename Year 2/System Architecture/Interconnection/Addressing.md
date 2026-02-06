@@ -19,6 +19,7 @@ When you are accessing data from memory you usually retrieve a 'word' of bits. I
 
 ## Alignment
 
+Alignment is wher
 
 
 
