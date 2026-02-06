@@ -14,7 +14,7 @@ Until recently it was not practical to fill a 32-bit address space with *actual*
 A byte is almost always 8-bits.
 A word depends on the architecture, most the time 32-bits.
 
-
+When you are accessing data from memory you usually retrieve a 'word' of bits. If you for some reason need to access more than a word or you need to get data that flows on to the array of 
 
 
 
