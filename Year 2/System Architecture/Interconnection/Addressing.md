@@ -24,6 +24,8 @@ If you have a 64-bit (8-byte) system, your memory isn't one column of bytes. It 
 Looking at the example above if we want to access the memory address 8x00000000 to retrieve '...0007' it would require reading the ENTIRE row of 8x00000000. This why aligning the data so that data structures fit nicely within each 'row' is needed so to prevent 2 clock cycles for accessing a single data structure.
 
 
+## Endianness
 
+Thgis
 
 
