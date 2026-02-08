@@ -12,7 +12,9 @@ If we have a 64-bit processor, we *could* have:
 Since we have a 64-bit machine, the CPU can access 8 bytes at a time, the LSBs signify which byte we want to access. 
 What this means is that when we access a memory address, sometimes we want to access a specific byte within the 64 bits, and the 3 LSBs allow us to do so.
 
-$3 ~\text{bits} =  2^3 = $ 
+$3 ~\text{bits} =  2^3 = 8$ and there are $8$ bytes within $64$ bits.
+
+
 
 
 
