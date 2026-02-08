@@ -2,7 +2,7 @@
 
 Tags: [[System Architecture]]
 
-# Bus Implementation
+# Bus: Implementation
 
 
 
