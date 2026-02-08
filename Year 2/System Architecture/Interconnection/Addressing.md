@@ -26,6 +26,8 @@ Looking at the example above if we want to access the memory address 8x00000000 
 
 ## Endianness
 
-Thgis
+This refers to the ordering of bytes within a word.
+
+We have looked at this before [[RISC-V with Memory#Endianness|here]] in the context of RISC-V with memory.
 
 
