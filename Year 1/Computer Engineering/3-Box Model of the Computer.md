@@ -1,7 +1,5 @@
 04-11-2024 15:07
 
-Status: #new
-
 Tags: [[Computer Engineering]]
 
 # 3-Box Model of the Computer
