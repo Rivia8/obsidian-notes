@@ -31,3 +31,5 @@ This refers to the ordering of bytes within a word.
 We have looked at this before [[RISC-V with Memory#Endianness|here]] in the context of RISC-V with memory.
 
 
+![[Pasted image 20260208135818.png#invert]]
+Most of the time, the byte order is irrelevant. What matters is how the stored quantity is accessed with different sized operations.
