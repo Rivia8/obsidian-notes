@@ -27,3 +27,4 @@ Not much can be done generally for read latency, architecturally caching would d
 Improving Bandwidth:
 You can make the bus wider. It does increase the number of wires considerably which can become a be a problem for the pinout process.
 
+
