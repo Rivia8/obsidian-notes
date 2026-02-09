@@ -18,6 +18,7 @@ There are two important metrics:
 
 **Latency:** the *delay* from starting an operation to perceiving the result
 **Bandwidth:** The rate at which data can be moved
+**Read Latency:** is the time from wanting some data and receiving the data.
 
 
 
