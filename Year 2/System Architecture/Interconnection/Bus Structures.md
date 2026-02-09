@@ -16,6 +16,13 @@ Harvard:
 - Fetches can be made in parallel with data movement (overcomes the memory bottleneck)
 
 Von Neumann:
-- Simpler and convenient for programmers, available memory can be partitioned dynamically into code and data segments as is currently appropriate.
-- 
+- Simpler and convenient for programmers, 
+- Available memory can be partitioned dynamically into code and data segments as is currently appropriate.
+- Data and code can be interchanged.
+- Most contemporary 'big' computers (x86, ARM) use Von Neumann architecture.
+- Not all are purely Von Neuman, some contemporary embedded controllers (e.g. the AVR used in the Arduino controller boards) utilise Harvard Architecture.
+
+## Harvard Architecture at the Cache Level
+
+
 
