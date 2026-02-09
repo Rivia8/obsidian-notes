@@ -40,6 +40,8 @@ When a JIT compiler finishes writing new code, it cannot just jump to it. Cleani
 2. **Cache Flush:** It sends a signal to the **I-Cache** saying "hey the data at Address X has changed".
 3. **Reload:** The next time the CPU tries to execute code at address X, the I-Cache sees it is invalid, reaches out to main memory to get the fresh version and everything works correctly.
 
+In standard processors, we have **Symmetric Multi-Processing (SMP)** -  we have many cores that act as standalone CPUs:
 
+![[Pasted image 20260209173624.png#invert]]
 
-
+Each is a fully capable processor.
