@@ -116,7 +116,7 @@ It is good to check that the circuit implemented correctly has the functions you
 
 Once you have a cell netlist, we have to place the primitives of the netlist on the target device.
 The inputs are the cell netlist and constraints, the tool roughly allocates large areas for major blocks like the ALU or memory controller. This follows external constraints (like pin positions).
-For ASICs these components are standard cells, for FPGAs they are look-up tables (LTUs).
+For ASICs these components are standard cells, for FPGAs they are look-up tables (LUTs).
 
 There is an optimisation technique called **Simulated Annealing** -  a method that is inspired by how metals are cooled to make them stronger.
 
