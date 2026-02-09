@@ -25,6 +25,15 @@ Reducing Latency:
 Not much can be done generally for read latency, architecturally caching would do so. For Write latency, it can be alleviated by write buffering.
 
 Improving Bandwidth:
-You can make the bus wider. It does increase the number of wires considerably which can become a be a problem for the pinout process.
+You can make the bus wider. It does increase the number of wires considerably which can become a be a problem for the pinout process (sometimes its desirable to have a thinner data bus where speed matters more than data width, things like I/O devices). One bus implementation can be converted into another by what is usually called a bus **bridge**:
+![[Pasted image 20260209153350.png#invert]]
 
+We can have different architectures present within a system, [[Harvard Architecture]] can be seen above. We can also see multiple buses with bridges.
 
+On-chip and often on PCB where it is feasible it is normal to use **parallel** buses with many wires. For more distant expansions, **serial** buses (same info but sequenced in time) is preferred (e.g. PCIE Express, USB).
+
+## IO Spaces
+
+These are interfaces from the outside world. They are mediated by **peripherals**.
+
+Typically peripherals will have a number of specialised registers which are used to monitor and control external qualities. 
