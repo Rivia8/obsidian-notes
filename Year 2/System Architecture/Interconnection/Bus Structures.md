@@ -24,5 +24,11 @@ Von Neumann:
 
 ## Harvard Architecture at the Cache Level
 
+Most high performance use Von Neumann but they typically use Harvard-style at the cache level with separate buses. 
+These connect different processor pipeline stages to parallel **caches**.
+
+When an object code has been written it is usually necessary to provide some sort of **memory barrier** which ensures that the writes are complete before trying to read them.
+
+
 
 
