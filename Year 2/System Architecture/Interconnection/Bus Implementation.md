@@ -14,6 +14,10 @@ What this means is that when we access a memory address, sometimes we want to ac
 
 $3 ~\text{bits} =  2^3 = 8$ and there are $8$ bytes within $64$ bits.
 
+There are two important metrics:
+
+**Latency:** the *delay* from starting an operation to perceiving the result
+**Bandwidth:** The rate at which data can be moved
 
 
 
