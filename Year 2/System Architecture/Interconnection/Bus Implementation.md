@@ -21,6 +21,9 @@ There are two important metrics:
 **Read Latency:** is the time from wanting some data and receiving the data.
 
 
+Reducing Latency:
+Not much can be done generally for read latency, architecturally caching would do so. For Write latency, it can be alleviated by write buffering.
 
+Improving Bandwidth:
 
 
