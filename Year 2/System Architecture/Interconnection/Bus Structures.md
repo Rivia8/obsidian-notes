@@ -17,4 +17,5 @@ Harvard:
 
 Von Neumann:
 - Simpler and convenient for programmers, available memory can be partitioned dynamically into code and data segments as is currently appropriate.
+- 
 
