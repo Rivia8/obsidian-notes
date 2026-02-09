@@ -37,3 +37,5 @@ On-chip and often on PCB where it is feasible it is normal to use **parallel** b
 These are interfaces from the outside world. They are mediated by **peripherals**.
 
 Typically peripherals will have a number of specialised registers which are used to monitor and control external qualities. 
+
+These registers are often **memory mapped**, they have unique addresses in the overall address space. Most I/O peripherals only have a small number of associated registers.
