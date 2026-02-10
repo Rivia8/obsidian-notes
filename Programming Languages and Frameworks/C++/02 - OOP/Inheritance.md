@@ -10,6 +10,23 @@ Look at these pieces of code:
 
 ```C++
 #include “point.h”
+class Shape{
+private:
+	int id;
+	char* name;
+	Point* points;
+public:
+	Shape(Point* points, int npoints);
+	Shape(Point* points, int npoints, char* name);
+	~Shape();
+	void setName(char *name);
+	char* getName() {return name;}
+};
+```
+
+
+```C++
+#include “point.h”
 class Circle{
 	private:
 	int id;
@@ -46,18 +63,6 @@ public:
 };
 ```
 
-```C++
-#include “point.h”
-class Shape{
-private:
-	int id;
-	char* name;
-	Point* points;
-public:
-	Shape(Point* points, int npoints);
-	Shape(Point* points, int npoints, char* name);
-	~Shape();
-	void setName(char *name);
-	char* getName() {return name;}
-};
-```
+You can setup inheritance for these classes above to look like the following:
+
+![[Pasted image 20260210131337.png#invert]]
