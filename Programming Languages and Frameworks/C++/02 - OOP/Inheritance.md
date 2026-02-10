@@ -86,3 +86,14 @@ To fix this you use `virtual` keyword.
 3. Object Slicing
 
 In C++ objects are values (not references).
+Assigning, a derived object to a base variable causes the compiler to 'slice off' the derived parts to make it fit into a smaller base variable.
+
+4. Non-Virtual Destructor Trap
+
+If you delete a `Derived` object through a `Base*` pointer, and the Base Destructor is not `virtual`, the  `Derived` destructor will never run.
+
+5. Private inheritance
+
+Inheritance implies an "Is-A" relationship (A Car **is a** Vehicle) but you also can inherit privately (using the `private` keyword) which changes the meaning to "implemented-in-terms-of" (**Has A**).
+
+You are able to do **Composition** (holding a variable) but with the ability to override virtual functions.
