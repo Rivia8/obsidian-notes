@@ -16,12 +16,11 @@ This happens **before** the program runs. The compiler knows exactly which funct
 
 **Templates**: `vector<int>` vs `vector<float>`
 
-
-
 ## 2. **Runtime Polymorphism (Dynamic Binding)**
 
 This is considered the 'true' OOP polymorphism. What this means is that the program decides while it is running which function to call, this is achieved using **inheritance** and **Virtual Functions**.
 
+You choose the implementation at **runtime** based on the **dynamic type**. 
 
 
 
