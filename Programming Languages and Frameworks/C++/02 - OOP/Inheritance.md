@@ -66,3 +66,6 @@ public:
 You can setup inheritance for these classes above to look like the following:
 
 ![[Pasted image 20260210131337.png#invert]]
+
+You can see that the `class Circle` inherits the parent class `Shape` through the colon: `class childname : parentname`.
+
