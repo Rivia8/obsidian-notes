@@ -33,3 +33,4 @@ public:
 ```
 
 Using an initialisation list is faster and technically better since the compiler has less work to do. With the initialisation list, the compiler calls the copy constructor directly, it builds the object with its fields immediately and needs to temporary object. Without it, the compiler will need to call the default constructor for the class but then once the assignment operator runs it allocates *new* memory and copies `n` into it.
+
