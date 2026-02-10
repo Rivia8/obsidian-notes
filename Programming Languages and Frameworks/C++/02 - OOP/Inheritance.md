@@ -97,3 +97,7 @@ If you delete a `Derived` object through a `Base*` pointer, and the Base Destruc
 Inheritance implies an "Is-A" relationship (A Car **is a** Vehicle) but you also can inherit privately (using the `private` keyword) which changes the meaning to "implemented-in-terms-of" (**Has A**).
 
 You are able to do **Composition** (holding a variable) but with the ability to override virtual functions.
+
+6. Name Hiding (Not overriding)
+
+In C++, scopes do not mix. Functions in a derived class hide all functions with the same name in the base class, *even if the parameters are different*.
