@@ -28,7 +28,7 @@ public:
 ```C++
 #include “point.h”
 class Circle{
-	private:
+private:
 	int id;
 	char* name;
 	Point point;
