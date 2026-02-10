@@ -4,11 +4,11 @@
 class Character{
 
     private:
-        string name;
+        std::string name;
         int health;
 
     public:
-        Character(std::S) {
-
-        }
-}
+        Character(std::string name, int health):
+            name{name}, health{health} {};
+        
+};
