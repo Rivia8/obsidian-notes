@@ -81,4 +81,8 @@ If you have two classes, `B` and `C`, that inherit from `A` and then a final cla
 
 This means that class `D` now contains two copies of Class `A` (one from `B` and one from `C`).
 
-To fix this you 
+To fix this you use `virtual` keyword.
+
+3. Object Slicing
+
+In C++ objects are values (not references).
