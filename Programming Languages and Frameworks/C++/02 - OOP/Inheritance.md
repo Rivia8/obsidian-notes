@@ -69,3 +69,5 @@ You can setup inheritance for these classes above to look like the following:
 
 You can see that the `class Circle` inherits the parent class `Shape` through the colon: `class childname : parentname`.
 
+## Inheritance Quirks in C++
+
