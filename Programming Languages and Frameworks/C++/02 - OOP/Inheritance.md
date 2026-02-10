@@ -1,0 +1,63 @@
+10-02-2026 13:07
+
+Tags: [[C++]]
+
+# Inheritance
+
+Inheritance makes OOP much more powerful.
+
+Look at these pieces of code:
+
+```C++
+#include “point.h”
+class Circle{
+	private:
+	int id;
+	char* name;
+	Point point;
+	double r;
+
+public:
+	Circle(Point point, double r);
+	Circle(Point point, double r, char* name);
+	~Circle() {delete[] name;}
+	void setName(char *name);
+	char* getName() {return name;}
+	double getArea();
+	Point getCentre() {return point};
+};
+```
+
+```C++
+#include “point.h”
+class Rectangle{
+private:
+	int id;
+	char* name;
+	Point points[4];
+public:
+	Rectangle(Point* points);
+	Rectangle(Point* points, char* name);
+	~Rectangle() {delete[] name;}
+	void setName(char *name);
+	char* getName() {return name;}
+	double getArea();
+	Point getCentre();
+};
+```
+
+```C++
+#include “point.h”
+class Shape{
+private:
+	int id;
+	char* name;
+	Point* points;
+public:
+	Shape(Point* points, int npoints);
+	Shape(Point* points, int npoints, char* name);
+	~Shape();
+	void setName(char *name);
+	char* getName() {return name;}
+};
+```
