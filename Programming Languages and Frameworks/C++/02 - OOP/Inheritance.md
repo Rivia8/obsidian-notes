@@ -73,4 +73,12 @@ You can see that the `class Circle` inherits the parent class `Shape` through th
 
 1. The child class will always call the base class's constructor, implicitly or explicitly.
 
-The base class object is kind of p
+2. The 'Diamond Problem' - also known as **Multiple Inheritance**
+
+This is the most famous quirk. Unlike Java and C#, C++ allows a class to inherit from multiple **parents** at the same time.
+
+If you have two classes, `B` and `C`, that inherit from `A` and then a final class `D` that inherits from *both* `B` and `C` you get a diamond shape.
+
+This means that class `D` now contains two copies of Class `A` (one from `B` and one from `C`).
+
+To fix this you 
