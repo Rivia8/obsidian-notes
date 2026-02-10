@@ -71,3 +71,6 @@ You can see that the `class Circle` inherits the parent class `Shape` through th
 
 ## Inheritance Quirks in C++
 
+1. The child class will always call the base class's constructor, implicitly or explicitly.
+
+The b
