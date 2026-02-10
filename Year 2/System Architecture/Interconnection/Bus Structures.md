@@ -45,3 +45,10 @@ In standard processors, we have **Symmetric Multi-Processing (SMP)** -  we have 
 ![[Pasted image 20260209173624.png#invert]]
 
 Each is a fully capable processor.
+
+You can have different arrangements for different processors:
+
+![[Pasted image 20260209174131.png#invert]]
+
+Above is the example of a DSP (Digital Signal Processor).
+DSPs perform matrix multiplication and so they need to read pairs of operands at high speeds (2 or more buses for efficiency).
