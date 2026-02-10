@@ -73,4 +73,4 @@ You can see that the `class Circle` inherits the parent class `Shape` through th
 
 1. The child class will always call the base class's constructor, implicitly or explicitly.
 
-The b
+The base class object is kind of p
