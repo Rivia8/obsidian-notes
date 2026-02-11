@@ -10,8 +10,11 @@ We want to make frequently accessed memories fast and infrequently accessed memo
 
 Almost all software shares characteristics which can be described by the [Pareto Principle](https://en.wikipedia.org/wiki/Pareto_principle). 
 
+*Recall: [[Memory Properties#Caches|types of locality in memory]]*
 
+Here we can see the levels of cache:
 
+![[Pasted image 20260211133209.png#invert]]
 
 
 
