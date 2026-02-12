@@ -17,6 +17,6 @@ From this equation we can see that the performance will be ***significantly*** i
 There are two main components:
 
 1. The **tag**: identifies *which* elements are currently stored.
-2. The **data memory**: : holds a copy of a *subset* of the larger storage space.
+2. The **data memory**:  holds a copy of a *subset* of the larger storage space.
 
 
