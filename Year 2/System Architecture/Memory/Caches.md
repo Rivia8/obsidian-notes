@@ -20,3 +20,5 @@ There are two main components:
 2. The **data memory**:  holds a copy of a *subset* of the larger storage space.
 
 
+
+
