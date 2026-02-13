@@ -67,3 +67,7 @@ The rule for this type of cache is that there is only **one** possible place for
 
 With the example we looked at above `0x2002` could be placed at any location at any cache line. 
 However in **Direct Mapped Cache**, data can only be placed in specific cache lines determined by the lower bits of the data.
+
+**Advantages:**
+- Because the hardware knows exactly where to put data, it is very fast.
+	- You also have the option of **speculative reading** 
