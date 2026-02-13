@@ -23,8 +23,8 @@ There are two main components:
 ![[Pasted image 20260212194012.png#invert]]
 
 One tag can span across a block of adjacent addresses, this makes use of **spatial locality**.
-The block is known as **cache line**.
-And each small black in the example above is a word.
+The row is known as **cache line**.
+And each small block in the example above is a word.
 The length of the cache line is up to the engineers discretion and is not proportional to the architecture (word length).
 
 There is also data such as ***validity*** which indicates if there is a copy there or not.
@@ -57,7 +57,6 @@ This has the most efficient use of space. You will almost never get a cache miss
 	- Lots of comparators needs more power.
 - Speed:
 	- The electronics have to wait for the comparison result before they know *which* data to output, this can be slower than simpler caches that know exactly where to look.
-
 
 ### Direct Mapped Cache
 
