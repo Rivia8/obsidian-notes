@@ -59,4 +59,7 @@ This has the most efficient use of space. You will almost never get a cache miss
 
 ### Direct Mapped Cache
 
-This is the **opposite** to fully associative cadche.
+This is the **opposite** to fully associative cache.
+The rule for this type of cache is that there is only **one** possible place for any specific address to live. You don't get to choose.
+
+With the example we looked at above
