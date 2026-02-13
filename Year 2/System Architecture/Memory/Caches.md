@@ -70,4 +70,11 @@ However in **Direct Mapped Cache**, data can only be placed in specific cache li
 
 **Advantages:**
 - Because the hardware knows exactly where to put data, it is very fast.
-	- You also have the option of **speculative reading** 
+	- You also have the option of **speculative reading** the hardware can grab the data from the line at the same time it checks the tag
+
+**Disadvantages:**
+- If you have frequent swaps with some addresses that are belong to the same cache line, there will be lots of conflicts which is called **thrashing**.
+
+### Set Associative
+
+This is an alleviation to **Set Associate Caching**. Pretty much instead of having a single tag for a collection of tags you have 
