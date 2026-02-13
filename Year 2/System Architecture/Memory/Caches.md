@@ -24,6 +24,7 @@ There are two main components:
 
 One tag can span across a block of adjacent addresses, this makes use of **spatial locality**.
 The block is known as **cache line**.
+And each small black in the example above is a word.
 
 There is also data such as ***validity*** which indicates if there is a copy there or not.
 
