@@ -38,11 +38,13 @@ The main rule: Any block of memory can be stored in **any** line of the cache.
 
 The way it works:
 - You have a 16-bit architecture
-- A cache line is 4 words, 4 * 16 / 8 = 8 bytes
+- A cache line is 4 words, $(4 * 16) / 8 = 8$ bytes
 - In the 16-bit tag the 3 LSBs are used for identifying which block the data is in.
 - The remaining 13 bits are the Tag
 	- i.e. `0x2002`: `0010 0000 0000 0010` the offset at the end points to byte 2
 	- The tag is `0010 0000 0000 0`
+
+Although the data is stored in a per word basis you are able to retrieve by **byte**.
 
 In the lookup process, every **cache line's** tag is compared to the tag you're looking for. When the cache line corresponding to that tag is found, then the offset is used to find the specific byte.
 
