@@ -59,3 +59,4 @@ This has the most efficient use of space. You will almost never get a cache miss
 
 ### Direct Mapped Cache
 
+This is the **opposite** to fully associative cadche.
