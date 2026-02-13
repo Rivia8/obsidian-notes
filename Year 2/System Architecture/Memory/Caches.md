@@ -62,4 +62,5 @@ This has the most efficient use of space. You will almost never get a cache miss
 This is the **opposite** to fully associative cache.
 The rule for this type of cache is that there is only **one** possible place for any specific address to live. You don't get to choose.
 
-With the example we looked at above
+With the example we looked at above `0x2002` could be placed at any location at any cache line. 
+However in **Direct Mapped Cache**, data can only be placed in specific cache lines determined by the lower bits of the data.
