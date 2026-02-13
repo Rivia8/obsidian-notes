@@ -9,5 +9,6 @@
   "obsidian-linter",
   "auto-class",
   "obsidian-git",
-  "text-extractor"
+  "text-extractor",
+  "vscode-editor"
 ]

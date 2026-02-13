@@ -55,3 +55,7 @@ This has the most efficient use of space. You will almost never get a cache miss
 	- Lots of comparators needs more power.
 - Speed:
 	- The electronics have to wait for the comparison result before they know *which* data to output, this can be slower than simpler caches that know exactly where to look.
+
+
+### Direct Mapped Cache
+
