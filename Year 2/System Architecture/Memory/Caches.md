@@ -44,4 +44,14 @@ The way it works:
 
 In the lookup process, every **cache line's** tag is compared to the tag you're looking for. When the cache line corresponding to that tag is found, then the offset is used to find the specific byte.
 
+**Advantages:**
+This has the most efficient use of space. You will almost never get a cache miss unless the cache is too small.
 
+**Disadvantages:**
+
+- Extra Hardware:
+	- If your cache has 1024 lines, you need 1024 **comparators** (the device that compares each **cache lines** tag to the tag you're looking for)
+- Power:
+	- Lots of comparators needs more power.
+- Speed:
+	- The electronics have to wait for the comparison result before they know *which* data to output, this can be slower than simpler caches that know exactly where to look.
