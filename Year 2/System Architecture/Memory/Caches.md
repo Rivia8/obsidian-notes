@@ -77,4 +77,17 @@ However in **Direct Mapped Cache**, data can only be placed in specific cache li
 
 ### Set Associative
 
-This is an alleviation to **Set Associate Caching**. Pretty much instead of having a single tag for a collection of tags you have 
+This is an alleviation to **Set Associate Caching**. Pretty much instead of having a single tag for a collection of data, there are multiple sets.
+
+For a 2-Way Associative Set Cache:
+- There are two sub-slots for data in a given tag.
+
+For a 4-Way Associative Set Cache:
+- There are four sub-slots for data in a given tag.
+
+
+**Advantages:**
+- Better hit rate
+
+**Disadvantages:**
+- This is slower and requires more power than **Direct Mapped Cache**
