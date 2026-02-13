@@ -91,3 +91,8 @@ For a 4-Way Associative Set Cache:
 
 **Disadvantages:**
 - This is slower and requires more power than **Direct Mapped Cache**
+
+
+### Which is the Best?
+
+Lower Associativity is simpler and faster and lower power when the cache hits but will have more misses which are slow and power hungry
