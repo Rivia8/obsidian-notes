@@ -32,5 +32,8 @@ The server's job:
 	One single specific server is in charge of *all* permissions, this makes the entire system quite fragile. Makes the system **prone to crashes** and have a **severe bottleneck** (if it has 10,000 clients the system will be overwhelmed).
 
 2. **Isolation vs. Atomicity**
-	
+	The server lock guarantees **isolation** but does not guarantee **atomicity**, this means that if the data transfer fails if there will be any rollback.
+
+
+
 
