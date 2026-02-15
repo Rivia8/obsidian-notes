@@ -42,8 +42,10 @@ Some true statements:
 
 ## Logical Clocks
 
-**Logical clocks** take advantage of the fact that an **implicit partial ordering of events can be obtained from the simple sending and receiving of messages between processes** 
+Since there is no **global** clock, you cannot use something like `System.currentTimeMillis()` since one node might be ahead/behind another.
 
+**Logical clocks** take advantage of the fact that an **implicit partial ordering of events can be obtained from the simple sending and receiving of messages between processes** 
+So we track events but not time.
 
 
 
