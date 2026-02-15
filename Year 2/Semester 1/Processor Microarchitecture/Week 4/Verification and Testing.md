@@ -6,7 +6,7 @@ Tags: [[Processor Microarchitecture]]
 
 *This is part of Week 4, Video 1*
 
-[[Verification]] and [[Year 2/Processor Microarchitecture/Week 4/Testing|Testing]] are two distinct but critical processes in digital design.
+[[Verification]] and [[Year 2/Semester 1/Processor Microarchitecture/Week 4/Testing|Testing]] are two distinct but critical processes in digital design.
 
 Simply put verification is what we know as "Are we building the product right?". This happens before the chip is manufactured and it is the process of checking that your design matches the specification.
 

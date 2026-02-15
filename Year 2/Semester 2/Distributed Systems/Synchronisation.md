@@ -20,8 +20,17 @@ You *could* timestamp a message as its sent out, but you don't know how long the
 the two clocks are in sync.
 (The only thing that is certain when you have two independent clocks is that a message will not arrive at its destination before its sent which is self-explanatory and obvious).
 
+---
+Example:
 
+You have P and Q which are two distinct processes and they execute a sequence of instructions:
 
+![[Pasted image 20260215131243.png#invert|300]]
+Although vertically p4 is lower than q3, if you look at the arrows, we can see that a message was sent **from** q3 **to** p4, this means that p4 happens **after** q3 and so p5 is the last thing to execute.
+
+---
+
+The sending and receiving of messag
 
 
 
