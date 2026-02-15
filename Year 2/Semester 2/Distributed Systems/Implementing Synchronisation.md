@@ -38,4 +38,6 @@ The server's job:
 
 The **Two-Phase Commit (2PC)** algorithm is the standard solution for consistency in **distributed systems**.
 
+Here the goal is **atomicity** what this means is that the system can never end up in a half-finished state.
+If the a sequence of events fails it returns to the original state as if never happened.
 
