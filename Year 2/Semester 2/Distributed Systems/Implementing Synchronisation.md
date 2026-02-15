@@ -34,6 +34,3 @@ The server's job:
 2. **Isolation vs. Atomicity**
 	
 
-
-
-
