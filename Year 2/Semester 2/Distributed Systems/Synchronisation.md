@@ -54,8 +54,31 @@ It assumes that each processor $i$ has a Logical Clock $LC_i$.
 
 When an event occurs on processor $i$, $LC_i$ is incremented by 1 and when a processor sends a message to another process it also sends its logical clock.
 
-If the receiving process' logical clock is less than the 
+If the receiving process' logical clock is less than the logical clock sent by the process, the receiving process **updates** its logical clock.
+If the receiving process' logical clock is **greater** than the logical clock sent by the process, the receiving **does not** update its logical clock.
 
+For an example:
+
+We have $X$ and $Y$
+$X$ sends a message to $Y$.
+
+*Scenario 1*
+$Y$'s clock, $LC_Y$ is **behind** $LC_X$ (the sender).
+Since $LC_Y < LC_X$, $LC_Y = LC_X + 1$, Process $Y$'s logical clock gets updated.
+
+*Scenario 2:*
+$X$ clock, $LC_X$ is less than $LC_Y$
+Since $LC_Y > LC_X$, $LC_Y = LC_Y$, nothing happens
+
+
+Another Example:
+
+|**Step**|**Process**|**Action**|**Local Clock**|**Explanation**|
+|---|---|---|---|---|
+|1|**P1**|Internal Event|**1**|P1 starts working.|
+|2|**P1**|**Sends Message**|**2**|P1 ticks to 2 and sends message `(Msg, Time=2)` to P2.|
+|3|**P2**|Internal Event|**1**|P2 is working independently.|
+|4|**P2**|**Receives Message**|**3**|P2 receives `(Msg, Time=2)`.<br><br>  <br><br>P2's clock is currently 1.<br><br>  <br><br>Comparison: Is $1 < (2 + 1)$? Yes.<br><br>  <br><br>Update: Set P2's clock to $2 + 1 = \mathbf{3}$.|
 
 
 
