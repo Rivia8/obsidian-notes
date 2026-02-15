@@ -30,7 +30,20 @@ Although vertically p4 is lower than q3, if you look at the arrows, we can see t
 
 ---
 
-The sending and receiving of messag
+The sending and receiving of messages gives us an implicit partial ordering of events whether we intend to or not (a message never arrives before being sent).
+
+
+Some true statements:
+
+1. if $a$ and $b$ are events in the same process, and $a$ occurs before $b$ then $a \rightarrow b$ is true.
+2. If $a$ is the event of a message being sent by one process and $b$ is the event of the message being received by another process then $a \rightarrow b$ is true.
+3. $\rightarrow$ is a transitive relation, so if $a \rightarrow b$ and $b \rightarrow c$ then $a \rightarrow c$ is true.
+4. If two events $x$ and $y$ are events that happen in different processes that do not exchange messages (not even indirectly), then $x \rightarrow y$ is not true and not even directly. These events are said to be **concurrent** which means nothing can be said about either of them.
+
+## Logical Clocks
+
+
+
 
 
 
