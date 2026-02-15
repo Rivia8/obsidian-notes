@@ -42,6 +42,7 @@ Some true statements:
 
 ## Logical Clocks
 
+**Logical clocks** take advantage of the fact that an **implicit partial ordering of events can be obtained from the simple sending and receiving of messages between processes** 
 
 
 
