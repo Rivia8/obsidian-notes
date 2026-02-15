@@ -47,6 +47,14 @@ Since there is no **global** clock, you cannot use something like `System.curren
 **Logical clocks** take advantage of the fact that an **implicit partial ordering of events can be obtained from the simple sending and receiving of messages between processes** 
 So we track events and not time.
 
+### Lamport's Logical Clock
+
+This is a simple example of a logical clock.
+It assumes that each processor $i$ has a Logical Clock $LC_i$. 
+
+When an event occurs on processor $i$, $LC_i$ is incremented by 1 and when a processor sends a message to another process it also sends its logical clock.
+
+
 
 
 
