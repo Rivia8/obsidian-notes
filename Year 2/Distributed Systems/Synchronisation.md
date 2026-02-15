@@ -14,6 +14,12 @@ Synchronisation is needed when you need to agree on the order of events (if a me
 
 **Deadlock** can result when multiple processes are sharing the same resources.
 
+Nodes in a distributed system are connected via a network, networks are not always reliable and so coordination of actions that require communication can be quite difficult.
+
+You *could* timestamp a message as its sent out, but you don't know how long the message would have taken to be sent unless the two nodes have the same clock **or**
+the two clocks are in sync.
+(The only thing that is certain when you have two independent clocks is that a message will not arrive at its destination before its sent which is self-explanatory and obvious).
+
 
 
 
