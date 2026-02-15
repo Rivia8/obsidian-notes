@@ -41,3 +41,13 @@ The **Two-Phase Commit (2PC)** algorithm is the standard solution for consistenc
 Here the goal is **atomicity** what this means is that the system can never end up in a half-finished state.
 If the a sequence of events fails it returns to the original state as if never happened.
 
+Mechanism:
+1. **Request:** The coordinator node tells the participants ($C_1, C_2$) what needs to be done.
+2. **Local Check:** Each participant checks if it can do the action
+3. **Vote:** if a participant can do it, it logs the action to a secure "undo log" so it can recover later and votes **VOTE_COMMIT**. If it **cannot** do it, it votes **VOTE_ABORT**.
+
+If everyone voted **COMMIT**, then all participants make the changes permanent but if a single node voted **ABORT** then the system rolls back to the exact state it was in before the transaction started.
+
+### Electing a Coordinator Node
+
+The **Bully Algorithm** is a mechanism for choosing a coordinator from a set of coordinate nodes.
