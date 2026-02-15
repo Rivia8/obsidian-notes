@@ -54,6 +54,7 @@ It assumes that each processor $i$ has a Logical Clock $LC_i$.
 
 When an event occurs on processor $i$, $LC_i$ is incremented by 1 and when a processor sends a message to another process it also sends its logical clock.
 
+If the receiving process' logical clock is less than the 
 
 
 
