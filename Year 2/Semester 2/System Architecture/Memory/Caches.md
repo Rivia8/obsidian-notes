@@ -97,7 +97,7 @@ For a 4-Way Associative Set Cache:
 
 Lower Associativity is simpler and faster and lower power when the cache hits but will have more misses which are slow and power hungry
 
-## Cache Operation
+
 
 
 
