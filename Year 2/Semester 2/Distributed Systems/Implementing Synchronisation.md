@@ -63,4 +63,9 @@ The algorithm **assumes that all the nodes are ordered**.
 
 ## Clock Synchronisation
 
-Clock Synchronisation is not completely possible (in Distributed Systems) by the fact that messages are not sent instantly over real networks.
+Clock Synchronisation is not completely possible (in Distributed Systems) by the fact that messages are not sent instantly over real networks and there is some degree of variation in the time messages take to arrive at their destination.
+
+As long as some amount of error is acceptable, there are at least two widely acceptable ways for getting clocks in different parts into near synchronisation.
+
+### Cristian's Algorithm
+
