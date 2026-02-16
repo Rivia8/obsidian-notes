@@ -19,7 +19,11 @@ There are three potentially sensible strategies for dealing with a deadlock:
 
 **Avoid:** Making it so that the 4 conditions can never occur.
 
-**Detect:** When the deadlock is about to occur you deal with the consequences by having some mechanism for detecting whether all four conditions are about to hold. 
+**Detect:** When the deadlock is about to occur you deal with the consequences by having some mechanism for detecting whether all four conditions are about to hold.
+
+The way in which you deal with the deadlock depends on how likely it is to happen in your system. If its very unlikely to happen its probably best have **detect** in place. If its more **likely** to occur then its probably best to implement **Prevent**.
+
+
 
 
 
