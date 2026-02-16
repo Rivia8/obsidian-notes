@@ -41,6 +41,7 @@ The **Process:**
 
 This is efficient (in time) because CAM hardware checks all items in a single clock cycle, $O(1)$, the only drawback is the amount of transistors and electricity to perform the operation.
 
+![[Pasted image 20260216150027.png#invert]]
 
 
 
