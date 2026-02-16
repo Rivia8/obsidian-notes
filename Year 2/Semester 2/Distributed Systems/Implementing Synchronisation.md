@@ -69,3 +69,19 @@ As long as some amount of error is acceptable, there are at least two widely acc
 
 ### Cristian's Algorithm
 
+This is when a client is calling the server to ask what the current time is.
+
+You have a machine $P$ that needs the correct time from  a server $S$.
+
+Since network travel takes time, when its 12:00:00 by the time the data get sent to $P$ it will be 12:00:01.
+
+To fix this, you need to account for travel time:
+1. $P$ measures the total **Round Trip Time (RTT)** - the time sending the request to getting the reply.
+2. $P$ assumes the network is symmetrical (takes the same time to get there and the same back)
+3. So $P$ sets its clock to $\text{Server Time} + ({\text{RTT} / 2})$
+
+Remember this assumes that the time for the message to get there is the same as the time to get back, if the assumption is wrong then $RTT$ is inaccurate and the clock will be set incorrectly.
+
+### Berkely Algorithm
+
+This like a conductor leading an orchestra or a teacher synchronising a class.
