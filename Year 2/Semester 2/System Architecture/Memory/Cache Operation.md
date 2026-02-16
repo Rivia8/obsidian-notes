@@ -18,7 +18,13 @@ Finally, we either get a hit or miss:
 
 
 **The problem with fully-associative cache:**
-Since there are no "index" and data can be anywhere (isn't fixed to select cache lines) 
+Since there are no "index" and data can be anywhere (isn't fixed to select cache lines) you would have to read every single line (using the method above) this is very slow and will use a lot of energy.
+
+In order to fix this there is a slower two step process that utilises **CAM**.
+
+## Content Addressable Memory **CAM**
+
+
 
 
 
