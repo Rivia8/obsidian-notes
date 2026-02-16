@@ -17,6 +17,9 @@ There are three potentially sensible strategies for dealing with a deadlock:
 
 **Prevent:** You prevent the deadlock from occurring in the first place by making sure that it is never possible for all four of the conditions to be true at the same time.
 
+**Avoid:** Making it so that the 4 conditions can never occur.
+
+**Detect:** When the deadlock is about to occur you deal with the consequences by having some mechanism for detecting whether all four conditions are about to hold. 
 
 
 
