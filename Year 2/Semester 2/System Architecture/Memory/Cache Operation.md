@@ -39,7 +39,7 @@ The **Process:**
 1. **CAM Search** - The Cache Controller sends the **Address Tag** into the CAM array. The CAM searches all entries in parallel (instantly). If the tag is found it outputs a "Match Line" signal.
 2. That "Match Line" signal is then used as a simple address to read the actual data RAM. It extracts the data from line #3 and sends it to the CPU.
 
-
+This is efficient (in time) because CAM hardware checks all items in a single clock cycle, $O(1)$, the only drawback is the amount of transistors and electricity to perform the operation.
 
 
 
