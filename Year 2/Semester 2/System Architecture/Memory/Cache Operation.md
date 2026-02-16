@@ -18,7 +18,7 @@ Finally, we either get a hit or miss:
 
 
 **The problem with fully-associative cache:**
-Since there are no "index" and data can be anywhere (isn't fixed to select cache lines)
+Since there are no "index" and data can be anywhere (isn't fixed to select cache lines) 
 
 
 
