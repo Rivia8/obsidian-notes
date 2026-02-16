@@ -61,3 +61,4 @@ Mechanism:
 The algorithm relies on the use of timeouts to decide when to 'give up' waiting for responses.
 The algorithm **assumes that all the nodes are ordered**.
 
+
