@@ -16,7 +16,6 @@ Finally, we either get a hit or miss:
 - **Hit**: The comparator circuit signals a match. The data is routed to the CPU/
 - **Miss**: The cache reports a miss, the CPU must now go to main RAM (which is slow to fetch the data).
 
-
 **The problem with fully-associative cache:**
 Since there are no "index" and data can be anywhere (isn't fixed to select cache lines) you would have to read every single line (using the method above) this is very slow and will use a lot of energy.
 
