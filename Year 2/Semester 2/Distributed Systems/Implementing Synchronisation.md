@@ -50,4 +50,14 @@ If everyone voted **COMMIT**, then all participants make the changes permanent b
 
 ### Electing a Coordinator Node
 
-The **Bully Algorithm** is a mechanism for choosing a coordinator from a set of coordinate nodes.
+The **Bully Algorithm** is a mechanism for choosing a coordinator from a set of coordinate nodes. 
+Its called a **Bully Algorithm** because the higher numbered nodes 'bully' lower numbered nodes into submission.
+
+Mechanism:
+1. $P$ sends an **ELECTION** message to all modes.
+2. If no one responds, $P$ wins the election and becomes the co-ordinator. It informs all the other nodes that it is now the coordinator.
+3. If one of the higher-numbered nodes, $Q$, answers then $P$ concedes and $Q$ repeats the election process, until one node eventually wins.
+
+The algorithm relies on the use of timeouts to decide when to 'give up' waiting for responses.
+The algorithm **assumes that all the nodes are ordered**.
+
