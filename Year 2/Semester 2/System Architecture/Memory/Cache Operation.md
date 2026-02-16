@@ -36,6 +36,11 @@ You already have the address, you just go there to get the data
 - Output: The address
 Here you have **less** information, and so you're getting data about where the data is.
 
+The **Process:**
+1. **CAM Search** - The Cache Controller sends the **Address Tag** into the CAM array. The CAM searches all entries in parallel (instantly). If the tag is found it outputs a "Match Line" signal.
+2. That "Match Line" signal is then used as a simple address to read the actual data RAM. It extracts the data from line #3 and sends it to the CPU.
+
+
 
 
 
