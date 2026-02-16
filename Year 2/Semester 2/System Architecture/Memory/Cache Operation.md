@@ -29,8 +29,12 @@ This is a special type of hardware.
 First recap RAM:
 - Input: An address
 - Output: The Data
+You already have the address, you just go there to get the data
 
 **CAM** is associative memory.
+- Input: The Tag
+- Output: The address
+Here you have **less** information, and so you're getting data about where the data is.
 
 
 
