@@ -85,3 +85,11 @@ Remember this assumes that the time for the message to get there is the same as 
 ### Berkely Algorithm
 
 This like a conductor leading an orchestra or a teacher synchronising a class.
+
+A group of computers on a LAN need to have the same time but they might not have access to a perfect UTC source.
+
+Mechanism:
+1. **Election:** One computer is chosen as the **Master** (using an election method like the Bully Algorithm)
+2. **Polling:** The Master asks all other machines (slaves) "What time do you think it is?"
+3. **Averaging:** The Master gathers all the times (including its own), it throws out any outliers (clocks that are very wrong) and then calculates an average of the group.
+4. **Adjustments:** The Master does **not** send back the absolute time but instead it tells each slave relative offsets to adjust their clocks. This is to prevent further uncertainty due to RTT.
