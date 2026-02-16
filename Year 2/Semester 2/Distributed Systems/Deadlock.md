@@ -8,7 +8,7 @@ Deadlock occurs when 4 conditions hold simultaneously:
 
 1. **Mutual Exclusion**: At least one resource must be non-shareable.
 2. **Hold and Wait**: A process is currently holding at least one resource
-3. **No Pre-Emption**
+3. **No Pre-Emption**: Once a process has acquired a resource 
 4. **Circular Wait**
 
 
