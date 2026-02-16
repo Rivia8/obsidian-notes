@@ -18,7 +18,7 @@ Finally, we either get a hit or miss:
 
 
 **The problem with fully-associative cache:**
-Since thee
+Since there are
 
 
 
