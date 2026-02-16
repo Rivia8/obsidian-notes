@@ -24,6 +24,14 @@ In order to fix this there is a slower two step process that utilises **CAM**.
 
 ## Content Addressable Memory **CAM**
 
+This is a special type of hardware.
+
+First recap RAM:
+- Input: An address
+- Output: The Data
+
+**CAM** is associative memory.
+
 
 
 
