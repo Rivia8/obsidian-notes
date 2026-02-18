@@ -22,7 +22,21 @@ Examples of a Distributed System:
 - Banking
 
 With Distributed Systems you can:
-- s
+- Share Resources
+- Bind customers and suppliers
+- Allow us to things we could not normally do
+	- We can employ the use of lots of machines to speed up processes and so reliability
 
+This gives us:
+- Higher reliability
+- Scalability
+- Faster cooperation
+- Better performance
 
+Distributed Systems vary in size and the way which nodes are connected (the topology).
+Although nodes can act independently from one another, they cannot ignore one another.
+
+Computation is **concurrent**, there is **no shared state** (no single global clock) and failures can occur which we may not be aware of.
+
+Not taking the fact that components are distributed into account during design time is what makes many systems flawed.
 
