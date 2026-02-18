@@ -40,4 +40,4 @@ Computation is **concurrent**, there is **no shared state** (no single global cl
 
 Not taking the fact that components are distributed into account during design time is what makes many systems flawed.
 
-![[1- Introduction to Distributed Systems.pdf]]
+[[1- Introduction to Distributed Systems.pdf#page=3|Look here for the rest of the content]]
