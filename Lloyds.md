@@ -9,6 +9,9 @@
 3. Individual Exercise (Prep work)
 4. Technical Exercise (No critical since doing Tech. Eng.)
 
+What will be assessed:
+
+![[Pasted image 20260222201246.png]]
 
 ## Individual Exercise
 
