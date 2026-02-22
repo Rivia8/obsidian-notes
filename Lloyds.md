@@ -24,4 +24,4 @@ My side is that I **agree** to the stance.
 
 
 ![[Pasted image 20260222201503.png|400]]
-Will be
+Will be given a bank scenario by an engineer, will be a structured conversation and how you'd approach it through an engineering perspective. Will have an element of coding and up to me to choose the language (including pseudcode)
