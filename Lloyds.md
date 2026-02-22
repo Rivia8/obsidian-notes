@@ -2,6 +2,11 @@
 
 # Lloyds
 
+## Exercises:
+
+1. Skills-Based Interview
+2. Critical Thinking Exercise
+
 
 ## Topic 1
 
