@@ -20,4 +20,8 @@ What will be assessed:
 
 My side is that I **agree** to the stance.
 
-## Why mobile apps
+## Technical Exercise
+
+
+![[Pasted image 20260222201503.png|400]]
+Will be
