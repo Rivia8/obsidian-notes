@@ -38,7 +38,7 @@ Whilst they are incredibly powerful and are at the bleeding edge of generative A
 
 Now although, this may seem contradictory to my original point with the stance at the beginning of this, what I'm trying to get at is that banks (*Lloyds, Halifax, Bank of Scotland*) they **have** the context, they **have** the data to eliminate these issues on an individual basis. And this of course, requires **bespoke**, ring-fenced trained models trained strictly on verified banking data to protect privacy. This 'fixes' the problem with traditional AI chatbots for the people that are relying on them.
 
-Currently, maybe in the far or near future this won't be the case, humans are **still** needed. AI cannot handle everything and so the investment into human support is still crucial as an **architectural safety** net
+Currently, maybe in the far or near future this won't be the case, humans are **still** needed. AI cannot handle everything and so the investment into human support is still crucial as an **architectural safety** net - so the AI handles the high-volume data parsing but when the system detects high-risk anomalies it could escalate the user to a human specialist, something in that sort of fashion.
 
 ### 3: Research Approach
 
