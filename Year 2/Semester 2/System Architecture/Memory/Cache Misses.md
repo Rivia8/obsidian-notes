@@ -52,5 +52,10 @@ One of the ways of avoiding the penalty caused by cache misses, is to reduce the
 
 **Data-Orientated Design**: If you organise your structs and arrays so that data accessed together is stored next to each other in memory, you maximise spatial locality.
 
-## Cache Write Policy
+## Flushing
 
+Every so often there is a need to **flush** a cache (invalidate its contents). The most common reason is probably a *context switch* where the translation of *virtual addresses* is redefined. This means that the virtual-addressed cache has to be dumped.
+
+## Write Allocation
+
+If a **write miss** occurs, it is a good idea to fetch and cache the line which contains the data.
