@@ -18,5 +18,21 @@ There are three different types of cache 'misses':
 When a cache miss has occurred a check is made that the requested address *can* be cached (some addresses should not be considered for caching).
 In a [[Caches#Direct Mapped Cache|Direct Mapped Cache]], there isn't a choice but in cache architectures with more associativity, there *is*. When there is a choice, the first choice may be a place which is current *invalid*. 
 
-There may be an instance where all candidate lines are valid and there is a *capacity miss* (all cache lines are full) so we need an **eviction strategy**.
+There may be an instance where all candidate lines are valid and there is a *capacity miss* (all cache lines are full) so we need an **eviction strategy**:
+
+### Cyclic Replacement
+
+Uses a simple rotating hardware pointer, i.e. you evict the data in Slot 0, then Slot 1, then slot 2, looping back to the start when it reaches the end. 
+There can be significant performance degradation if you're constantly looping through 3 variables but your cache set only holds 2.
+
+### Random Replacement
+
+Rolls a hardware die (usually a fast pseudorandom number generator) and picks a random cache line to overwrite.
+This avoids the problem of getting stuck in a loop that can be experienced with cyclic replacement. The performance degradation is smooth and predictable too.
+
+### LRU - Least Recently Used
+
+This keeps track of when you last touched a piece of data. It is based on the assumption that if something hasn't been used in a while, it is not likely to needed again. 
+This can still suffer from pattern issues. The main disadvantage is that it requires more state (storage) to be kept and it can be quite complicated to implement.
+
 
