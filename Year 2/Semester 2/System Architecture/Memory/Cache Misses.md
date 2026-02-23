@@ -38,4 +38,5 @@ This can still suffer from pattern issues. The main disadvantage is that it requ
 ### Fetching the Line
 
 Whilst picking a cache line with the above process, it may be possible to be fetching the new line in parallel. It is important to start this early to reduce *latency*.
-Whilst the fetch is taking place, the processor is **stalled** (in the basic case) and so losing performance - the latency impact can be serious. 
+Whilst the fetch is taking place, the processor is **stalled** (in the basic case) and so losing performance - the latency impact can be serious.
+
