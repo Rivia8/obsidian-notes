@@ -32,7 +32,7 @@ I strongly agree with the statement. Banks should and at this rate *must* offer 
 
 Consumers are already turning to unregulated, open-web chatbots *like ChatGPT, Gemini*, *Claude* for financial help. Whilst they are incredibly powerful and are at the bleeding edge of generative AI technology, they are a double edged sword. What I mean by this is that, they have a well-known and documented tendency to **hallucinate** and give sort of misleading answers with the language you use whilst the user is not intending for that outcome, this can be dangerous since the way chatbots are designed with their output, they can be **extremely** convincing even if they are completely wrong. Usually the issue with these AI services is that they lack context to an individuals finance, financial history, expenditure etc. and because AI is just a probabilistic model at the end of the day, an individual *may* **not** fit into that probabilistic landscape that the AI is getting at.
 
-Now although, this may seem contradictory to my original point with my stance at the beginning of this, what I'm trying to get at, is that Banks (*Lloyds, Halifax, Bank of Scotland*) they **have** the context, they **have** the data to eliminate these issues on an individual basis.
+Now although, this may seem contradictory to my original point with my stance at the beginning of this, what I'm trying to get at, is that Banks (*Lloyds, Halifax, Bank of Scotland*) they **have** the context, they **have** the data to eliminate these issues on an individual basis. And this of course, requires **bespoke**, ring-fenced trained models trained strictly on banking data to protect privacy.
 
 ### 3: Research Approach
 
@@ -40,6 +40,9 @@ Now although, this may seem contradictory to my original point with my stance at
 
 
 
+### Cites
+
+https://www.independent.co.uk/us/money/ai-financial-advisor-planning-experts-b2894826.html
 
 ## Technical Exercise
 
