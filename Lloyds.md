@@ -30,7 +30,11 @@ My side is that I **agree** to the stance.
 
 I strongly agree with the statement. Banks should and at this rate *must* offer real-time financial coaching through mobile apps even if *it* requires significant investment in AI and human support.
 
-### 2: Research Approach
+### 2: The Reason for Taking the Position
+
+Consumers are already turning to unregulated, open-web chatbots *like ChatGPT, Gemini* for financial help. Whilst they are incredibly powerful and are at the bleeding edge of generative AI technology, they are a double edged sword. What I mean by this is that, they have a well-known tendency to **hallucinate** and give sort of misleading answers.
+
+### 3: Research Approach
 
 
 
