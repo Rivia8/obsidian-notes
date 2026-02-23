@@ -46,7 +46,7 @@ When it came to researching the topic, I focused my research on the technical li
 
 ### Conclusion
 
-
+So to conclude, deploying a half-measure in AI is quite dangerous and the significant upfront cost is completely justified **in order to put people first.** By combining bespoke, data=
 
 
 
