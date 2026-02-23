@@ -30,7 +30,7 @@ I strongly agree with the statement. Banks should and at this rate *must* offer 
 
 ### 2: The Reason for Taking the Position
 
-Consumers are already turning to unregulated, open-web chatbots *like ChatGPT, Gemini* for financial help. Whilst they are incredibly powerful and are at the bleeding edge of generative AI technology, they are a double edged sword. What I mean by this is that, they have a well-known tendency to **hallucinate** and give sort of misleading answers with the language you use whilst the user is not intending for that outcome, this can be dangerous since the way chatbots are designed they with their output, they can be **extremely** convincing even if they are completely wrong.
+Consumers are already turning to unregulated, open-web chatbots *like ChatGPT, Gemini* for financial help. Whilst they are incredibly powerful and are at the bleeding edge of generative AI technology, they are a double edged sword. What I mean by this is that, they have a well-known tendency to **hallucinate** and give sort of misleading answers with the language you use whilst the user is not intending for that outcome, this can be dangerous since the way chatbots are designed they with their output, they can be **extremely** convincing even if they are completely wrong. Usually the issue with these AI services is that they lack context to an individuals
 
 Now although, this may seem contradictory to my original point with my stance at the beginning of this, what I'm trying to get at, is that Banks 
 
