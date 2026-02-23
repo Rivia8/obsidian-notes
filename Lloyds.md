@@ -32,7 +32,7 @@ I strongly agree with the statement. Banks should and at this rate *must* offer 
 
 ### 2: The Reason for Taking the Position
 
-Consumers are already turning to unregulated, open-web chatbots *like ChatGPT, Gemini* for financial help. Whilst they are incredibly powerful and are at the bleeding edge of generative AI technology, they are a double edged sword. What I mean by this is that, they have a well-known tendency to **hallucinate** and give sort of misleading answers.
+Consumers are already turning to unregulated, open-web chatbots *like ChatGPT, Gemini* for financial help. Whilst they are incredibly powerful and are at the bleeding edge of generative AI technology, they are a double edged sword. What I mean by this is that, they have a well-known tendency to **hallucinate** and give sort of misleading answers with the language you use whilst the user is not indent 
 
 ### 3: Research Approach
 
