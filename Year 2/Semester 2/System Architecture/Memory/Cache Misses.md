@@ -59,3 +59,5 @@ Every so often there is a need to **flush** a cache (invalidate its contents). T
 ## Write Allocation
 
 If a **write miss** occurs, it is a good idea to fetch and cache the line which contains the data.
+
+### Which Architecture is the Best?
