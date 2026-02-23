@@ -26,6 +26,17 @@ Discuss:
 
 My side is that I **agree** to the stance.
 
+### 1: The Chosen Position
+
+I strongly agree with the statement. Banks should and at this rate *must* offer real-time financial coaching through mobile apps even if *it* requires significant investment in AI and human support.
+
+### 2: Research Approach
+
+
+
+
+
+
 ## Technical Exercise
 
 
