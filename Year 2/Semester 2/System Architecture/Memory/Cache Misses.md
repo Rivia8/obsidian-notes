@@ -40,3 +40,4 @@ This can still suffer from pattern issues. The main disadvantage is that it requ
 Whilst picking a cache line with the above process, it may be possible to be fetching the new line in parallel. It is important to start this early to reduce *latency*.
 Whilst the fetch is taking place, the processor is **stalled** (in the basic case) and so losing performance - the latency impact can be serious.
 
+In something like a page fault, the delay is millions of cycles but with a cache miss is just a few hundred cycles.
