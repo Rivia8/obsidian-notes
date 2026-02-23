@@ -18,6 +18,12 @@ What will be assessed:
 **Topic 1:**
 "Banks should offer real-time financial coaching for their customers through mobile apps, even if it requires significant investment in AI and human support"
 
+Discuss:
+- The chosen position,
+- Why I took the position,
+- The approach I took to research the topic and research the position.
+
+
 My side is that I **agree** to the stance.
 
 ## Technical Exercise
