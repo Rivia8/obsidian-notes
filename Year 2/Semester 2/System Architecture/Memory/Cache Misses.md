@@ -40,4 +40,11 @@ This can still suffer from pattern issues. The main disadvantage is that it requ
 Whilst picking a cache line with the above process, it may be possible to be fetching the new line in parallel. It is important to start this early to reduce *latency*.
 Whilst the fetch is taking place, the processor is **stalled** (in the basic case) and so losing performance - the latency impact can be serious.
 
-In something like a page fault, the delay is millions of cycles but with a cache miss is just a few hundred cycles.
+In something like a page fault, the delay is millions of cycles but with a cache miss is just a few hundred cycles so it cannot just swap out the processes via software (like in a page fault), so instead of the OS doing it in software, modern CPUs use hardware thread switching.
+
+## Cache Prefetching
+
+One of the ways of avoiding the penalty caused by cache misses, is to reduce the number of cache misses. This can be done by **speculation** - predicting and fetching lines before they might be wanted.
+
+**Instruction Prefetching:** If you are on line 10, it fetches line 11, 12 and 13. But the problem is that if on average the code branches every 7 instructions, the CPU might prefetch a bunch of instructions but hit an `if` statement that jumps somewhere else.
+
