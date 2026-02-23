@@ -35,4 +35,7 @@ This avoids the problem of getting stuck in a loop that can be experienced with 
 This keeps track of when you last touched a piece of data. It is based on the assumption that if something hasn't been used in a while, it is not likely to needed again. 
 This can still suffer from pattern issues. The main disadvantage is that it requires more state (storage) to be kept and it can be quite complicated to implement.
 
+### Fetching the Line
+
+Whilst picking a cache line with the above process, it may be possible to be fetching the new line in parallel. It is important to start this early to reduce *latency*.
 
