@@ -46,5 +46,11 @@ In something like a page fault, the delay is millions of cycles but with a cache
 
 One of the ways of avoiding the penalty caused by cache misses, is to reduce the number of cache misses. This can be done by **speculation** - predicting and fetching lines before they might be wanted.
 
-**Instruction Prefetching:** If you are on line 10, it fetches line 11, 12 and 13. But the problem is that if on average the code branches every 7 instructions, the CPU might prefetch a bunch of instructions but hit an `if` statement that jumps somewhere else.
+**Instruction Prefetching:** If you are on line 10, it fetches line 11, 12 and 13. But the problem is that if on average the code branches every 7 instructions, the CPU might prefetch a bunch of instructions but hit an `if` statement that jumps somewhere else leading to all that prefetched data to be thrown away.
+
+**Hardware Data Prefetching:**  many instruction sets (like x86 or ARM) give the programmer a specific `prefetch` command. You put this inside a loop to tell the CPU to perform a 'dummy' read. This adds extra instructions but hides the massive 200-cycle RAM delay.
+
+**Data-Orientated Design**: If you organise your structs and arrays so that data accessed together is stored next to each other in memory, you maximise spatial locality.
+
+## Cache Write Policy
 
