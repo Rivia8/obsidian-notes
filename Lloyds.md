@@ -32,7 +32,7 @@ I strongly agree with the statement. Banks should and at this rate *must* offer 
 
 Consumers are already turning to unregulated, open-web chatbots *like ChatGPT, Gemini*, *Claude* for financial help. 
 
-According to the Personal Comparison Site **Finder**: they "found 40 per cent of Brits have used tools like ChatGPT to get advice, while 16 per cent of this group have used AI tools for stocks and shares tips or investing advice."
+According to the Personal Finance Comparison Site **Finder**: they "found 40 per cent of Brits have used tools like ChatGPT to get advice, while 16 per cent of this group have used AI tools for stocks and shares tips or investing advice."
 
 Whilst they are incredibly powerful and are at the bleeding edge of generative AI technology, they are a double edged sword. What I mean by this is that, they have a well-known and documented tendency to **hallucinate** and give sort of misleading answers with the language you use whilst the user is not intending for that outcome, this can be dangerous since the way chatbots are designed with their output, they can be **extremely** convincing even if they are completely wrong. Usually the issue with these AI services is that they lack context to an individuals finance, financial history, expenditure etc. and because AI is just a probabilistic model at the end of the day, an individual *may* **not** fit into that generalised landscape that the AI is getting at.
 
