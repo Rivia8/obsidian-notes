@@ -42,7 +42,7 @@ Currently, maybe in the far or near future this won't be the case, humans are **
 
 ### 3: Research Approach
 
-When it came to researching the topic, I focused my research on the technical limitations of current AI and how it intersects with banking regulations and how the current climate of LLMs are affecting British citizens.
+When it came to researching the topic, I focused my research on the technical limitations of current AI, how it intersects with banking regulations and how the current climate of LLMs are affecting British citizens.
 
 ### Conclusion
 
