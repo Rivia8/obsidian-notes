@@ -11,7 +11,7 @@
 
 What will be assessed:
 
-![[Pasted image 20260222201246.png]]
+![[Pasted image 20260222201246.png#invert]]
 
 ## Individual Exercise
 
@@ -73,3 +73,21 @@ Will be given a bank scenario by an engineer, will be a structured conversation 
 ## Group Exercise
 
 Working with other candidates to develop a new Sustainable investing app.
+
+![[Pasted image 20260224114755.png#invert]]
+
+My aim is:
+
+**Data Accuracy** and **ensuring that the supporting data is complete**.
+If the underlying data is flawed, the app will fail to deliver meaningful insights to the customers.
+Integrates **Environmental**, social **Social** **Governance** (ESG) data and personal finance data to provide LBG customers with a streamlined view of the ESG impacts of their loans.
+
+Need to ensure that the ESG metrics we present are not only accurate but also relevant and comprehensive.
+- Enhance credibility,
+- Enhance and foster user trust
+
+
+### Team Usage
+
+- Customer usage, making sure that the app is useful over time (user retention)
+- 
