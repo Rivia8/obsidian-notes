@@ -89,7 +89,10 @@ Need to ensure that the ESG metrics we present are not only accurate but also re
 
 ### Team Usage
 
+- Data Accuracy and ensuring the supporting data is complete.
 - Customer usage, making sure that the app is useful over time (user retention)
 - ESG factors, most relevant metrics, survey that gives different factors of whether something is important or not important
 - Create and design effect user experience, nothing too complex may make customers feel overwhelmed (with financial data), larger fonts and important for diverse needs.
+- Speed to market
 
+Lloyds competitor released they have their own investing app, 
