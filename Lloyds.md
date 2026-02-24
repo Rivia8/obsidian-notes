@@ -90,4 +90,4 @@ Need to ensure that the ESG metrics we present are not only accurate but also re
 ### Team Usage
 
 - Customer usage, making sure that the app is useful over time (user retention)
-- 
+- ESG factors, most relevant metrics, survey that gives different factors of whether something is important or not important
