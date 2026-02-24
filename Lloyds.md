@@ -11,7 +11,7 @@
 
 What will be assessed:
 
-![[Pasted image 20260222201246.png#invert]]
+![[Pasted image 20260222201246.png]]
 
 ## Individual Exercise
 
