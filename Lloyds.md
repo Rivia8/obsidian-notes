@@ -60,6 +60,7 @@ https://www.ftadviser.com/content/e37bf7ab-0416-49cf-9dc6-b806b6d24377
 
 
 ![[Pasted image 20260222201503.png|400]]
+
 Will be given a bank scenario by an engineer, will be a structured conversation and how you'd approach it through an engineering perspective. Will have an element of coding and up to me to choose the language (including pseudocode)
 
 ## Skills-Based Interview
