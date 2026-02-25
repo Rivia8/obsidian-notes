@@ -93,4 +93,6 @@ Snapchat's filters use things like selective warping to change how someone's fac
 **Angular Resolution**:
 ![[Pasted image 20260225133206.png#invert]]
 ![[Pasted image 20260225133150.png#invert]]
+![[Pasted image 20260225133339.png#invert]]
 
+The method above is known as **Nyquist's Theorem** which is a period signal that can be reconstructed if the sampling interval is at least half the period. An object can be detected if two samples span its smallest dimension
