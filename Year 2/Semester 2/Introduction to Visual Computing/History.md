@@ -87,5 +87,7 @@ In **Archaeology** image processing is used. In 2015 the remains of 90 standing 
 
 The **Beauty Industry** heavily uses image processing with things like filters.
 Snapchat's filters use things like selective warping to change how someone's face looks.
+ 
+**Spatial Resolution**, you can reduce the resolution of an image.
 
-**Spatial Resolution**, you can reduce the resolution of a passport 
+**Angular Resolution,** 
