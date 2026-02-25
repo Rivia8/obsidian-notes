@@ -101,3 +101,12 @@ The method above is known as **Nyquist's Theorem** which is a period signal that
 
 ![[Pasted image 20260225133706.png#invert]]
 
+**Intensity Resolution:** Humans can see about 40 shades of brightness, 7.5 million shades of colour and images are commonly stored with 256 shades of grey (brightness) and 16.8 million shades of colour.
+![[Pasted image 20260225134047.png]]
+
+## Image Noise
+
+![[Pasted image 20260225134107.png|400]]
+
+In the dark room we have graininess, this is because the camera has to increase the ISO - the brightness by increasing the voltage but this produces noise.
+
