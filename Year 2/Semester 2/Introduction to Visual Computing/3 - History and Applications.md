@@ -2,7 +2,7 @@
 
 Tags: [[Introduction to Visual Computing]]
 
-# History and Applications
+# History
 
 ## A Medical Application
 
