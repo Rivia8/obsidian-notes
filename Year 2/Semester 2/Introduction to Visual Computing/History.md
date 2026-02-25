@@ -87,7 +87,9 @@ In **Archaeology** image processing is used. In 2015 the remains of 90 standing 
 
 The **Beauty Industry** heavily uses image processing with things like filters.
 Snapchat's filters use things like selective warping to change how someone's face looks.
- 
+
+### Resolutions
+
 **Spatial Resolution**, you can reduce the resolution of an image.
 
 **Angular Resolution**:
@@ -95,4 +97,7 @@ Snapchat's filters use things like selective warping to change how someone's fac
 ![[Pasted image 20260225133150.png#invert]]
 ![[Pasted image 20260225133339.png#invert]]
 
-The method above is known as **Nyquist's Theorem** which is a period signal that can be reconstructed if the sampling interval is at least half the period. An object can be detected if two samples span its smallest dimension
+The method above is known as **Nyquist's Theorem** which is a period signal that can be reconstructed if the sampling interval is at least half the period. An object can be detected if two samples span its smallest dimension. More samples are needed if we want to recognise the object:
+
+![[Pasted image 20260225133706.png#invert]]
+
