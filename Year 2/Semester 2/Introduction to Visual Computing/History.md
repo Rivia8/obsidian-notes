@@ -69,4 +69,13 @@ Sonar is similar to ultrasounds, this transmits soundwaves to objects under the 
 **Reflection Seismology** is when we use image processing to find what's under the ground. You produce vibrations at different points and map concentric circles to find whereabouts an object is under the ground. 
 This is commonly used for oil exploration.
 
-Astronomy has lots of uses for image processing. One way they use image processing is taking lots of images of the same celestial object with different wavelengths of light, and then 
+**Astronomy** has lots of uses for image processing. One way they use image processing is taking lots of images of the same celestial object with different wavelengths of light, and the collating the images together to produce a final image.
+
+**Weather** can be imaged using infrared.
+
+**Agriculture** this is more Computer Vision, but robots are used to for automated pruning of vines, the robots are able to detect the vines.
+
+Within the policing and security sector lots of imaging is used. For an example, automatic number plate detection.
+Ultraviolet is used to view things like footprints on waxed floors.
+
+Remote sensing within satellite imagery. Satellite photo rectified 
