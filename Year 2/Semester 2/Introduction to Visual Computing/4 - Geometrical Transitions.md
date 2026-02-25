@@ -21,7 +21,7 @@ Its histogram will look like the following:
 ![[Pasted image 20260225165933.png#invert]]
 
 
-![[Pasted image 20260225165955.png#invert]]
+![[Pasted image 20260225165955.png]]
 
 ![[Pasted image 20260225170002.png]]
 
