@@ -84,3 +84,5 @@ Remote sensing within satellite imagery.
 In geography, there are lots of applications. One specific one is Coastal Erosion. To do this pictures of the same coast are taken at different points of time, and they are aligned using **Image Registration** by using anchor points (like houses in the images - something that hasn't changed).
 
 In **Archaeology** image processing is used. In 2015 the remains of 90 standing stones were discovered at Stonehenge using aerial imaging.
+
+The **Beauty Industry** heavily uses image processing with things like filters.
