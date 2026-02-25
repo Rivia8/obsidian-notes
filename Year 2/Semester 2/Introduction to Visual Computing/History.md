@@ -90,4 +90,7 @@ Snapchat's filters use things like selective warping to change how someone's fac
  
 **Spatial Resolution**, you can reduce the resolution of an image.
 
-**Angular Resolution,** 
+**Angular Resolution**:
+![[Pasted image 20260225133206.png#invert]]
+![[Pasted image 20260225133150.png#invert]]
+
