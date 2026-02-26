@@ -85,7 +85,7 @@ Here is an example with the solarise effect:
 ---
 
 Here is another example of **Min-Max Linear Stretch:**
-
+This is like a contrast adjustment.
 ![[Pasted image 20260226065457.png]]
 ![[Pasted image 20260226065505.png]]
 
