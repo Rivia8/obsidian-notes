@@ -106,10 +106,23 @@ But it can also be done automatically:
 
 **Automatic Thresholding:**
 
- P-Tile (percentile) calculation of $T$
+P-Tile (percentile) calculation of $T$
 
 If we know that an object should occupy a certain percentage of the pixels in an image, we can automatically select $T$.
 
+The way the algorithm works is that you:
+1. Calculate the number of pixels that should be the object (% of image size)
+2. Create an image histogram
+3. Accumulate frequencies until total exceeds number of expected object pixels
+4. Return current grey level as $T$.
+![[Pasted image 20260226071034.png]]
+![[Pasted image 20260226070959.png]]
+![[Pasted image 20260226071057.png]]
 
+![[Pasted image 20260226071108.png|400]]
 
+![[Pasted image 20260226071128.png|400]]
 
+![[Pasted image 20260226071243.png]]
+
+However, there can sometimes be **Misclassifications** with 
