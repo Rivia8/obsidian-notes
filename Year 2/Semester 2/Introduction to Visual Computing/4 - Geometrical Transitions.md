@@ -125,4 +125,8 @@ The way the algorithm works is that you:
 
 ![[Pasted image 20260226071243.png]]
 
-However, there can sometimes be **Misclassifications** with 
+However, there can sometimes be **Misclassifications** with some of these methods.
+![[Pasted image 20260226071431.png]]
+
+![[Pasted image 20260226071453.png]]
+
