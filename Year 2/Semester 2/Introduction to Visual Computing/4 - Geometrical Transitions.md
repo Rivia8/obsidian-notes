@@ -130,3 +130,5 @@ However, there can sometimes be **Misclassifications** with some of these method
 
 ![[Pasted image 20260226071453.png]]
 
+## Geometrical Transitions
+
