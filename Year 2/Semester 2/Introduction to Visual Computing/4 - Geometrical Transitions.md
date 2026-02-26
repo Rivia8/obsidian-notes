@@ -96,4 +96,20 @@ Here is another example of **thresholding:**
 ![[Pasted image 20260226065542.png]]
 
 When it comes to thresholding, how do we choose a value for the threshold, $T$?
+This is the main usage of **histograms** that were mentioned before:
+
+![[Pasted image 20260226070021.png]]
+
+
+This requires a manual observation of the histogram to reach the conclusion.
+But it can also be done automatically:
+
+**Automatic Thresholding:**
+
+ P-Tile (percentile) calculation of $T$
+
+If we know that an object should occupy a certain percentage of the pixels in an image, we can automatically select $T$.
+
+
+
 
