@@ -132,3 +132,22 @@ However, there can sometimes be **Misclassifications** with some of these method
 
 ## Geometrical Transitions
 
+Using the following image, we're going to look at various different types of transformations:
+
+![[Pasted image 20260226204848.png]]
+
+### Scaling
+
+This is like zooming into a specific section.
+![[Pasted image 20260226204948.png]]
+
+### Translation
+
+This is moving the view of the image in a given direction:
+![[Pasted image 20260226205025.png]]
+
+### Scaling and Transition
+
+Both of the operations above can be done at the same time.
+![[Pasted image 20260226205117.png]]
+
