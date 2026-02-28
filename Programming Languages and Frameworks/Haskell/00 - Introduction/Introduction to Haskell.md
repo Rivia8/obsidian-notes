@@ -32,3 +32,7 @@ The goal of functional programming is to:
 - Reason about them like mathematical functions
 	 if $f(x) = g(x)$ for all $x$ then $f = g$
 
+	 let $x = f10$ and in $x + x + x = f10 + f10 + f10$, in a regular programming language, there will be differences with how its executed and changes with execution order, whether they are being copied etc. But in functional programming we want the above statement to be true **as much as possible.**
+
+
+
