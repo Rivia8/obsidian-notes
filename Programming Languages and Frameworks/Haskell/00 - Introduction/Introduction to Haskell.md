@@ -24,5 +24,11 @@ numbers = [1, 2, 3, 4, 5]
 doubledNumbers = map (*2) numbers
 ```
 
- 
+The goal of functional programming is to:
+
+- Treat functions like any other data
+
+
+- Reason about them like mathematical functions
+	 if $f(x) = g(x)$ for all $x$ then $f = g$
 
