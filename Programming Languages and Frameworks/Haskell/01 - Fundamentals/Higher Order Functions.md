@@ -2,6 +2,17 @@
 
 Tags:
 
+This is where you pass a function as a parameter of another function.
+
+```Haskell
+
+-- Here we have defined addConst
+addConst :: Int -> Int -> Int
+addConst n m = n + m
+
+addThree = addConst 3
+ 
+```
 
 
 
