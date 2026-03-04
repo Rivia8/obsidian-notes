@@ -29,8 +29,36 @@ main = print (addConstB 3 7)
 -- results in the same answer as above
 ```
 
+What we have used above is what is known as a **Function Literal**.
 
+## Function Literals
 
+```Haskell
 
+doubleIt :: Int -> Int
+doubleIt x = x * 2
 
+myList = [1,2,3,4]
 
+doubledList = map doubleIt myList
+-- Result: [2, 4, 6, 8]
+```
+
+In Haskell a function literal is known as a **Lambda** or an **Anonymous Function.**
+Its a throwaway function without a name that you can define on the spot.
+
+The way you define it is as follows:
+
+```Haskell
+\x -> x * 2
+
+\x y -> x + y
+```
+
+The real usage is combining it with functions:
+
+```Haskell
+myList = [1, 2, 3, 4]
+
+doubledList = map (\x -> x * 2) myList
+```
