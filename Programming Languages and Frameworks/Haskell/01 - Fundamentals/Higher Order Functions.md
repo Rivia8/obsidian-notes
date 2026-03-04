@@ -1,8 +1,10 @@
 04-03-2026 14:14
 
-Tags:
+Tags: [[Haskell]]
 
 This is where you pass a function as a parameter of another function.
+
+This can be done since functions are treated as "first-class citizens" just like an `Int` or a `String`, you can pass them around.
 
 ```Haskell
 
@@ -20,10 +22,14 @@ main = print (addConstB 7)
 You can write this **explicitly** so that it returns a function
 
 ```Haskell
+addConstB n = \m -> n
 
-addConstB =
-
+-- To evaluate this:
+main = print (addConstB 3 7)
+-- results in the same answer as above
 ```
+
+
 
 
 
