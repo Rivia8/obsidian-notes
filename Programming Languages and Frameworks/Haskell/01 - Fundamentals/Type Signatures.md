@@ -15,9 +15,16 @@ greeting = "Hello World"
 
 -- Square takes an Int and returns an Int
 square :: Int -> Int
-square n = n * n*
+square n = n * n
 
+-- add takes an Int another Int and returns an Int
+add :: Int -> Int -> Int
+add x y = x + y
 ```
+
+
+
+
 
 
 
