@@ -19,7 +19,27 @@ meaningOfLife = 42
 
 # Defining Functions
 
-This is where syntax can look drastically different, to define a function you write the f
+This is where syntax can look drastically different, to define a function you write the function name followed by its parameters (separated by spaces) an equal signs and then the body.
+
+```Haskell
+-- A function that adds two numbers
+add x y = x + y
+
+-- A function that squares a number
+square n = n * n
+```
+
+In order you would do:
+
+```Haskell
+add 5 10
+square 4
+```
+
+*You don't need parentheses*
+
+
+
 
 
 
