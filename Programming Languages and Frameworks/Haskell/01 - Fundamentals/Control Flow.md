@@ -36,4 +36,12 @@ checkNumber n =
 
 Pattern matching and `case` is great for checking the shape of data, it isn't great at checking *math* or logic.
 
-For Boolean conditions Haskell utilises Guards:
+For Boolean conditions Haskell utilises Guards: they look like a pip character and act like a much cleaner `if/else if/else` chain:
+
+```Haskell
+checkAge :: Int -> String
+checkAge age
+	| age < 0 = "You havn't been born yet"
+	| age < 18 = "You are a minotr"
+
+```
