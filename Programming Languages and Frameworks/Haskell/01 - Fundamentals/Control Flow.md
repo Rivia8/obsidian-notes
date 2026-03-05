@@ -49,6 +49,8 @@ checkAge age
 
 The compiler reads the guards top to bottom and the first condition that evaluates to `True` get its corresponding expression returned.
 
+## `where`
+
 When you use guard expressions you often utilise the same calculated value against several different conditions. 
 The `where` clause allows you to calculate that value exactly once.
 
@@ -101,4 +103,19 @@ greet "Alice" = "Hello Alice! Your secret code is " ++ code
 greet name = "Hello " ++ name ++ "!" 
 -- You CANNOT use 'code' here. It is out of scope.
 ```
+
+## `let`
+
+`let ... in` lets you define your variables *first* and *then* use them in the final expression.
+
+```Haskell
+cylinderSurfaceArea :: Float -> Float -> Float
+cylinderSurfaceArea radius height =
+	let piVal = 3.14159
+		topArea = 2 * piVal * (radius ^ 2)
+		sideArea = 2 * piVal * radius * height
+	in topArea + sideArea
+```
+
+The syntax is always: `let <bindings> in <expression>`
 
