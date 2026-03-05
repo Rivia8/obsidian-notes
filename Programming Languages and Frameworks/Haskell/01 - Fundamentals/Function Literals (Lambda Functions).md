@@ -3,7 +3,6 @@
 Tags: [[Haskell]]
 
 
-
 ```Haskell
 doubleIt :: Int -> Int
 doubleIt x = x * 2
