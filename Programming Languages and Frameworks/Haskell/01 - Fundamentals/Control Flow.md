@@ -34,3 +34,6 @@ checkNumber n =
 
 # Guards `|`
 
+Pattern matching and `case` is great for checking the shape of data, it isn't great at checking *math* or logic.
+
+For Boolean 
