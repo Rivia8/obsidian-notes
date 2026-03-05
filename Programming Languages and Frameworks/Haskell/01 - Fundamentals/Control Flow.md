@@ -119,3 +119,19 @@ cylinderSurfaceArea radius height =
 
 The syntax is always: `let <bindings> in <expression>`
 
+One thing to remember is that `let` is an expression, what this means is that it evaluates to a value.
+
+This means that it can be placed anywhere:
+
+```Haskell
+someMath = 4 * (let a = 9 in a + 1) + 2
+-- Result: 4 * (10) + 2 = 42
+```
+
+Even in a list:
+
+```Haskell
+weirdList = [1, 2, (let x = 3 in x * 10), 4]
+-- Result: [1, 2, 30, 4]
+```
+
