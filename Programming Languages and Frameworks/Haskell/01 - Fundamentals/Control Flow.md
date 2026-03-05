@@ -45,5 +45,6 @@ checkAge age
 	| age < 18 = "You are a minor"
 	| age >= 18 = "You are an adult"
 	| otherwise = "invalid age"
-
 ```
+
+The compiler reads the guards top to bottom and the first condition that evaluates to `True` get its corresponding expression returned.
