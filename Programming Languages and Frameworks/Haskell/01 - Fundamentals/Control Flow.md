@@ -16,7 +16,18 @@ describeList xs = "This List is " ++ case xs of
 	_ -> "a longer list"
 ```
 
+- \[] Matches an empty list
+- \[x] Matches a list with exactly one element
+- _ is a the 'wildcard' or a default catch-all (like `default :` in a C++ switch)
+
 # `if ... then .. else` Expression
 
 This is traditional logic, the only difference with Haskell is that the `else` is strictly mandatory (since every expression in Haskell *must* evaluate to a value, you cannot have an `if` without an `else`).
 
+```Haskell
+checkNumber :: Int -> String
+checkNumber n = 
+    if n > 10 
+    then "Greater than 10" 
+    else "10 or less"
+```
