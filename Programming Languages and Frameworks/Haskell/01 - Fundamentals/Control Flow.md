@@ -42,6 +42,8 @@ For Boolean conditions Haskell utilises Guards: they look like a pip character a
 checkAge :: Int -> String
 checkAge age
 	| age < 0 = "You havn't been born yet"
-	| age < 18 = "You are a minotr"
+	| age < 18 = "You are a minor"
+	| age >= 18 = "You are an adult"
+	| otherwise = "invalid age"
 
 ```
