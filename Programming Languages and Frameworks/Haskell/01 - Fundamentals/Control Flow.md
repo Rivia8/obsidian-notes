@@ -31,3 +31,6 @@ checkNumber n =
     then "Greater than 10" 
     else "10 or less"
 ```
+
+# Guards `|`
+
