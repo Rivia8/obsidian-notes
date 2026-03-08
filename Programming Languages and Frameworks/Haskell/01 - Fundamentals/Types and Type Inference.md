@@ -6,7 +6,6 @@ Haskell is both **statically** and **strongly** typed.
 
 # Types
 
-
 Declaring a type is quite simple:
 
 ```Haskell
@@ -21,19 +20,47 @@ main = print(f(10::Double))
 -- Error, since 'f' is expecting an Int and not a Double
 ```
 
-## Int, Integer and Integral
+
+## Primitives
+### Int, Integer and Integral
 
 We have seen that we have `Int` and `Double` in Haskell but since it's a more mathematical language, we also have **Integer** and **Integral**.
 
-**Int** is a type that represents 64 bits (depends on the machine) of signed Integers.
+**Int** is a type that represents 64 bits (depends on the machine) of signed Integers.'
+
 **Integer** is a type of arbitrary precision integers, it has no upper and lower bound.
+
 **Integral** is a type class whose instances are integer types.
 
-## Bool
+### Bool
 
+Represents boolean logic. The values are `True` and `False`.
 
+### Char
 
+A single Unicode character, denoted by a single quotes (e.g., 'a', 'b')
 
+## Collections
+
+Unlike C++ where you have things like `std::vector`, `std::array` and `std::list`, Haskell relies heavily on two fundamental collection types.
+
+### Lists
+
+A list is a collection of items that must be of all the same type - ***homogenous***. 
+*Syntax*: `[1, 2, 3]` or `['a', 'b', 'c']`
+
+Haskell here relies on a singly-linked list, not a contiguous arrays. What this means is that adding to the front of a list is an instant $O(1)$ but getting the 100th element requires walking through the first 99 elements, $O(n)$.
+
+A list of integers is written as `[Int]`
+
+### Tuples
+
+A tuple is a collection of items that can be different types - ***Heterogenous***. But it has a fixed size.
+*Syntax*: `(5, "Hello)` or `('A'. True, 3.14)`
+
+They are perfect for returning multiple values from a function without needing to define a custom `struct` or `class`.
+
+A tuple holding an integer and a boolean is written as `(Int, Bool)`
 
 # Type Inference
 
