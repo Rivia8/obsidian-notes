@@ -62,12 +62,14 @@ They are perfect for returning multiple values from a function without needing t
 
 A tuple holding an integer and a boolean is written as `(Int, Bool)`
 
-# Type Inference
+## Strings
 
-Haskell's type inference is global and bidirectional, the compiler treats the code like a giant Sudoku puzzle. It looks at how a value is created, but it looks at **how that value is used later on** to deduce the only mathematically possible type.
+This is just a **Type Synonym** for a list of characters: `[Char]`.
 
+`"Hello"` is translated by the compiler into `['H', 'e', 'l', 'l', 'o']`
 
+## Nothing Type
 
+In Haskell, every function has to return something, a value must be returned. If there is no meaningful data to return (usually when doing IO like printing to the screen), it returns the Unit type, written as `()`.
 
-
-
+It is a tuple with zero elements and it has exactly one value which is also written as `()`.
