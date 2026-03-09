@@ -23,7 +23,9 @@ The little $t$ on the top right means transposed and that means the column becau
 
 **Points vs Vectors:**
 Points are a specific *point* meaning a specific place.
-Vectors are 
+Vectors are represent the displacement of an object.
+
+
 
 
 
