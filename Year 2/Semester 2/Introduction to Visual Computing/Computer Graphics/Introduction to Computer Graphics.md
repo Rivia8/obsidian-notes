@@ -2,6 +2,18 @@
 
 Tags: [[Introduction to Visual Computing]]
 
+# Maths for Graphics
+
+Points that are discussed:
+
+- Points
+- Vectors
+
+
+- Matrices
+- Coordinates
+
+
 
 
 
