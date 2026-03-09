@@ -6,12 +6,14 @@ Tags: [[Introduction to Visual Computing]]
 
 Points that are discussed:
 
-- Points
-- Vectors
-
+- Geometric Entities:
+	- Points
+	- Vectors
 
 - Matrices
 - Coordinates
+
+
 
 
 
