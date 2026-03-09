@@ -13,6 +13,9 @@ Points that are discussed:
 - Matrices
 - Coordinates
 
+In graphics vectors are denoted by $v$ and not $\vec{v}$.
+Vectors use the matrix notation to be represented in a column:
+$$v = \matrix{a}{b}$$
 
 
 
