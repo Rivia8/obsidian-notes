@@ -60,6 +60,8 @@ The cross product gives us a Vector (rather than a scalar like the dot product a
 
 ![[Pasted image 20260313163136.png]]
 
+
+
 ## Matrices
 
 These are useful mathematical tools.
