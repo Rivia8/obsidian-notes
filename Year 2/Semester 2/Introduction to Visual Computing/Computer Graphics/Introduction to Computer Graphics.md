@@ -66,3 +66,10 @@ These are useful mathematical tools.
 
 ![[Pasted image 20260313163229.png]]
 
+Matrix addition doesn't work unless the matrix is the size
+
+Matrix multiplication can happen as long as the number of columns in the first matrix is the same as the number of rows in the second matrix.
+
+![[Pasted image 20260313163431.png]]
+
+This means that matrix multiplication is **not** commutative.
