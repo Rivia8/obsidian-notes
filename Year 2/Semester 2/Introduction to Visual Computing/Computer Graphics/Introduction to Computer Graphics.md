@@ -57,3 +57,12 @@ If the values are perpendicular, then the dot product is 0 since $\cos{90}$ is 0
 ## Cross Product
 
 The cross product gives us a Vector (rather than a scalar like the dot product above).
+
+![[Pasted image 20260313163136.png]]
+
+## Matrices
+
+These are useful mathematical tools.
+
+![[Pasted image 20260313163229.png]]
+
