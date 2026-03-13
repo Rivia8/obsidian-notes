@@ -29,6 +29,8 @@ We use perpendicular vectors, they are *orthonormal* which means orthogonal and 
 
 ![[Pasted image 20260313154707.png]]
 
+**Orthagonal**: The axes are mutually perpendicular. Every axis is at exactly 90° to the others.
+**Normalised:** Each axis is a "unit vector", so it has strict length (or magnitude) of exactly 1.
 
 
 
