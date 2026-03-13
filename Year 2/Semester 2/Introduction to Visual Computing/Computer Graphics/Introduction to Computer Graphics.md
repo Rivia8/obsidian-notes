@@ -39,10 +39,21 @@ In order to represent 0 displacement we have a zero vector.
 $$ V + 0 = V$$
 $$ V * 0  = 0$$ Where $0$ is the zero vector. 
 
-The **Dot Product:**
-This is an operation that takes two vectors and returns a single, standard number (a scalar). It measures how much two vectors 
+## Dot Product
 
+This is an operation that takes two vectors and returns a single, standard number (a scalar). It measures how much two vectors point in the same direction:
 
+$$a + b = a_xb_x + a_yb_y + a_zb_z$$
 
+We can also use the angle between the vectors to calculate the dot product:
 
+![[Pasted image 20260313162116.png]]
 
+If $a$ and $b$ are unit vectors:
+$$\hat{a}~ \cdot~ \hat{b} = \cos{\theta} $$
+If the values are perpendicular, then the dot product is 0 since $\cos{90}$ is 0:
+![[Pasted image 20260313162347.png]]
+
+## Cross Product
+
+The cross product gives us a Vector (rather than a scalar like the dot product above).
