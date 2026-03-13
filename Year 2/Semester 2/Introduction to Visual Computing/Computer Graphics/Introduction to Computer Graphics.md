@@ -32,6 +32,8 @@ We use perpendicular vectors, they are *orthonormal* which means orthogonal and 
 **Orthagonal**: The axes are mutually perpendicular. Every axis is at exactly 90° to the others.
 **Normalised:** Each axis is a "unit vector", so it has strict length (or magnitude) of exactly 1.
 
+A vector is a geometric quantity that has direction and size and roughly represents position, but it is better to refer it to as **displacement**.
+A vector requires to exist in a vector space equipped with addition and scalar multiplication.
 
 
 
