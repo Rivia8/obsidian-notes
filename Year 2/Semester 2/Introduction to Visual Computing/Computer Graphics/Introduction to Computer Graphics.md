@@ -25,6 +25,9 @@ The little $t$ on the top right means transposed and that means the column becau
 Points are a specific *point* meaning a specific place.
 Vectors are represent the displacement of an object.
 
+We use perpendicular vectors, they are *orthonormal* which means orthogonal and along the normal:
+
+![[Pasted image 20260313154707.png]]
 
 
 
