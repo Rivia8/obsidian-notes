@@ -39,7 +39,8 @@ In order to represent 0 displacement we have a zero vector.
 $$ V + 0 = V$$
 $$ V * 0  = 0$$ Where $0$ is the zero vector. 
 
-
+The **Dot Product:**
+This is an operation that takes two vectors and returns a single, standard number (a scalar). It measures how much two vectors 
 
 
 
