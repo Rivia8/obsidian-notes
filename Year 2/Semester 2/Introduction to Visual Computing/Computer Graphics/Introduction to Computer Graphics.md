@@ -35,8 +35,9 @@ We use perpendicular vectors, they are *orthonormal* which means orthogonal and 
 A vector is a geometric quantity that has direction and size and roughly represents position, but it is better to refer it to as **displacement**.
 A vector requires to exist in a vector space equipped with addition and scalar multiplication.
 
-
-
+In order to represent 0 displacement we have a zero vector.
+$$ V + 0 = V$$
+$$ V * 0  = 0$$ Where $0$ is the zero vector. 
 
 
 
