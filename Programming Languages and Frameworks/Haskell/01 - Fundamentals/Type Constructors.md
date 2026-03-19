@@ -55,3 +55,10 @@ data MyList a = Empty | Append a (MyList a)
 ```
 
 - `Append` is a data constructor that takes two arguments `a` and `MyList a`
+
+Haskell sees the following as the same thing:
+
+```Haskell
+sugarList = [1,2,3]
+realList = 1 : 2 : 3 : []
+```
