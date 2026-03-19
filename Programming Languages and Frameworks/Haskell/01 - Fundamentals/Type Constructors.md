@@ -4,7 +4,9 @@ Tags: [[Introduction to Haskell]]
 
 In Haskell, the word constructor, is split completely into two different concepts, **Type Constructors** and **Data Constructors.**
 
+There are two concepts that you need to be familiar with: **Types** vs **Values**.
 
+The Type Level is the universe of blueprints (`Int`, `String`, `Bool`)
 
 
 
