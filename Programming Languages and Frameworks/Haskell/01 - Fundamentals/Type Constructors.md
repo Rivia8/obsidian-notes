@@ -43,6 +43,6 @@ alice :: Person
 alice = Person "Alice" 20
 ```
 
-Looking at the constructor, `data Person = Person String Int`
+Looking at the constructor, `data Person = Person String Int`, the `Person` on the left is the Type Constructor and the `Person` on the right is the data constructor.
 
 
