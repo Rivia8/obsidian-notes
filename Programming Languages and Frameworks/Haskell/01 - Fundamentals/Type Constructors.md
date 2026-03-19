@@ -45,4 +45,13 @@ alice = Person "Alice" 20
 
 Looking at the constructor, `data Person = Person String Int`, the `Person` on the left is the Type Constructor and the `Person` on the right is the data constructor.
 
+### Recursion
 
+Algebraic datatypes can incorporate **recursion.** 
+Since Haskell is like mathematics we can incorporate recursion quite nicely.
+
+```Haskell
+data MyList a = Empty | Append a (MyList a)
+```
+
+- `Append` is a data constructor that takes two arguments `a` and `MyList a`
