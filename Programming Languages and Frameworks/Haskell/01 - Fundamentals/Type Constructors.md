@@ -26,4 +26,19 @@ data Maybe a = Nothing | Just a
 - `Just` is a data constructor that takes exactly one argument of type `a`.
 
 
+### Types with Multiple Fields
+
+This is similar to structs, if a type only has one way to be built, the Type Constructor and the Data Constructor are given the exact same name. This is done by convention and they are **different** things:
+
+```Haskell
+data Person = Person String Int
+
+getName :: Person -> String
+
+getName (Person name age) = name
+
+alice :: Person
+alice = Person "Alice" 20
+```
+
 
