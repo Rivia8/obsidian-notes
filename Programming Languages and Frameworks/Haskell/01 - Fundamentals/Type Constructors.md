@@ -33,12 +33,16 @@ This is similar to structs, if a type only has one way to be built, the Type Con
 ```Haskell
 data Person = Person String Int
 
+-- Type level, tells that the function takes a Person and returns a String
 getName :: Person -> String
 
+-- Value level, pattern match on the data constructor to extract the name 
 getName (Person name age) = name
 
 alice :: Person
 alice = Person "Alice" 20
 ```
+
+Looking at the constructor, `data Person = Person String Int`
 
 
