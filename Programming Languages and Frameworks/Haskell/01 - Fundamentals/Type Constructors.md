@@ -62,15 +62,3 @@ Haskell sees the following as the same thing:
 sugarList = [1,2,3]
 realList = 1 : 2 : 3 : []
 ```
-
-## Haskell's List Type
-
-Haskell has its own List already predefined.
-
-```Haskell
-
-myIntHead :: [Int] -> Maybe Int
-myIntHead [] = Nothing
-myIntHead x xs
-
-```
