@@ -17,12 +17,13 @@ data Maybe a = Nothing | Just a
 ```
 
 `data Maybe a`
-- `Maybe` is the type constructor
+- `Maybe` is the type constructor.
 - `Maybe` itself isn't a concrete type but is rather a function *for* types. It takes a type variable `a` as an argument and spits out a concrete type.
 
 `Nothing | Just a`
-- This side lives in the value level that was discussed before
-- 
+- This side lives in the value level that was discussed before.
+- These are the actual functions that are used to build the data in memory. The `|` means or.
+- `Just` is a data constructor that takes exactly one argument of type `a`.
 
 
 
