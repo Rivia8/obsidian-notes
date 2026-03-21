@@ -21,6 +21,6 @@ The two parts of the cycle can be subdivided:
 
 1. **Fetch**: the CPU grabs the next instruction from memory and loads it into the IR. The PC is incremented.
 2. **Decode**: the CPU identifies the instruction by **decoding** the contents of the IR. The control signals are generated to process the identified instruction in later phases of the instruction cycle. Source operands are obtained from register file needed to process the instruction.
-3. **Execute**: Instruction is executed.
-4. **Memory**: This either reads data from memory or writes a result to the designated location.
-5. **Write**-**back**: The write-back phase writes the result to the designated register.
+3. **Execute**: instruction is executed.
+4. **Memory**: this either reads data from memory or writes a result to the designated location.
+5. **Write**-**back**: the write-back phase writes the result to the designated register.
