@@ -1,7 +1,5 @@
 17-12-2024 16:29
 
-Status: #new 
-
 Tags: [[Architecture]]
 
 # Instruction Set Architectures
