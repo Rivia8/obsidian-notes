@@ -31,4 +31,14 @@ The **worst case** data path is when the CPU has to go through all these phases:
 In very a basic instruction processing engine, each instruction takes a single clock cycle to execute (single-cycle processor).
 Only [[Combinatorial Logic|Combinational Logic]] is used to implement instruction execution. This means that to calculate the next state, only the current inputs are considered.
 
-The microacrhi
+**Microarchitectural Model**:
+![[Pasted image 20260321164051.png#invert]]
+
+Above is the diagram of a highly abstracted single-cycle microarchitecture.
+- Each instruction takes a single clock cycle
+- All state updates made at the end of an instruction's execution.
+
+What determines the Cycle Time of the Processor?:
+- The slowest instruction determines the clock cycle time
+- Other instructions have "slack"
+
