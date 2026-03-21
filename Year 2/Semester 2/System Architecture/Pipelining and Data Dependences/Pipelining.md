@@ -30,3 +30,5 @@ The **worst case** data path is when the CPU has to go through all these phases:
 ![[Pasted image 20260321162629.png#invert]]
 In very a basic instruction processing engine, each instruction takes a single clock cycle to execute (single-cycle processor).
 Only [[Combinatorial Logic|Combinational Logic]] is used to implement instruction execution. This means that to calculate the next state, only the current inputs are considered.
+
+The microacrhi
