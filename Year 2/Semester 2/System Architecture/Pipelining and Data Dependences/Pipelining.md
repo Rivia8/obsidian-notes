@@ -24,3 +24,6 @@ The two parts of the cycle can be subdivided:
 3. **Execute**: instruction is executed.
 4. **Memory**: this either reads data from memory or writes a result to the designated location.
 5. **Write**-**back**: the write-back phase writes the result to the designated register.
+
+The **worst case** data path is when the CPU has to go through all these phases:
+![[Pasted image 20260321162436.png#invert]]
