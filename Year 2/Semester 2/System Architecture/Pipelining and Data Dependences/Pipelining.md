@@ -12,5 +12,8 @@ Tags: [[System Architecture]]
 
 # Pipelining
 
+The Instruction Processing Cycle is a simple repetitive fetch-execute cycle.
+
 Pipelining is the assembly line principle applied to executing software instructions.
 Instead of waiting for one instruction to completely finish before starting the next one, the CPU breaks the execution down into smaller, distinct stages and overlaps them.
+
