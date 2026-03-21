@@ -2,8 +2,9 @@
 
 Tags: [[System Architecture]]
 
+# Recap:
 
 
-
+- The process of executing an instruction is called the **instruction cycle** or processing cycle
 
 
