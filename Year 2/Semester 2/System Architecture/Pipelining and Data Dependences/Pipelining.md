@@ -7,4 +7,6 @@ Tags: [[System Architecture]]
 
 - The process of executing an instruction is called the **instruction cycle** or processing cycle
 
+# Pipelining
 
+Pipelining is the assembly line principle applied to executing software instructions.
