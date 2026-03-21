@@ -17,3 +17,10 @@ The Instruction Processing Cycle is a simple repetitive fetch-execute cycle.
 Pipelining is the assembly line principle applied to executing software instructions.
 Instead of waiting for one instruction to completely finish before starting the next one, the CPU breaks the execution down into smaller, distinct stages and overlaps them.
 
+The two parts of the cycle can be subdivided:
+
+1. **Fetch**:
+2. **Decode**:
+3. **Execute**:
+4. **Memory**:
+5. **Write**-**back**:
