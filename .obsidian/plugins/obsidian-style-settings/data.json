@@ -1,21 +1,3 @@
 {
-  "minimal-advanced@@styled-scrollbars": false,
-  "minimal-style@@image-muted": 1,
-  "minimal-style@@zoom-off": true,
-  "minimal-style@@sidebar-tabs-style": "sidebar-tabs-default",
-  "minimal-style@@sidebar-tabs-names": "tab-names-off",
-  "minimal-style@@vault-profile-display": "vault-profile-default",
-  "minimal-style@@hide-help": true,
-  "minimal-style@@h1-color@@light": "#D00000",
-  "minimal-style@@h1-color@@dark": "#D00000",
-  "minimal-style@@h2-color@@light": "#DC2F02",
-  "minimal-style@@h2-color@@dark": "#DC2F02",
-  "minimal-style@@h3-color@@light": "#E85D04",
-  "minimal-style@@h3-color@@dark": "#E85D04",
-  "minimal-style@@h4-color@@light": "#F48C06",
-  "minimal-style@@h4-color@@dark": "#F48C06",
-  "minimal-style@@h5-color@@light": "#FAA307",
-  "minimal-style@@h5-color@@dark": "#FAA307",
-  "minimal-style@@h6-color@@light": "#FFBA08",
-  "minimal-style@@h6-color@@dark": "#FFBA08"
+  "minimal-advanced@@styled-scrollbars": false
 }
