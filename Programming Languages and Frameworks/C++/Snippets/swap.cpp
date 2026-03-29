@@ -1,3 +1,7 @@
+#include <string>
+#include <iostream>
+
+
 template <typename T>
 class Box {
 private:
@@ -13,4 +17,6 @@ public:
 int main() {
     Box<int> intBox(42);
     Box<std::string> stringBox("Treasure");
+
+   std::cout << "hello";
 }
