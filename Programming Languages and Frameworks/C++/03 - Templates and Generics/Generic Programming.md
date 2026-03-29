@@ -28,3 +28,6 @@ To make this generic we use [[Templates]]
 # Generic Classes
 
 Templates aren't just for functions, they are heavily used for classes too especially with data structures. If you want to build a `Box` that can hold any type of item, you make the whole class a template.
+
+Similarly to how you use the [[templates|template]] keyword for functions you do the same thing with classes.
+
