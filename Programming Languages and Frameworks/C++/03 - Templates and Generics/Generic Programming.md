@@ -31,3 +31,4 @@ Templates aren't just for functions, they are heavily used for classes too espec
 
 Similarly to how you use the [[templates|template]] keyword for functions you do the same thing with classes.
 
+![[swap.cpp]]
