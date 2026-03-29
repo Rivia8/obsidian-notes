@@ -29,4 +29,29 @@ To make this generic we use [[Templates]]
 
 Templates aren't just for functions, they are heavily used for classes too especially with data structures. If you want to build a `Box` that can hold any type of item, you make the whole class a template.
 
-Similarly to how you use the [[templates|template]] keyword for functions you do the same thing with classes.
+Similarly to how you use the [[templates|template]] keyword for functions you do the same thing with classes:
+
+```C++
+#include <string>
+#include <iostream>
+
+template <typename T>
+class Box {
+private:
+    T contents;
+public:
+    Box(T item) : contents(item) {} // Constructor using initialization list!
+    
+    T getContents() {
+        return contents;
+    }
+};
+
+int main() {
+    Box<int> intBox(42);
+    Box<std::string> stringBox("Treasure");
+
+   std::cout << "hello";
+}
+```
+
