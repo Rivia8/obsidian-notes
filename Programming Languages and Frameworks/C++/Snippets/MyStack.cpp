@@ -39,7 +39,7 @@ class MyStack{
         try {
             int pos = (this->vec.size()) - 1;
             T element = this->vec[pos];
-            this->vec.erase(pos); // Erase resizes.
+            this->vec.erase(vec.begin() + pos); // Erase resizes.
             return element;
             throw std::out_of_range("The vec is empty"); 
         }
