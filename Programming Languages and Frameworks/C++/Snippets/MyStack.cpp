@@ -46,18 +46,17 @@ class MyStack{
             std::cout << "Error has Occurred: " << errorCode;
         }
     }
-
-    int main(){
-        MyStack<int> MyStack;
-        MyStack.push(10);
-        MyStack.push(20);
-        MyStack.push(30);
-
-        while (!MyStack.isEmpty()){
-            std::cout << "item: " << MyStack.pop();
-        }
-        
-        return 0;
-    }
-
 };
+
+int main(){
+    MyStack<int> MyStack;
+    MyStack.push(10);
+    MyStack.push(20);
+    MyStack.push(30);
+
+    while (!MyStack.isEmpty()){
+        std::cout << "item: " << MyStack.pop();
+    }
+    
+    return 0;
+}
