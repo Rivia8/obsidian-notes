@@ -34,7 +34,12 @@ What determines the Cycle Time of the Processor?:
 The clock has to wait for the instruction to finish entirely before it can tick again. This means that the clock time must be set in order to accommodate the **slowest instruction** in the entire system.
 This means that even *if* an instruction is fast, like `ADD` that finishes in 6ns, because the slowest instruction `LOAD` takes 10ns, there is 4ns **SLACK**.
 
+In a Single-Cycle processor, only **one** instruction is in the system at a time. So when the instruction is in the decode phase, the ALU is turned off. When the instruction is in the "Execute" phase (using the ALU), the Instruction Memory and Data Memory are turned off.
 
+## Performance Analysis
 
-
+Execution time of a single instruction:
+$$\text{CPI(Clocks Per Instruction)} \times \text{Clock Cycle Time}$$
+Execution time of an entire program:
+$$\text{}$$
 
