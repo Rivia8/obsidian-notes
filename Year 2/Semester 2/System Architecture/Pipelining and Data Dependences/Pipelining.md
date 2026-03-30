@@ -42,3 +42,5 @@ What determines the Cycle Time of the Processor?:
 - The slowest instruction determines the clock cycle time
 - Other instructions have "slack"
 
+
+
