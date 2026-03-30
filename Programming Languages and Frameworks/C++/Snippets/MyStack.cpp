@@ -15,12 +15,12 @@ class MyStack{
     public:
     void push(T item) {
         this->vec.push_back(item);
-    }
+    };
 
     bool isEmpty(){
         // .empty() returns 1 if the vector is empty and 0 otherwise
         return this->vec.empty();
-    }
+    };
 
     T peek(){
         // Returns the item at the top of the vector WITHOUT REMOVING it from the internal vector.
@@ -32,21 +32,22 @@ class MyStack{
         catch (int errorCode) {
             std::cout << "Error has Occurred: " << errorCode;
         }
-    }
+    };
 
     T pop(){
-        // Returns hte item at the top of the vector and REMOVES it from the internal vecotr.
+        // Returns the item at the top of the vector and REMOVES it from the internal vecotr.
         try {
-            int pos = (this->vec.size()) - 1;
+            if (this->isEmpty()) throw std::out_of_range("This vector is empty");
+            
+            int pos = (int)(this->vec.size()) - 1;
             T element = this->vec[pos];
             this->vec.erase(vec.begin() + pos); // Erase resizes.
-            return element;
-            throw std::out_of_range("The vec is empty"); 
+            return element; 
         }
-        catch (int errorCode) {
-            std::cout << "Error has Occurred: " << errorCode;
+        catch (const std::out_of_range& e) {
+            std::cout << "Error has Occurred: " << e.what();
         }
-    }
+    };
 };
 
 int main(){
