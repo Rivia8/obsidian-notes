@@ -43,3 +43,5 @@ $$\text{CPI(Clocks Per Instruction)} \times \text{Clock Cycle Time}$$
 Execution time of an entire program:
 $$\text{No. of Instr} \times \text{Average CPI} \times \text{Clock Cycle Time}$$
 # The Solution
+
+This is where the methods of [[Pipelining]] come into consideration.

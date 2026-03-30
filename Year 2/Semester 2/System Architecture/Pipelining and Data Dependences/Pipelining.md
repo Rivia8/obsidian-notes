@@ -15,5 +15,7 @@ Tags: [[System Architecture]]
 Pipelining is the assembly line principle applied to executing software instructions.
 Instead of waiting for one instruction to completely finish before starting the next one, the CPU breaks the execution down into smaller, distinct stages and overlaps them.
 
-The reason **for** pipelining is due to the limitations of [[Single Cycle Processors]]
+## More Concurrency
+
+The first method of *pipelining* 
 
