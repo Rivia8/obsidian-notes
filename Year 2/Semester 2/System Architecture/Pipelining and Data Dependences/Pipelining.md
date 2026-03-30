@@ -19,7 +19,9 @@ How we can do it:
 
 When an instruction is using some resources in its processing phase, we can **process other instructions on idle resources** (doing things with components that are not in use).
 
-
+- Divide the instruction processing cycle into distinct "stage" of processing,
+- Make sure that are enough hardware resources,
+- Process
 
 
 
