@@ -41,5 +41,5 @@ In a Single-Cycle processor, only **one** instruction is in the system at a time
 Execution time of a single instruction:
 $$\text{CPI(Clocks Per Instruction)} \times \text{Clock Cycle Time}$$
 Execution time of an entire program:
-$$\text{}$$
-
+$$\text{No. of Instr} \times \text{Average CPI} \times \text{Clock Cycle Time}$$
+# The Solution
