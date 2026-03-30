@@ -15,5 +15,9 @@ Tags: [[System Architecture]]
 Pipelining is the assembly line principle applied to executing software instructions.
 Instead of waiting for one instruction to completely finish before starting the next one, the CPU breaks the execution down into smaller, distinct stages and overlaps them.
 
+How we can do it:
+
+When an instruction is using some resources in its processing phase, we can **p**
+
 
 
