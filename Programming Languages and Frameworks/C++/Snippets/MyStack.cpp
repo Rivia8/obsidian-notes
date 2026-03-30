@@ -36,7 +36,8 @@ class MyStack{
     T pop(){
         // Returns hte item at the top of the stack and REMOVES it from the internal vecotr.
         try {
-            T element = this->stack[this->stack.size() - 1];
+            int pos = (this->stack.size()) - 1;
+            T element = this->stack[pos];
             return element;
             throw std::out_of_range("The stack is empty"); 
         }
@@ -45,4 +46,4 @@ class MyStack{
         }
     }
 
-}
+};
