@@ -13,24 +13,25 @@ class MyStack{
         std::vector<T> vec; // Standard vector to focus on logic and not the sizing.
 
     public:
-    void push(T item) {
+    void push(T item){
         this->vec.push_back(item);
     };
 
-    bool isEmpty(){
+    bool isEmpty() const{
         // .empty() returns 1 if the vector is empty and 0 otherwise
         return this->vec.empty();
     };
 
-    T peek(){
+    T peek() const{
         // Returns the item at the top of the vector WITHOUT REMOVING it from the internal vector.
         
         try {
+            if (this->isEmpty()) throw std::out_of_range("This vector is empty");
             return this->vec[((this->vec.size()) - 1)];
-            throw std::out_of_range("The vec is empty"); 
         }
-        catch (int errorCode) {
-            std::cout << "Error has Occurred: " << errorCode;
+        catch (const std::out_of_range& e) {
+            std::cout << "Error has Occurred: " << e.what();
+            throw;
         }
     };
 
@@ -46,18 +47,19 @@ class MyStack{
         }
         catch (const std::out_of_range& e) {
             std::cout << "Error has Occurred: " << e.what();
+            throw;
         }
-    };
+    }
 };
 
 int main(){
-    MyStack<int> MyStack;
-    MyStack.push(10);
-    MyStack.push(20);
-    MyStack.push(30);
+    MyStack<int> myStack;
+    myStack.push(10);
+    myStack.push(20);
+    myStack.push(30);
 
-    while (!MyStack.isEmpty()){
-        std::cout << "item: " << MyStack.pop();
+    while (!myStack.isEmpty()){
+        std::cout << "item: " << myStack.pop() << "\n";
     }
     
     return 0;
