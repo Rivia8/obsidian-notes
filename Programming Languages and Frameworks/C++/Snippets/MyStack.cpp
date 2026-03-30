@@ -12,6 +12,7 @@ class MyStack{
     private:
         std::vector<T> vec; // Standard vector to focus on logic and not the sizing.
 
+    public:
     void push(T item) {
         this->vec.push_back(item);
     }
@@ -59,4 +60,4 @@ int main(){
     }
     
     return 0;
-}
+};
