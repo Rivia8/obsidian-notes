@@ -27,7 +27,13 @@ The **main** benefit is that more work can be done per unit time which leads to 
 
 ## Hardware Changes 
 
-We need some hardware changes to **accommodate** the pipelined 
+We need some hardware changes to **accommodate** the 'pipelined' process.
 
+![[Pasted image 20260331141234.png#invert]]
+
+Instead of direct connection between stages, you use extra buffers to hold the state of each stage.
+- So once the 'fetch' stage finishes grabbing the first isntr
+Clock buffers once per cycle.
+If all stages are homogem
 
 
