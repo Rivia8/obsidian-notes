@@ -37,5 +37,14 @@ Clock buffers once per cycle.
 - Every time the clock ticks, all the buffers buffer for a split-second, the data in stage 1 moves to the buffer for stage 2
 If all stages are homogeneous  (the same propagation delay) clock speed is increased by 5x.
 
+## Ideal Pipeline
+
+The ideal pipeline is to have an increase throughput with little increase in cost.
+How?:
+- Repetition of **identical operations**.
+- Repetition of **independent operations**
+- **Uniformly partitionable sub operations**
+	- Processing can be evenly divided into latency-uniform sub operations that do not share resources.
+
 
 
