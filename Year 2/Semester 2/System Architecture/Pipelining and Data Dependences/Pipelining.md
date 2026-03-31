@@ -21,7 +21,7 @@ When an instruction is using some resources in its processing phase, we can **pr
 
 - Divide the instruction processing cycle into distinct "stage" of processing,
 - Make sure that are enough hardware resources,
-- Process
+- Process a **different**
 
 
 
