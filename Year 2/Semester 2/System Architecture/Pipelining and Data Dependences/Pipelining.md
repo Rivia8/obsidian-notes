@@ -32,8 +32,10 @@ We need some hardware changes to **accommodate** the 'pipelined' process.
 ![[Pasted image 20260331141234.png#invert]]
 
 Instead of direct connection between stages, you use extra buffers to hold the state of each stage.
-- So once the 'fetch' stage finishes grabbing the first isntr
+- So once the 'fetch stage' finishes grabbing the first instruction, its held in a buffer whilst the 'fetch stage' then fetches the next instruction.
 Clock buffers once per cycle.
-If all stages are homogem
+- Every time the clock ticks, all the buffers buffer for a split-second, the data in stage 1 moves to the buffer for stage 2
+If all stages are homogeneous  (the same propagation delay) clock speed is increased by 5x.
+
 
 
