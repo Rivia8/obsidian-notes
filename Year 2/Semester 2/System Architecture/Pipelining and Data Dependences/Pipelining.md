@@ -46,7 +46,7 @@ How?:
 - **Uniformly partitionable sub operations**
 	- Processing can be evenly divided into latency-uniform sub operations that do not share resources.
 
-## Not an Ideal Pipeline
+## None-Ideal Pipeline
 
 - Non-identical operations
 	- Forcing different instructions to go through the same stage pipe stages 
@@ -54,6 +54,9 @@ How?:
 	- Need to force each stage to be controlled by the same clock. Can cause **internal fragmentation**.
 - Dependent operations
 	- Can cause pipeline stalls
+
+**Effects of Non-ideal Pipelining:**
+
 
 
 
