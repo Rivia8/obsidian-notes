@@ -55,8 +55,6 @@ How?:
 - Dependent operations
 	- Can cause pipeline stalls
 
-**Effects of Non-ideal Pipelining:**
-
 
 
 
