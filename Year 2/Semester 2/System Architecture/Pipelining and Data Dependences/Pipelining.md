@@ -46,5 +46,15 @@ How?:
 - **Uniformly partitionable sub operations**
 	- Processing can be evenly divided into latency-uniform sub operations that do not share resources.
 
+## Not an Ideal Pipeline
+
+- Non-identical operations
+	- Forcing different instructions to go through the same stage pipe stages 
+- Non-uniform sub operations
+	- Need to force each stage to be controlled by the same clock. Can cause **internal fragmentation**.
+- Dependent operations
+	- Can cause pipeline stalls
+
+
 
 
