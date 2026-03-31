@@ -21,7 +21,13 @@ When an instruction is using some resources in its processing phase, we can **pr
 
 - Divide the instruction processing cycle into distinct "stage" of processing,
 - Make sure that are enough hardware resources,
-- Process a **different**
+- Process a **different** instruction in each stage.
+
+The **main** benefit is that more work can be done per unit time which leads to increased instruction processing throughput.
+
+## Hardware Changes 
+
+We need some hardware changes to **accommodate** the pipelined 
 
 
 
