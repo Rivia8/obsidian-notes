@@ -21,7 +21,7 @@ Software Interlocking: The hardware is dumb. If there is a data dependence, the 
 
 Hardware Interlocking: The processor hardware is smart, the physical circuitry detects the crash about to happen and physically freezes the pipeline stages.
 
-### Scoreboarding (Hardware implementation of Interlocking)
+### Scoreboarding 
 
 **Scoreboarding** is a specific algorithm on allowing the silicon to physically 'detect' the problem.
 *Its like an occupancy sign on a bathroom door*
@@ -51,4 +51,13 @@ Instead of looking at a bit, the **Decode Stage** has complex logic circuits (wi
 **Disadvantages:**
 - Logic is much more complex,
 - Logic becomes a lot more complex as the pipeline becomes deeper.
+
+## Options after Detecting a Dependence
+
+What do you do after detecting a dependence.
+
+### Stalling the Dependent Instruction
+
+`ADD r1, r2, r3`
+`SUB r5, r1, r4`
 
