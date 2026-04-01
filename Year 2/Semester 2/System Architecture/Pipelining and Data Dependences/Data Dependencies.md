@@ -15,11 +15,12 @@ There are three types of dependencies:
 
 There are three types of data dependencies:
 
-1. Flow Dependence or RAW (Read-After-Write)
-	- Flow dependences always needs to be obeyed because they constitute true dependence on a value.
-2. Anti Dependence or WAR (Write-After-Read)
-3. Output-Dependence or WAW (Write-After-Write)
-	- Anti and Output dependences exist due to a limited number of architectural registers.
+1. **Flow Dependence** or RAW (Read-After-Write)
+	- Flow dependence always needs to be obeyed because they constitute true dependence on a value.
+2. **Anti Dependence** or WAR (Write-After-Read)
+3. **Output-Dependence** or WAW (Write-After-Write)
+	- Anti and Output dependence exist due to a limited number of architectural registers.
+
 
 
 
