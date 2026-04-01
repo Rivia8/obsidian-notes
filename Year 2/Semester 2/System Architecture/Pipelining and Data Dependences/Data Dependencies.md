@@ -6,6 +6,8 @@ When an instruction relies on another, it breaks the flow of the pipeline and th
 
 Dependencies dictate ordering requirements between instructions.
 
+Resource contention is sometimes called resource dependence or "structural hazard"
+
 There are three types of dependencies:
 - Data Dependence
 - Control Dependence
