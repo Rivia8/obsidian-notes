@@ -26,7 +26,11 @@ Hardware Interlocking: The processor hardware is smart, the physical circuitry d
 **Scoreboarding** is a specific algorithm on allowing the silicon to physically 'detect' the problem.
 *Its like an occupancy sign on a bathroom door*
 
-Every 
+Every register (`r1`, `r2` etc) gets an extra wire (bit) attached to it.
+When instruction 1 enters the pipeline and says "I am going to calculate a new value for `r3`", the hardware flips `r3`'s bit to invalid (occupied).
+When instruction 2 enters the pipeline and wants to read `r3` it looks at the bit and sees 'invalid'.
+This causes the hardware to trigger an  **interlock**, stalling instruction in the decode stage until instruction 1 finishes and flips the sign back to **valid**.
+
 
 
 
