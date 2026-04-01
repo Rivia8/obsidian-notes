@@ -51,3 +51,4 @@ Instead of looking at a bit, the **Decode Stage** has complex logic circuits (wi
 **Disadvantages:**
 - Logic is much more complex,
 - Logic becomes a lot more complex as the pipeline becomes deeper.
+- 
