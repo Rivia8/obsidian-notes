@@ -7,6 +7,8 @@ Tags: [[System Architecture]]
 
 ![[Data Dependencies#Handling Data Dependence]]
 
+# Detect and Wait
+
 ## Interlocking
 
 This is a form of **detection**.
