@@ -40,4 +40,14 @@ This causes the hardware to trigger an  **interlock**, stalling instruction in t
 
 ### Combinational Dependence Check Logic 
 
-[[Handling Data Dependencies#Scoreboarding (Hardware implementation of Interlocking)|The above]] is considered 'dumb' since it will stall even if the dependence is fake - WAR or WAR depedencies.
+[[Handling Data Dependencies#Scoreboarding (Hardware implementation of Interlocking)|The above]] is considered 'dumb' since it will stall even if the dependence is fake - WAR or WAR dependencies.
+
+Instead we have **Combinational Dependence Check**, which is smarter.
+Instead of looking at a bit, the **Decode Stage** has complex logic circuits (wires) that  look "downstream" into the Execute, Memory and "Write-Back" stages. 
+
+**Advantage:**
+- Only stalls for **RAW** flow dependencies.
+
+**Disadvantages:**
+- Logic is much more complex,
+- Logic becomes a lot more complex as the pipeline becomes deeper.
