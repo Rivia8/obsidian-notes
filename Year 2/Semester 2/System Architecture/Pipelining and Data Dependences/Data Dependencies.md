@@ -27,9 +27,9 @@ There are three types of data dependencies:
 
 Because Anti and Output dependencies are 'false', they are easier to handle.
 
-## Handling Data Dependence
+## Ways of Handling flow Dependencies:
 
-There are 5 fundamental ways of handling flow dependencies:
+There are [[Handling Data Dependencies|5 fundamental ways]] of handling flow dependencies:
 1. **Detect and Wait** until value is available in register file.
 2. **Detect and forward/bypass** data to dependent instruction
 3. **Detect and Eliminate** the dependence at the software level
@@ -37,6 +37,7 @@ There are 5 fundamental ways of handling flow dependencies:
 4. **Predict** the needed value(s), execute "**speculatively**" and **verify**
 5. **Do something else** (fine-grained multi threading)
 	- No need to detect
+
 
 
 

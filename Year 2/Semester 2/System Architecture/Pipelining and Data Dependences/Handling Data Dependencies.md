@@ -5,7 +5,7 @@ Tags: [[System Architecture]]
 
 *Recall that there are 5 fundamental data dependencies:*
 
-![[Data Dependencies#Handling Data Dependence]]
+![[Data Dependencies#Ways of Handling flow Dependencies]]
 
 # Detect and Wait
 
