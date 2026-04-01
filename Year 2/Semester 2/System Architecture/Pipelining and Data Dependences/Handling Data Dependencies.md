@@ -31,6 +31,11 @@ When instruction 1 enters the pipeline and says "I am going to calculate a new v
 When instruction 2 enters the pipeline and wants to read `r3` it looks at the bit and sees 'invalid'.
 This causes the hardware to trigger an  **interlock**, stalling instruction in the decode stage until instruction 1 finishes and flips the sign back to **valid**.
 
+**Advantage:**
+- Simple 1 bit register
 
+**Disadvantages:**
+- Need to stall for all types of dependencies
+- Other techniques do not stall on false dependencies
 
-
+### Hardware Depedence 
