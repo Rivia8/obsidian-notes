@@ -13,8 +13,9 @@ There are three types of dependencies:
 - Control Dependence
 - Resource Dependence
 
+## Data Dependence
 
-
+There are three types of data dependence
 
 
 
