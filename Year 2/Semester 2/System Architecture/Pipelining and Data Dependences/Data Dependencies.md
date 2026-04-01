@@ -30,12 +30,12 @@ Because Anti and Output dependencies are 'false', they are easier to handle.
 ## Handling Data Dependence
 
 There are 5 fundamental ways of handling flow dependencies:
-- **Detect and Wait** until value is available in register file.
-- **Detect and forward/bypass** data to dependent instruction
-- **Detect and Eliminate** the dependence at the software level
+1. **Detect and Wait** until value is available in register file.
+2. **Detect and forward/bypass** data to dependent instruction
+3. **Detect and Eliminate** the dependence at the software level
 	- No need for hardware to detect dependence
-- **Predict** the needed value(s), execute "**speculatively**" and **verify**
-- **Do something else** (fine-grained multi threading)
+4. **Predict** the needed value(s), execute "**speculatively**" and **verify**
+5. **Do something else** (fine-grained multi threading)
 	- No need to detect
 
 

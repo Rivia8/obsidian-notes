@@ -10,5 +10,9 @@ Tags: [[System Architecture]]
 ## Interlocking
 
 This is a form of **detection**.
+There is software based and hardware based.
+
+"It is the detection of dependence between instructions in a pipelined processor to guarantee correct execution"
+
 
 
