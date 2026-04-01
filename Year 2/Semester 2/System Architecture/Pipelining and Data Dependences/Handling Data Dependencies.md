@@ -38,4 +38,6 @@ This causes the hardware to trigger an  **interlock**, stalling instruction in t
 - Need to stall for all types of dependencies
 - Other techniques do not stall on false dependencies
 
-### Hardware Depedence 
+### Combinational Dependence Check Logic 
+
+[[Handling Data Dependencies#Scoreboarding (Hardware implementation of Interlocking)|The above]] is considered 'dumb' since it will stall even if the dependence is fake - WAR or WAR depedencies.
