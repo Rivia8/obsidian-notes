@@ -22,10 +22,19 @@ There are three types of data dependencies:
 2. **Anti Dependence** or WAR (Write-After-Read)
 	- Instruction 1 needs to read the original value of `r1` and if instruction 2 somehow races agead in the pipeline and overwrites `r1` too early, Instruction 1 will accidentally read the new value instead of the old value it was supposed to get.
 3. **Output-Dependence** or WAW (Write-After-Write)
-	- 
+	- This happens when two different instructions are trying to write their final answers into the exact same registers.
 - Anti and Output dependence exist due to a limited number of architectural registers.
 
+Because Anti and Output dependencies are 'false', they are easier to handle.
 
+There are 5 fundamental ways of handling flow dependencies:
+- **Detect and Wait** until value is available in register file.
+- **Detect and forward/bypass** data to dependent instruction
+- **Detect and Eliminate** the dependence at the software level
+	- No need for hardware to detect dependence
+- **Predict** the needed value(s), execute "**speculatively**" and **verify**
+- **Do something else** (fine-grained multi threading)
+	- No need to detect
 
 
 
