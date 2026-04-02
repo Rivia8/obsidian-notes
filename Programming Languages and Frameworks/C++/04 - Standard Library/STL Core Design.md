@@ -7,6 +7,8 @@ It has 12.7MB of headers compared to the 0.4MB with C>
 
 ![[Pasted image 20260402170237.png#invert]]
 
-The standard library consists of 4 fundamental 
+The standard library consists of 4 fundamental aspects:
+
+1. 
 
 
