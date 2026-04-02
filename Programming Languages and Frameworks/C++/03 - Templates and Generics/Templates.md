@@ -77,4 +77,19 @@ int main() {
 
 We use **Template Type Alias** in order to shorten long-winded template names.
 
-This is done utilising the `using` keyword. This lets you create a generic "nickname" for a complex type.
+This is done utilising the `using` keyword. This lets you create a generic "nickname" for a complex type without all the yap.
+
+Example of this can be if you want to store a list of items `std::vector`, in a map `std::map`, with the key being the 
+
+```C++
+// Instead of:
+void printInventory(std::map<int, std::vector<std::string>> inv) { ... }
+void clearInventory(std::map<int, std::vector<std::string>>& inv) { ... }
+
+// We can do
+using InventoryMap = std::map<int, std::vector<std::string>>;
+
+void printInventory(InventoryMap inv) { ... }
+void clearInventory(InventoryMap& inv) { ... }
+
+```
