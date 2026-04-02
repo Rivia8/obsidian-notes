@@ -92,7 +92,7 @@ This entirely happens in software.
 
 Instead of building complex hardware to detect and stall, the compiler 'fixes' the code before it runs.
 
-This can occur in troguh**Instruction Reordering** (we *can* also [[Handling Data Dependencies#Compiler - Inserting NOPs|insert NOPs]] but that crosses over as **Detect and Wait**).
+This can occur in through **Instruction Reordering** (we *can* also [[Handling Data Dependencies#Compiler - Inserting NOPs|insert NOPs]] but that crosses over as **Detect and Wait**).
 
 ## Instruction Reordering
 
