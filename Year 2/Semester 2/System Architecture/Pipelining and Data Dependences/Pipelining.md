@@ -55,7 +55,10 @@ How?:
 - Dependent operations
 	- Can cause pipeline stalls
 
+## Deeper Pipelining
 
+If slicing a processor into 5 stages make its 5 times faster, why can we not slice into 100 stages to make it 100 times faster.
 
+Since the system clock only has to wait for the slowest stage to finish, a shorter stage means you can tick the clock much faster, so clock frequency ideally increases.
 
 

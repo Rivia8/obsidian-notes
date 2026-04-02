@@ -73,8 +73,7 @@ If you look above, the second instruction is pushed until the 4th clock cycle.
 
 This is the fix for the above's wasteful cycles
 
-This is what modern compilers do, the compiler looks at the entire program and says: "Are there any other instructions later in the code that have absolutely nothing do with `r1`"
-
+This is what modern compilers do, the compiler looks at the entire program and says: "Are there any other instructions later in the code that have absolutely nothing do with `r1`" and if there are it places it between the current and dependent instruction.
 
 
 ## Options after Detecting a Dependence
