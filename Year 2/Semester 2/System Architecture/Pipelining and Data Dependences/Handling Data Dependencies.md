@@ -67,6 +67,17 @@ This only works if we can find something **useful** to do or otherwise NOPs are 
 
 If you look above, the second instruction is pushed until the 4th clock cycle.
 
+---
+
+Another Example:
+
+`ADD r1, r2, r3`
+`SUB r5, r1, r4`
+
+**Stalling** would mean freezing instruction 2 in the decode stage and waiting for instruction 1 to finish.
+There is a crucial part, you cannot write to a register and read from it in the exact same clock cycle. Because of this, instruction 2 has to wait for instruction 1 to completely finish its Write-Back stage (Cycle 5). Instruction 2 can finally read the register on Cycle 6.
+
+What this does is creates a massive 3-Cycle **Bubble**.
 
 
 # Detect and Data Forwarding/Bypassing
@@ -81,23 +92,11 @@ This entirely happens in software.
 
 Instead of building complex hardware to detect and stall, the compiler 'fixes' the code before it runs.
 
-This can occur in two ways, **Instruction Reordering** or Inserting **NOPs**.
-
-## Stalling the Dependent Instruction/Inserting NOPs
-
-![[Pasted image 20260402103756.png#invert]]
-
-`ADD r1, r2, r3`
-`SUB r5, r1, r4`
-
-**Stalling** would mean freezing instruction 2 in the decode stage and waiting for instruction 1 to finish.
-There is a crucial part, you cannot write to a register and read from it in the exact same clock cycle. Because of this, instruction 2 has to wait for instruction 1 to completely finish its Write-Back stage (Cycle 5). Instruction 2 can finally read the register on Cycle 6.
-
-What this does is creates a massive 3-Cycle **Bubble**.
+This can occur in troguh**Instruction Reordering** (we *can* also [[Handling Data Dependencies#Compiler - Inserting NOPs|insert NOPs]] but that crosses over as **Detect and Wait**).
 
 ## Instruction Reordering
 
-This is the ideal fix. 
+This is a lot more ideal compared to [[Handling Data Dependencies#Compiler - Inserting NOPs|Inserting NOPs]] since that has an instruction bubble that.
 
 The compiler looks ahead at the code and tries to reorder instructions.
 - If it sees `Instruction 1` (calculates `R1`) and `Instruction 2` (needs `R1`), it knows putting them back-to-back will cause a crash.
