@@ -56,24 +56,6 @@ Instead of looking at a bit, the **Decode Stage** has complex logic circuits (wi
 - Logic is much more complex,
 - Logic becomes a lot more complex as the pipeline becomes deeper.
 
-### Compiler - Inserting NOPs
-
-*Software*
-
-We can use the compiler to **reorder instructions**. 
-This only works if we can find something **useful** to do or otherwise NOPs are inserted.
-
-![[Pasted image 20260402103756.png#invert]]
-
-If you look above, the second instruction is pushed until the 4th clock cycle.
-
-### Compiler - Instruction Reordering
-
-*Software*
-
-This is the fix for the above's wasteful cycles
-
-This is what modern compilers do, the compiler looks at the entire program and says: "Are there any other instructions later in the code that have absolutely nothing do with `r1`" and if there are it places it between the current and dependent instruction.
 
 # Detect and Data Forwarding/Bypassing
 
@@ -91,6 +73,8 @@ This can occur in two ways, **Instruction Reordering** or Inserting **NOPs**.
 
 ## Stalling the Dependent Instruction/Inserting NOPs
 
+![[Pasted image 20260402103756.png#invert]]
+
 `ADD r1, r2, r3`
 `SUB r5, r1, r4`
 
@@ -101,7 +85,7 @@ What this does is creates a massive 3-Cycle **Bubble**.
 
 ## Instruction Reordering
 
-This is the ideal fix. 
+This is more ideal and is a fix for the wasteful solution above.
 
 The compiler looks ahead at the code and tries to reorder instructions.
 - If it sees `Instruction 1` (calculates `R1`) and `Instruction 2` (needs `R1`), it knows putting them back-to-back will cause a crash.
