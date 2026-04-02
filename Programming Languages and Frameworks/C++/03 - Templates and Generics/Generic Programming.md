@@ -55,3 +55,23 @@ int main() {
 }
 ```
 
+
+# Generic Functions
+
+A generic function utilises the [[Templates|template]] keyword to introduce its *own* generic type variable right above its definition. The compiler generates a new version of the function for *every* data type you pass into it.
+
+```C++
+template <typename T>
+T findMax(T a T b){
+	return (a > b) ? a : b;
+}
+
+int main() {
+	findMax<int>(5, 10); // Generates an int version
+	findMax<float>(5.5f, 2.1f); // Generates a float version
+}
+```
+
+
+# Generic Types
+

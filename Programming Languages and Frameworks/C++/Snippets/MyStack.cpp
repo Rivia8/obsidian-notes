@@ -22,7 +22,7 @@ class MyStack{
         return this->vec.empty();
     };
 
-    T peek() const{
+    T peek() const {
         // Returns the item at the top of the vector WITHOUT REMOVING it from the internal vector.
         
         try {
