@@ -75,21 +75,6 @@ This is the fix for the above's wasteful cycles
 
 This is what modern compilers do, the compiler looks at the entire program and says: "Are there any other instructions later in the code that have absolutely nothing do with `r1`" and if there are it places it between the current and dependent instruction.
 
-
-## Options after Detecting a Dependence
-
-What do you do after detecting a dependence?: *stall* or [[Handling Data Dependencies#Data Forwarding/Bypassing|Data Forwarding/Bypassing]]
-
-### Stalling the Dependent Instruction
-
-`ADD r1, r2, r3`
-`SUB r5, r1, r4`
-
-**Stalling** would mean freezing instruction 2 in the decode stage and waiting for instruction 1 to finish.
-There is a crucial part, you cannot write to a register and read from it in the exact same clock cycle. Because of this, instruction 2 has to wait for instruction 1 to completely finish its Write-Back stage (Cycle 5). Instruction 2 can finally read the register on Cycle 6.
-
-What this does is creates a massive 3-Cycle **Bubble**.
-
 # Detect and Data Forwarding/Bypassing
 
 To fix the problem with [[Handling Data Dependencies#Stalling the Dependent Instruction|the above]], we can add additional dependence check logic and data forwarding paths (i.e. buses) to supply the producer's value to the consumer right after the value becomes available.
@@ -101,3 +86,25 @@ Pretty much, since the next instruction (the one causing the dependence) require
 This entirely happens in software.
 
 Instead of building complex hardware to detect and stall, the compiler 'fixes' the code before it runs.
+
+This can occur in two ways, **Instruction Reordering** or Inserting **NOPs**.
+
+## Stalling the Dependent Instruction/Inserting NOPs
+
+`ADD r1, r2, r3`
+`SUB r5, r1, r4`
+
+**Stalling** would mean freezing instruction 2 in the decode stage and waiting for instruction 1 to finish.
+There is a crucial part, you cannot write to a register and read from it in the exact same clock cycle. Because of this, instruction 2 has to wait for instruction 1 to completely finish its Write-Back stage (Cycle 5). Instruction 2 can finally read the register on Cycle 6.
+
+What this does is creates a massive 3-Cycle **Bubble**.
+
+## Instruction Reordering
+
+This is the ideal fix. 
+
+The compiler looks ahead at the code and tries to reorder instructions.
+- If it sees `Instruction 1` (calculates `R1`) and `Instruction 2` (needs `R1`), it knows putting them back-to-back will cause a crash.
+- So, the compiler searches your program for _completely unrelated_ instructions (let's call them `Instruction A` and `Instruction B`).
+- It physically moves `A` and `B` to sit _between_ `Instruction 1` and `Instruction 2`.
+- **The Result:** From the hardware's perspective, the dependency has been "eliminated". By the time `Instruction 2` finally enters the pipeline, enough clock cycles have naturally passed (while the CPU worked on `A` and `B`) that the data in `R1` is ready and waiting.
