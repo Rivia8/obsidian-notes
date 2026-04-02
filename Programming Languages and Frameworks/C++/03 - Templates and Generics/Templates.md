@@ -26,3 +26,55 @@ swap<std::strin>(s1, s2);
 ```
 
 
+# Template Classes
+
+Templates aren't just for functions, they are heavily used for classes too especially with data structures. If you want to build a `Box` that can hold any type of item, you make the whole class a template.
+
+Similarly to how you use the [[templates|template]] keyword for functions you do the same thing with classes:
+
+```C++
+#include <string>
+#include <iostream>
+
+template <typename T>
+class Box {
+private:
+    T contents;
+public:
+    Box(T item) : contents(item) {} // Constructor using initialization list!
+    
+    T getContents() {
+        return contents;
+    }
+};
+
+int main() {
+    Box<int> intBox(42);
+    Box<std::string> stringBox("Treasure");
+
+   std::cout << "hello";
+}
+```
+
+
+# Template Functions
+
+A generic function utilises the [[Templates|template]] keyword to introduce its *own* generic type variable right above its definition. The compiler generates a new version of the function for *every* data type you pass into it.
+
+```C++
+template <typename T>
+T findMax(T a T b){
+	return (a > b) ? a : b;
+}
+
+int main() {
+	findMax<int>(5, 10); // Generates an int version
+	findMax<float>(5.5f, 2.1f); // Generates a float version
+}
+```
+
+## Template Alias
+
+We use **Template Type Alias** in order to shorten long-winded template names.
+
+This is done utilising the `using` keyword. This lets you create a generic "nickname" for a complex type.
