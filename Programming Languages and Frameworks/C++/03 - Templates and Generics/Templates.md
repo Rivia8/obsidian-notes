@@ -73,13 +73,13 @@ int main() {
 }
 ```
 
-## Template Alias
+## Alias and Template Alias
 
-We use **Template Type Alias** in order to shorten long-winded template names.
+We use **Aliasing** in order to shorten long-winded type names.
 
 This is done utilising the `using` keyword. This lets you create a generic "nickname" for a complex type without all the yap.
 
-Example of this can be if you want to store a list of items `std::vector`, in a map `std::map`, with the key being the 
+Example of this can be if you want to store a list of items `std::vector`, in a map `std::map`, with the key being the player's ID, `int`.
 
 ```C++
 // Instead of:
@@ -92,4 +92,24 @@ using InventoryMap = std::map<int, std::vector<std::string>>;
 void printInventory(InventoryMap inv) { ... }
 void clearInventory(InventoryMap& inv) { ... }
 
+```
+
+If we want the nickname to be flexible we can use **Template Aliasing**:
+
+```C++
+// "I am creating a nickname called PlayerData. 
+// It requires you to tell it what 'T' is."
+template <typename T>
+using PlayerData = std::map<int, T>;
+
+int main() {
+    // A map of Ints to Strings
+    PlayerData<std::string> names; 
+    
+    // A map of Ints to Vectors of Strings
+    PlayerData<std::vector<std::string>> inventories; 
+    
+    // A map of Ints to Floats
+    PlayerData<float> healthBars; 
+}
 ```
