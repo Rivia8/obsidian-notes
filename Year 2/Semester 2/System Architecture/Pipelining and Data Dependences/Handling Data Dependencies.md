@@ -23,6 +23,8 @@ Hardware Interlocking: The processor hardware is smart, the physical circuitry d
 
 ### Scoreboarding 
 
+*Hardware*
+
 **Scoreboarding** is a specific algorithm on allowing the silicon to physically 'detect' the problem.
 *Its like an occupancy sign on a bathroom door*
 
@@ -40,6 +42,8 @@ This causes the hardware to trigger an  **interlock**, stalling instruction in t
 
 ### Combinational Dependence Check Logic 
 
+*Hardware*
+
 [[Handling Data Dependencies#Scoreboarding (Hardware implementation of Interlocking)|The above]] is considered 'dumb' since it will stall even if the dependence is fake - WAR or WAR dependencies.
 
 Instead we have **Combinational Dependence Check**, which is smarter.
@@ -51,6 +55,8 @@ Instead of looking at a bit, the **Decode Stage** has complex logic circuits (wi
 **Disadvantages:**
 - Logic is much more complex,
 - Logic becomes a lot more complex as the pipeline becomes deeper.
+
+###
 
 ## Options after Detecting a Dependence
 
