@@ -16,7 +16,7 @@ There is software based and hardware based.
 
 "It is the detection of dependence between instructions in a pipelined processor to guarantee correct execution"
 
-Software Interlocking: The hardware is dumb. If there is a data dependence, the compiler, must detect it before the program runs, and insert 'dummy' instructions (called NOPs - No Operations) to artificially space out the instructions and force a wait.
+Software Interlocking: The hardware is dumb. If there is a data dependence software, the compiler, must detect it before the program runs, and insert 'dummy' instructions (called NOPs - No Operations) to artificially space out the instructions and force a wait.
 - Early processors, called **MIPs** - Microprocessors without (hardware) Interlocking of Pipelined Stage - had no hardware breaks (all done via software work).
 
 Hardware Interlocking: The processor hardware is smart, the physical circuitry detects the crash about to happen and physically freezes the pipeline stages.
