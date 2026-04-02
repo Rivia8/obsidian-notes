@@ -56,7 +56,13 @@ Instead of looking at a bit, the **Decode Stage** has complex logic circuits (wi
 - Logic is much more complex,
 - Logic becomes a lot more complex as the pipeline becomes deeper.
 
-###
+### Compiler Reordering
+
+*Software*
+
+We can use the compiler to **reorder instructions**. 
+This only works if we can find something **useful** to do or otherwise NOPs are inserted.
+
 
 ## Options after Detecting a Dependence
 
