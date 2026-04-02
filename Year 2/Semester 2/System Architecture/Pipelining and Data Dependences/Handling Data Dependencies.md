@@ -68,3 +68,4 @@ What this does is creates a massive 3-Cycle **Bubble**.
 
 ### Data Forwarding/Bypassing
 
+To fix the problem with [[Handling Data Dependencies#Stalling the Dependent Instruction|the above]], we can add additional dependence check logic and data forwarding paths (i.e. buses) to supply the producer's value to the consumer right aft
