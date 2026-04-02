@@ -61,4 +61,14 @@ If slicing a processor into 5 stages make its 5 times faster, why can we not sli
 
 Since the system clock only has to wait for the slowest stage to finish, a shorter stage means you can tick the clock much faster, so clock frequency ideally increases.
 
+The problem with this:
+- Splitting **requires** **more hardware**
+- Becomes hard to have **uniform chunks**
+- Each stage has **register delays** - the pipeline buffers themselves takes a tiny fraction of a nanosecond to open, save data and close, this can produce bottlenecks.
+- Can generate **a lot of heat**
+
+A deeper pipeline can make [[Handling Data Dependencies|data dependencies]] much worse:
+- More forwarding
+- More collisions
+- Greater penalty for hazards - incorrect CPU branch guesses requires pipeline flushes, a pipeline with 4 stages is minor compared to one with 30 stages.
 
