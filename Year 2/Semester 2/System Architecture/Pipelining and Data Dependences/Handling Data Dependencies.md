@@ -78,7 +78,7 @@ This is what modern compilers do, the compiler looks at the entire program and s
 
 ## Options after Detecting a Dependence
 
-What do you do after detecting a dependence.
+What do you do after detecting a dependence?: *stall* or [[Handling Data Dependencies#Data Forwarding/Bypassing|Data Forwarding/Bypassing]]
 
 ### Stalling the Dependent Instruction
 
@@ -90,8 +90,12 @@ There is a crucial part, you cannot write to a register and read from it in the 
 
 What this does is creates a massive 3-Cycle **Bubble**.
 
-### Data Forwarding/Bypassing
+# Detect and Data Forwarding/Bypassing
 
 To fix the problem with [[Handling Data Dependencies#Stalling the Dependent Instruction|the above]], we can add additional dependence check logic and data forwarding paths (i.e. buses) to supply the producer's value to the consumer right after the value becomes available.
 
 Pretty much, since the next instruction (the one causing the dependence) requires the value from the **current** instruction, instead of going through the whole Write-Back stage, we just send the data straight to the next instruction.
+
+# Detect and Eliminate
+
+Instead of building complex hardware to detect and stall, the compiler 'fixes' the code before it runs.
