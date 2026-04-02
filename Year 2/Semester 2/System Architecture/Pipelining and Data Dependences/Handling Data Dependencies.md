@@ -82,7 +82,7 @@ What this does is creates a massive 3-Cycle **Bubble**.
 
 # Detect and Data Forwarding/Bypassing
 
-To fix the problem with [[Handling Data Dependencies#Stalling the Dependent Instruction|the above]], we can add additional dependence check logic and data forwarding paths (i.e. buses) to supply the producer's value to the consumer right after the value becomes available.
+We can add additional dependence check logic and data forwarding paths (i.e. buses) to supply the producer's value to the consumer right after the value becomes available.
 
 Pretty much, since the next instruction (the one causing the dependence) requires the value from the **current** instruction, instead of going through the whole Write-Back stage, we just send the data straight to the next instruction.
 
