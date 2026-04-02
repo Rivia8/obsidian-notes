@@ -67,13 +67,7 @@ This only works if we can find something **useful** to do or otherwise NOPs are 
 
 If you look above, the second instruction is pushed until the 4th clock cycle.
 
-### Compiler - Instruction Reordering
 
-*Software*
-
-This is the fix for the above's wasteful cycles
-
-This is what modern compilers do, the compiler looks at the entire program and says: "Are there any other instructions later in the code that have absolutely nothing do with `r1`" and if there are it places it between the current and dependent instruction.
 
 # Detect and Data Forwarding/Bypassing
 
@@ -110,3 +104,4 @@ The compiler looks ahead at the code and tries to reorder instructions.
 - So, the compiler searches your program for _completely unrelated_ instructions (let's call them `Instruction A` and `Instruction B`).
 - It physically moves `A` and `B` to sit _between_ `Instruction 1` and `Instruction 2`.
 - **The Result:** From the hardware's perspective, the dependency has been "eliminated". By the time `Instruction 2` finally enters the pipeline, enough clock cycles have naturally passed (while the CPU worked on `A` and `B`) that the data in `R1` is ready and waiting.
+
