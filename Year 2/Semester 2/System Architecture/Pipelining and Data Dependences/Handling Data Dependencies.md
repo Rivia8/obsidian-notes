@@ -61,3 +61,10 @@ What do you do after detecting a dependence.
 `ADD r1, r2, r3`
 `SUB r5, r1, r4`
 
+**Stalling** would mean freezing instruction 2 in the decode stage and waiting for instruction 1 to finish.
+There is a crucial part, you cannot write to a register and read from it in the exact same clock cycle. Because of this, instruction 2 has to wait for instruction 1 to completely finish its Write-Back stage (Cycle 5). Instruction 2 can finally read the register on Cycle 6.
+
+What this does is creates a massive 3-Cycle **Bubble**.
+
+### Data Forwarding/Bypassing
+
