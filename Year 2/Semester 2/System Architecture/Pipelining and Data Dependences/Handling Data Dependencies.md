@@ -98,4 +98,6 @@ Pretty much, since the next instruction (the one causing the dependence) require
 
 # Detect and Eliminate
 
+This entirely happens in software.
+
 Instead of building complex hardware to detect and stall, the compiler 'fixes' the code before it runs.
