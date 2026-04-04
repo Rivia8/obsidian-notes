@@ -9,6 +9,12 @@ It has 12.7MB of headers compared to the 0.4MB with C>
 
 The standard library consists of 4 fundamental aspects:
 
-1. 
+1. [[Containers]]
+2. [[Iterators]]
+3. [[Algorithms]]
+4. [[Programming Languages and Frameworks/C++/04 - Standard Library/Functions|Functions]]
+
+*Their relationship is explained in the above image*
+
 
 
