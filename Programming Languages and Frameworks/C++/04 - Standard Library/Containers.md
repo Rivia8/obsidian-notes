@@ -12,7 +12,7 @@ The library divides the containers into three main functional categories.
 
 ![[Pasted image 20260405134342.png#invert]]
 
-# Sequence Containers
+## Sequence Containers
 
 These store data linearly: one after another. You control exactly where elements are inserted.
 
@@ -41,7 +41,7 @@ arr1.at(4) = 2; // same as arr1[4] = 2;
 arr2.at(4) = 0; // exception
 ```
 
-## Compared to C?
+### Compared to C?
 
 C-arrays are considerably more harmful than C++ arrays:
 
@@ -60,7 +60,7 @@ fn2(w); // w is still a vector, fn2 knows its size
 
 ![[Pasted image 20260405143339.png#invert]]
 
-# Associative Containers (Ordered)
+## Associative Containers (Ordered)
 
 These containers **automatically sort your data** as you insert it.
 
@@ -72,10 +72,26 @@ Examples are:
 - `std::multiset`
 - `std::multimap`
 
-# Unordered Associative Containers
+## Unordered Associative Containers
 
 These use hash maps rather than search trees.
 
 *Because* they rely on hashing, the elements you insert must be "hashable" rather than just comparable.
 
+They provide faster access times than their ordered counterparts but they require more space in memory to operate efficiently.
 
+Examples are:
+- `std::unordered_set`
+- `std::unorderd_map`
+
+
+## Common Interface
+
+STL containers are abstracted through a consistent, common interface.
+This means that you don't have to memorise a completely different set of functions for every data structure.
+
+Capacity Checks: `empty()`, `size()`, and `max_size()`
+
+Modifiers: `clear()`, `insert()`, `emplace()`, and `erase()`
+
+Iterators: `begin()`, `end()`, `cbegin()` and `cend()` to traverse data
