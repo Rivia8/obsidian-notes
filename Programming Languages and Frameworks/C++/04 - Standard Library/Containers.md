@@ -10,4 +10,9 @@ Different containers have different underlying implementation and trade-offs reg
 
 The library divides the containers into three main functional categories.
 
+# Sequence Containers
+
+These store data linearly: one after another. You control exactly where elements are inserted.
+
+
 
