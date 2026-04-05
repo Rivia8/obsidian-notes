@@ -11,6 +11,7 @@ Iterators are considered a "crucial glue" within the C++ standard library.
 
 (Conceptually) They are generalised pointers.
 
-While a traditional C-pointer points to a raw memory location, an iterator is a smart C++ object designed to act exactly like a pointer but safely within the bounds of a specific container.
+While a traditional [[Pointers|C Pointer]] points to a raw memory location, an iterator is a smart C++ object designed to act exactly like a pointer but safely within the bounds of a specific container.
 
-Since they mimic s
+Since they mimic pointers, they share the same semantics:
+- Accessing data you deference   
