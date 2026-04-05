@@ -26,4 +26,4 @@ std::list<int> ldata;
 std::map<int, int> translation;
 ```
 
-`std::vector<T>`: This is the most common container
+`std::vector<T>`: This is the most common container. It is a variable-sized array
