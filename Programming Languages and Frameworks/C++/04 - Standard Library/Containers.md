@@ -10,9 +10,20 @@ Different containers have different underlying implementation and trade-offs reg
 
 The library divides the containers into three main functional categories.
 
+![[Pasted image 20260405134342.png#invert]]
+
 # Sequence Containers
 
 These store data linearly: one after another. You control exactly where elements are inserted.
 
+```C++
+#include <vector>
+#include <list>
+#include <map>
 
+std::vector<int> data;
+std::list<int> ldata;
+std::map<int, int> translation;
+```
 
+`std::vector<T>`: This is the most common container
