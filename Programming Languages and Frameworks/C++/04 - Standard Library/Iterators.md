@@ -18,4 +18,5 @@ Since they mimic pointers, they share the same semantics:
 - To move around you step forward or backward using `++` and `--`
 - Some iterators (like those for vectors) allow pointer arithmetic, `+` and `-`
 
-C++ achieves this illusion by using operator overloading, it defines exactly what C++
+C++ achieves this illusion by using operator overloading, it defines exactly what `++` means for a contiguous array versus a scattered linked list. This is abstracted away so you can write **generic** code that works across all containers without worrying about their internal memory layout.
+
