@@ -18,3 +18,4 @@ Since they mimic pointers, they share the same semantics:
 - To move around you step forward or backward using `++` and `--`
 - Some iterators (like those for vectors) allow pointer arithmetic, `+` and `-`
 
+C++ achieves this illusion by using operator overloading, it defines exactly what C++
