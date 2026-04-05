@@ -35,5 +35,8 @@ To traverse [[Containers]], you need to know where it starts and ends, iterators
 - `Auto` was introduced in C++11. Since the compiler already knows what `c1.begin()` returns, you can let it deduce the type by simply writing `auto it = c1.begin()`.
 - In modern C++, standard traversal is done through syntactic sugar that hides the iterators entirely which is similar to Java or Python, you can just write `for (auto& elem : c1)`
 
-## Ranges
+## C++20 Ranges
 
+This is a modern 'upgrade'
+Instead of passing two separate iterators(`begin` and `end`) into an algorithm to define a target block of data, a Range combines them into one thing.
+Instead of writing: `find(c1.begin(), c1.end(), 0)` you can simply pass the entire container directly: `find(c1, 0)`.
