@@ -30,3 +30,10 @@ To traverse [[Containers]], you need to know where it starts and ends, iterators
 
 
 ## The Evolution of the Loop
+
+- Originally you had to explicitly type out the long type name every time: `std::vecotr<int>::iterator it = c1.begin()`
+- `Auto` was introduced in C++11. Since the compiler already knows what `c1.begin()` returns, you can let it deduce the type by simply writing `auto it = c1.begin()`.
+- In modern C++, standard traversal is done through syntactic sugar that hides the iterators entirely which is similar to Java or Python, you can just write `for (auto& elem : c1)`
+
+## Ranges
+
