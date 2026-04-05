@@ -63,9 +63,3 @@ fn2(w); // w is still a vector, fn2 knows its size
 # Associative Containers
 
 Can either be **ordered** or **unordered**. 
-
-- For **ordered** elements have to be comparable, so they are kept in some order, like a **search tree**.
-	- Examples: 
-
-- For **unordered** elements have to be hashable, they are kept in a hashmap. They are faster but needs more space.
-
