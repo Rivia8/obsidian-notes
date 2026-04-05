@@ -40,3 +40,6 @@ To traverse [[Containers]], you need to know where it starts and ends, iterators
 This is a modern 'upgrade'
 Instead of passing two separate iterators(`begin` and `end`) into an algorithm to define a target block of data, a Range combines them into one thing.
 Instead of writing: `find(c1.begin(), c1.end(), 0)` you can simply pass the entire container directly: `find(c1, 0)`.
+
+# Why do we use Iterators over c\[] like a Normal Array
+
