@@ -14,4 +14,6 @@ Iterators are considered a "crucial glue" within the C++ standard library.
 While a traditional [[Pointers|C Pointer]] points to a raw memory location, an iterator is a smart C++ object designed to act exactly like a pointer but safely within the bounds of a specific container.
 
 Since they mimic pointers, they share the same semantics:
-- Accessing data you deference   
+- Accessing data you deference them using `*` or `->`
+- To move around you step forward or backward using `++` and `--`
+- 
