@@ -16,4 +16,5 @@ While a traditional [[Pointers|C Pointer]] points to a raw memory location, an i
 Since they mimic pointers, they share the same semantics:
 - Accessing data you deference them using `*` or `->`
 - To move around you step forward or backward using `++` and `--`
-- 
+- Some iterators (like those for vectors) allow pointer arithmetic, `+` and `-`
+
