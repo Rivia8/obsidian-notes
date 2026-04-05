@@ -43,3 +43,6 @@ Instead of writing: `find(c1.begin(), c1.end(), 0)` you can simply pass the enti
 
 # Why do we use Iterators over c\[] like a Normal Array
 
+if you have a `std::vector`, you can have standard index loop.
+**But** the solution with iterators works with **any** of the containers, so it works with `std::set` or `std::list`.
+This is because `std::vector` has elements stored contiguously in memory, but other containers, like `std::set` or `std::list`  use different implementations, they use linked lists and binary trees respectively and so 
