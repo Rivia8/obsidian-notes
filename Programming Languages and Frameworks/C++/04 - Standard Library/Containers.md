@@ -22,8 +22,13 @@ These store data linearly: one after another. You control exactly where elements
 #include <map>
 
 std::vector<int> data;
-std::list<int> ldata;
+std::list<int> data;
+
 std::map<int, int> translation;
 ```
 
-`std::vector<T>`: This is the most common container. It is a variable-sized array
+`std::vector<T>`: This is the most common container. It is a variable-sized array that encapsulates a dynamically allocated heap array.
+- It resizes itself automatically and allows for rapid random access
+
+`std::array<T, k>`: A fixed-size array that requires you to specify both the type and the exact size at compile time, it operates as a safe, encapsulated stack array
+
