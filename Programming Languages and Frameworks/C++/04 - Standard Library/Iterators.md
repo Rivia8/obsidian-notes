@@ -26,4 +26,7 @@ To traverse [[Containers]], you need to know where it starts and ends, iterators
 
 - `begin()`: An iterator that points to the very first element in the container
 - `end()`: An iterator pointing to the memory space *just* past the last element
-	- Its important to remember tha 
+	- Its important to remember that `end()` does **not** point to the final item, but rather points just past the last element. With this, we do `it != last` rather than `it <= last`.
+
+
+## The Evolution of the Loop
