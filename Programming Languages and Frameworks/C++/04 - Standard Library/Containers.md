@@ -60,6 +60,22 @@ fn2(w); // w is still a vector, fn2 knows its size
 
 ![[Pasted image 20260405143339.png#invert]]
 
-# Associative Containers
+# Associative Containers (Ordered)
 
-Can either be **ordered** or **unordered**. 
+These containers **automatically sort your data** as you insert it.
+
+Because the data is kept in a specific order, typically managed by a binary search tree, the elements that are stored within them must be explicitly comparable.
+
+Examples are:
+- `std::set` - a collection of unique keys
+- `std::map` - a collection of key-value pairs
+- `std::multiset`
+- `std::multimap`
+
+# Unordered Associative Containers
+
+These use hash maps rather than search trees.
+
+*Because* they rely on hashing, the elements you insert must be "hashable" rather than just comparable.
+
+
