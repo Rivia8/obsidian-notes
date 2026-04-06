@@ -21,5 +21,11 @@ You can do this yourself in most cases but why use the standard algorithms?
 - **Lower the chance of Error**: Writing fewer loops means making fewer "off-by-one" index errors
 - **Clearer intention:** When another programmer reads `std::find`, they instantly know exactly what the lines of code achieve.
 
+## User-Defined Functions
+
+You can pass lambdas into functions like `find_if()`, `transform()` and `for_each()`.
+
+With this you can build arbitrarily complex programs by passing functions into other functions which is the core of **functional programming.**
+
 
 
