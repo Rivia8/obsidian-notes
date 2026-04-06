@@ -41,8 +41,16 @@ This is a modern 'upgrade'
 Instead of passing two separate iterators(`begin` and `end`) into an algorithm to define a target block of data, a Range combines them into one thing.
 Instead of writing: `find(c1.begin(), c1.end(), 0)` you can simply pass the entire container directly: `find(c1, 0)`.
 
+Here it is laid out:
+
+```C++
+for (auto& elem : c1) {
+    std::cout << elem << "\n";
+}
+```
+
 # Why do we use Iterators over c\[] like a Normal Array
 
 if you have a `std::vector`, you can have standard index loop.
 **But** the solution with iterators works with **any** of the containers, so it works with `std::set` or `std::list`.
-This is because `std::vector` has elements stored contiguously in memory, but other containers, like `std::set` or `std::list`  use different implementations, they use linked lists and binary trees respectively and so 
+This is because `std::vector` has elements stored contiguously in memory, but other containers, like `std::set` or `std::list`  use different implementations, they use linked lists and binary trees respectively and so you can't just use `[5]`, iterators abstract away the complexity since they **know** how to navigate them.
