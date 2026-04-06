@@ -2,7 +2,7 @@
 
 Tags: [[C++]]
 
-
+C++ is **not** a functional language, it treats 
 
 
 
