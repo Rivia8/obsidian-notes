@@ -12,7 +12,7 @@ The standard library consists of 4 fundamental aspects:
 1. [[Containers]]
 2. [[Iterators]]
 3. [[Algorithms]]
-4. [[Programming Languages and Frameworks/C++/04 - Standard Library/Functions|Functions]]
+4. Functions
 
 *Their relationship is explained in the above image*
 
