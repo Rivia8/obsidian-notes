@@ -34,3 +34,9 @@ For a very long time, formatting strings in C++ was unsafe by using C-style `pri
 
 This is the ecosystem that C++ uses to move data in and out of the program.
 There are 3 specific headers that all share the exact same `<<` output and `>>` input interface. 
+
+- **`<iostream>`**:  
+
+- **`<fstream>`**:
+
+- **`<sstream>`**:
