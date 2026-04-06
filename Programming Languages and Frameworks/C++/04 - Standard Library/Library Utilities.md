@@ -29,3 +29,8 @@ For a very long time, formatting strings in C++ was unsafe by using C-style `pri
 
 - Instead of: `std::cout << "Hello " << name << ", your score is " << score << "\n";`
 - You can write: `std::cout << std::format("Hello {}, your score is {}\n", name, score);`.
+
+## IO Streams
+
+This is the ecosystem that C++ uses to move data in and out of the program.
+There are 3 specific headers that all share the exact same `<<` output and `>> input`
