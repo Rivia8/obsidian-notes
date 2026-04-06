@@ -35,8 +35,9 @@ For a very long time, formatting strings in C++ was unsafe by using C-style `pri
 This is the ecosystem that C++ uses to move data in and out of the program.
 There are 3 specific headers that all share the exact same `<<` output and `>>` input interface. 
 
-- **`<iostream>`**:  
+- **`<iostream>`**: Provides high level abstraction `std::cin`, `std::cout` and `std::cer` to interact with the terminal  
 
-- **`<fstream>`**:
+- **`<fstream>`**: This provides `ifstream` (input file) and `ofstream` (output file), these streams utilise **RAII** (Resource Acquisition is Initialisation): when an `ifstream` object goes out of scope at the end of a function, C++ automatically closes the file on the hard drive.
 
-- **`<sstream>`**:
+- **`<sstream>`**: Provides `std::stringstream` which is essentially a stream that reads/writes to a string in RAM rather than a file or the console. It is powerful for formatting text or converting between types (like easily converting a string of space-separated numbers into actual `int` variables).
+
