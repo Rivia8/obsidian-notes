@@ -189,5 +189,5 @@ JOIN
 There are other things that you need to know to fully get by with SQL and just databases in general:
 1. [[Null]]
 2. [[Nested Queries]]
-3. [[Views]]
+3. [[Year 2/Semester 1/Database Systems/Views]]
 4. [[Stored Procedures]]
