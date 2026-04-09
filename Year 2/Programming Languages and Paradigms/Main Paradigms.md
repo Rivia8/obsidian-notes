@@ -12,7 +12,7 @@ Here are some of the main paradigms:
     - Concurrent
 - **[[Declarative Programming|Declarative]]**:
     - Functional
-    - Concurrent These are the main ones, there are many more.
+    - Concurrent, These are the main ones, there are many more.
 
 ![[overview1.svg#invert|800]]
 
