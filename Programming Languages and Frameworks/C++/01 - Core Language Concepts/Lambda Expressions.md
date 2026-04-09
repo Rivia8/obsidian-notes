@@ -34,6 +34,8 @@ int main() {
 }
 ```
 
+We can also use Ranges and Views so we no longer have to pass `begin()` and `end()` to every algorithm.
+
 
 
 
