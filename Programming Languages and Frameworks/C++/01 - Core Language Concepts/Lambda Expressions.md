@@ -12,7 +12,8 @@ Here is the anatomy of the C++ lambda:
 [captures](parameters) -> return_type { body }
 ```
 
-
+The capture clause is unique to C++, because lambdas are defined *inside* other functions, they don't automatically know about the local variables around them.
+The `{ body }` is the actual code to execute.
 
 
 
