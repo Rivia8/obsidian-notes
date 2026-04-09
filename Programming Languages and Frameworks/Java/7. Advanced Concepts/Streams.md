@@ -132,7 +132,7 @@ public class StreamFromValues {
 }
 ```
 
-As you can see, the Stream API methods are taking in **[[Interfaces|functional interfaces]]** as arguments, and as so are using [[Lambda Expressions|lambda expressions]].  
+As you can see, the Stream API methods are taking in **[[Interfaces|functional interfaces]]** as arguments, and as so are using [[Programming Languages and Frameworks/Java/7. Advanced Concepts/Lambda Expressions|lambda expressions]].  
 
 Streams are processed "vertically" which means a single element passes through the entire pipeline before the next element is processed. 
 Streams incorporate something called 'lazy' evaluation, meaning intermediate operations like `filter()` and `map()` only set up a "recipe" for the stream. No data is actually processed until a terminal operation like `collect()`, `forEach()` or `count()` is called.
@@ -141,7 +141,7 @@ The standard Java API runs on the CPU.\
 
 ## Method References as Lambda Expressions
 
-For many stream methods, we can either use [[Lambda Expressions|lambda expressions]] or method references.
+For many stream methods, we can either use [[Programming Languages and Frameworks/Java/7. Advanced Concepts/Lambda Expressions|lambda expressions]] or method references.
 A **method reference** is just a shorthand for lambda expressions.
 An easy example is: 
 ``` Java

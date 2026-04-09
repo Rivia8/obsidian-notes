@@ -89,7 +89,7 @@ public class Driver {
 
 In the example above, `v` is a reference variable, this means that `v` can hold a reference to any object whose class implements the `Vehicle` interface.
 
-You can use [[Lambda Expressions|lambda expressions]] to send the code for a particular method to another method which works quite nicely for interfaces.
+You can use [[Programming Languages and Frameworks/Java/7. Advanced Concepts/Lambda Expressions|lambda expressions]] to send the code for a particular method to another method which works quite nicely for interfaces.
 
 The reason for interfaces is that it allows you to achieve **abstraction**, **polymorphism**, and **loose coupling**.
 Technically you could just create methods without interfaces, but it misses these crucial design features.

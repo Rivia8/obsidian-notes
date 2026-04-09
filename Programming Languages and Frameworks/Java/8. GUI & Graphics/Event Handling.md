@@ -18,7 +18,7 @@ The **Event Handler** is the the thing that responds to the signal. In JavaFX it
 
 ## Legacy Event Handling
 
-This is what was used before we had [[Lambda Expressions]] and JavaFX to help us with event handling.
+This is what was used before we had [[Programming Languages and Frameworks/Java/7. Advanced Concepts/Lambda Expressions]] and JavaFX to help us with event handling.
 
 There were two ways could do this.
 
