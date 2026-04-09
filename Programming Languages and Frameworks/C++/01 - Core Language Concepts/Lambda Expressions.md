@@ -15,6 +15,26 @@ Here is the anatomy of the C++ lambda:
 The capture clause is unique to C++, because lambdas are defined *inside* other functions, they don't automatically know about the local variables around them.
 The `{ body }` is the actual code to execute.
 
+Here is an example:
+
+```C++
+#include <vector>
+#include <algorithm>
+
+int main() {
+    std::vector<int> numbers = {5, 12, 8, 20, 3};
+    int threshold = 10;
+
+    // We "capture" the threshold variable so the lambda can see it
+    int count = std::count_if(numbers.begin(), numbers.end(), 
+        [threshold](int n) { 
+            return n > threshold; 
+        }
+    );
+}
+```
+
+
 
 
 
