@@ -10,7 +10,7 @@ Views have three properties:
 - Non-mutating
 - Cheap to copy (creating, copying, or passing a view takes $O(1)$ time
 
- Views use lazy evaluation. So when you attach a view to a container, no calculation happens. The view simply remembers the instruction.
+ Views use lazy evaluation. So when you attach a view to a container, no calculation happens. The view simply remembers the instruction and the Maths only executes at the exact moment you ask for the data.
 
 
 
