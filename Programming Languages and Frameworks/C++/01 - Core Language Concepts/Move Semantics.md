@@ -24,6 +24,18 @@ If the compiler knows that a value is an r-value there is no point in copying it
 This is what **Move Semantics** is.
 An empty vector is made, and point its internal memory tracker to the old vector's data. Then the old vector's pointer is set to null.
 
+```C++
+std::string source = "Massive String Data...";
+
+// Deep Copy: 'source' keeps its data, 'target1' gets a duplicate.
+std::string target1 = source; 
+
+// Move: 'target2' steals the data. 'source' is left empty/valid but unspecified.
+std::string target2 = std::move(source);
+```
+
+
+
 
 
 
