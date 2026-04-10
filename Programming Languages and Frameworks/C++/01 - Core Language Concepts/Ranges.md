@@ -8,7 +8,8 @@ Before, if you wanted to sort a vector, you'd have to pass two separate iterator
 std::sort(numbers.begin(), numbers.end());
 ```
 
-A **Range** is 
+A **Range** is a concept that represents an iterable sequence of elements: anything that provides `begin()` and `end()` is considered a range.
+
 
 
 
