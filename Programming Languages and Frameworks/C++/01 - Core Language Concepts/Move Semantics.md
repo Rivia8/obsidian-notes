@@ -17,6 +17,13 @@ It does this by categorising expressions into L and R values.
 - **R-Value (Read value):** A temporary value. It has no persistent memory address. It exists for a fleeing moment on the *right* side of an equals sign and then destroyed.
 	- `5` is an r-value of the above example
 
+## Stealing Resources
+
+If the compiler knows that a value is an r-value there is no point in copying its details but rather its **pointers**.
+
+This is what **Move Semantics** is.
+An empty vector is made, and point its internal memory tracker to the old vector's data. Then the old vector's pointer is set to null.
+
 
 
 
