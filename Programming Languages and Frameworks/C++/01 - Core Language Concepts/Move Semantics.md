@@ -14,7 +14,8 @@ It does this by categorising expressions into L and R values.
 - **L-Value (Locator value)**: is something that occupies a persistent memory address. It has a name, you can use it on the left side of an equal sign:
 	- `int x = 5` - `x` is the L value
 
-- **R-Value (Read value):** A temporary value. It has no persistent memory address. It exists for a fleeing moment on the *right* side of an equals sign and then destroyed. 
+- **R-Value (Read value):** A temporary value. It has no persistent memory address. It exists for a fleeing moment on the *right* side of an equals sign and then destroyed.
+	- `5` is an r-value of the above example
 
 
 
