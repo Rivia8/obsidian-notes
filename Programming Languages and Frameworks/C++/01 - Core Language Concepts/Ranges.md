@@ -2,8 +2,13 @@
 
 Tags: [[C++]]
 
-Before, if you wanted to sort a vector, 
+Before, if you wanted to sort a vector, you'd have to pass two separate iterators to define the boundaries of the data:
 
+```C++
+std::sort(numbers.begin(), numbers.end());
+```
+
+A **Range** is 
 
 
 
