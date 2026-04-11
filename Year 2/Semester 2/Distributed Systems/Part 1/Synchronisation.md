@@ -2,7 +2,6 @@
 
 Tags: [[Distributed Systems]]
 
-# Synchronisation
 
 Synchronisation relates to both:
 1. **Data Synchronisation**: keeping multiple copies of a dataset in coherence with one another, given that the various copies are located in different nodes (same data in different nodes)

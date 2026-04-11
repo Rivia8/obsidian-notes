@@ -2,7 +2,6 @@
 
 Tags: [[Distributed Systems]]
 
-# Introduction to Distributed Systems
 
 A **Distributed System** has nodes and it relies on a **network**.
 The network can be something like the internet or a proprietary system
