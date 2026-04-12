@@ -38,10 +38,9 @@ Threads share the exact same address space.
 
 This makes threading threading a lot **faster** and more **efficient** compared to forking they can also communicate instantly since they are utilising the same variables.
 
-However, this is fundamentally unsafe, 
-
+However, this is fundamentally unsafe, since if Thread A is trying to read a variable `x` but Thread B tries to overwrite it `x` at the exact same millisecond, you can get unpredictable behaviour
 
 ## Parallel Computing
 
 This is what is known as **True Concurrency.**
-
+Here you have many processors that are bound by an interconnect which can be a bus across processors and so there are many processors running at the same time and not just multi threading.
