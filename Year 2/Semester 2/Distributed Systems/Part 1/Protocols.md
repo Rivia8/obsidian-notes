@@ -26,5 +26,9 @@ By following the HTTP protocol, Web servers are said to be **stateless.**
 
 **HTTP** works like this and what this means is that for a successful interaction, it must contain 100% of the information the server needs to fulfil it, the server will not rely on anything you told it five minutes ago.
 
+This may seem inefficient, but there are some major advantages to this:
 
+1. Massive Scalability
+	If a web server had to remember all these factors, it would run out RAM, by forgetting what happened instantly, the server instantly frees up resources to serve the next person.
+2. Fau 
 
