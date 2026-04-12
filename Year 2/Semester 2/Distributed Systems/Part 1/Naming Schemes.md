@@ -13,7 +13,9 @@ Because entities are constantly interacting with each other across a network, th
 
 *"A name resolution can be resolved to the entity it refers to... the means by which a process is allowed to access a named entity"*
 
-**Name **
+**Name Resolution** is the translation process, it converts human friendly names into something that the network can actually use.
+
+This naming system also has
 
 
 
