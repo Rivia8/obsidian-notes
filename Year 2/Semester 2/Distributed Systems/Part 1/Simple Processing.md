@@ -31,3 +31,5 @@ def foobar(a, b):
 This provides **strict isolation**, what this means is that the process will know with 100% certainty that it will execute in that order and no other will change the values of `x` and `y`.
 
 However, it comes with the strict limitation that if the `foobar()` function mentioned above takes a long time due to some reasons or another (long download time, waiting on slow peripherals etc) it will result in steep bottleneck.
+
+Sequential, isolated processing is **simple** but bounded and **limiting**.
