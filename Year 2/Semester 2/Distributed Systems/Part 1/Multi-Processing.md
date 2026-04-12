@@ -15,10 +15,11 @@ This is what we commonly see with simple machines or single-core processors and 
 
 What happens is that the processor will switch very quickly between processes and gives them each a "time slice" (a few milliseconds of CPU time). Every time this happens, the CPU has to do something called [[Processes#Context Switching|Context Switch]] which is ensuring that the contents of the CPU remains consistent with each process when its their turn.
 
-You then have different forms of [[Process Scheduling]] in order to make sure that each process gets its fair share of processor time
+You then have different forms of [[Process Scheduling]] in order to make sure that each process gets its fair share of processor time or to make sure a certain criteria is met.
 
 ## Multi-Processing
 
+**Multi-processing** is more of an addition to multi-tasking. This involves either **forking** or **threading** an existing process in order to create more processes.
 
 
 
