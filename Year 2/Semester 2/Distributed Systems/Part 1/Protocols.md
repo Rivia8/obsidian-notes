@@ -20,6 +20,8 @@ They serve as the **specifications** rather than the **implementations** of a pi
 | OPTIONS        | Returns a list of the commands supported by this particular server                                                                                                                                                                            |
 | DELETE         | It is used to delete a resource. It may return the a representation of the removed resource.                                                                                                                                                  |
 
+### Statelessness
+
 By following the HTTP protocol, Web servers are said to be **stateless.**
 
 **Stateless** means that it has **zero memory of the past**. Every single time a client sends a request to a server, the server treats it as a brand-new interaction. Once the server sends the response back, it immediately drops the connection and forgets the client ever existed.
@@ -28,7 +30,11 @@ By following the HTTP protocol, Web servers are said to be **stateless.**
 
 This may seem inefficient, but there are some major advantages to this:
 
-1. Massive Scalability
+1. **Massive Scalability**
 	If a web server had to remember all these factors, it would run out RAM, by forgetting what happened instantly, the server instantly frees up resources to serve the next person.
-2. Fau 
+2. **Fault Tolerance**
+	It allows for **No Single Point of Failure**. If a server fails with your transaction, it can be moved to another server. The new server doesn't need to know your history.
+
+There is a bit of a caveat of *statelessness* within websites. 
+In order to allow some functionality, state**full**ness is emulated on top of the statelessness logic. This is done via the  
 
