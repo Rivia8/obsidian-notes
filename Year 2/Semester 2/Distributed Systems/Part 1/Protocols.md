@@ -36,5 +36,12 @@ This may seem inefficient, but there are some major advantages to this:
 	It allows for **No Single Point of Failure**. If a server fails with your transaction, it can be moved to another server. The new server doesn't need to know your history.
 
 There is a bit of a caveat of *statelessness* within websites. 
-In order to allow some functionality, state**full**ness is emulated on top of the statelessness logic. This is done via the  
+In order to allow some functionality, state**full**ness is emulated on top of the statelessness logic. This is done outside the scope of the protocol.
+
+This is done with things like browser **Cookies** or **Tokens**.
+
+## Email
+
+The way email works is more complicated than it seems.
+The expectation of
 
