@@ -55,4 +55,7 @@ SMTP is **connection based**. This means that client and server open a dedicated
 
 ![[Pasted image 20260412173837.png#invert|400]]
 
-Here is SMTP vocabulary used in the communication between client (C) and server (S) 
+Here is SMTP vocabulary used in the communication between client (C) and server (S).
+
+SMTP is strictly a "push" protocol, this means that it is only used for sending and not viewing or retrieving emails. To do this, you would need a different protocol such as **IMAP** or **POP3.**
+
