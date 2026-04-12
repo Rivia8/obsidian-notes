@@ -2,7 +2,7 @@
 
 Tags: [[Distributed Systems]]
 
-In distributed systems, names are used to **uniquely identify** entities, to refer to locations  and others.
+In distributed systems, names are used to **uniquely identify** entities, to refer to locations and others.
 
 
 
