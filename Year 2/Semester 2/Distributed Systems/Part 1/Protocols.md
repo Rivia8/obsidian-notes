@@ -47,6 +47,10 @@ The expectation of emails is that an email has to be in exactly **one place** at
 	If its in two places it has been duplicated.
 	If its in no places then its been 'lost in the system'
 
+Because of the sensitive nature of the way that emails are handled, it cannot simply use a stateless protocol like HTTP (where the server acts like a vending machine and forgets instantly), instead it uses **SMTP (Simple Mail Transfer Protocol).**
+
+### SMTP
+
 
 
 
