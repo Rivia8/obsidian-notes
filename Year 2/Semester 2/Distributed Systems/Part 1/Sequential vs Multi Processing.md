@@ -10,9 +10,10 @@ A machine boils down to two resources
 - CPU (CPU time)
 - Storage - Primary Storage which is RAM
 
-An application lives within secondary storage, but once you click on it, its contents are opened within primary storage.
+An application lives within secondary storage, but once you click on it, its contents are opened within primary storage and it becomes a [[Processes|process]].
 
 ![[Pasted image 20260412180341.png#invert]]
+
 
 
 
