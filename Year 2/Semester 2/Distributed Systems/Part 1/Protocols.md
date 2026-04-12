@@ -2,7 +2,7 @@
 
 Tags: [[Distributed Systems]]
 
-**"Protocols define sets of rules governing how two or more objects should interact with **
+**"Protocols define sets of rules governing how two or more objects should interact with"**
 
 
 
