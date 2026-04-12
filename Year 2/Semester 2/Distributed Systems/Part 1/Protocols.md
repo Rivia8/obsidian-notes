@@ -53,4 +53,6 @@ Because of the sensitive nature of the way that emails are handled, it cannot si
 
 SMTP is **connection based**. This means that client and server open a dedicated line of communication and keep it open until the entire transaction is finished. The server **must** remember the state of the conversation from one line to the next.
 
+![[Pasted image 20260412173837.png#invert|400]]
 
+Here is SMTP vocabulary used in the communication between client (C) and server (S) 
