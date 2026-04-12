@@ -18,7 +18,7 @@ Because entities are constantly interacting with each other across a network, th
 ### Centralised Naming Approach
 
 One single central "authority" (usually a server). 
-When an entity joins, it must contact the central server and it verifies that the name the entity  wants isn't already taken, or it generates a brand-new unique name and hands it over.
+When an entity joins, it must contact the central server and it verifies that the name the entity wants isn't already taken, or it generates a brand-new unique name and hands it over.
 
 **Advantage:**
 - Absolute certain, you are 100% guaranteed that no two entities in your system will ever have the same name
