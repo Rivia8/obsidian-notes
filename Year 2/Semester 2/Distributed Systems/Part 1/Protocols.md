@@ -49,8 +49,8 @@ The expectation of emails is that an email has to be in exactly **one place** at
 
 Because of the sensitive nature of the way that emails are handled, it cannot simply use a stateless protocol like HTTP (where the server acts like a vending machine and forgets instantly), instead it uses **SMTP (Simple Mail Transfer Protocol).**
 
-### SMTP
+### SMTP (Simple Mail Transfer Protocol)
 
-
+SMTP is **connection based**. This means that client and server open a dedicated line of communication and keep it open until the entire transaction is finished. The server **must** remember the state of the conversation from one line to the next.
 
 
