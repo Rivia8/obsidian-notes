@@ -44,3 +44,16 @@ However, this is fundamentally unsafe, since if Thread A is trying to read a var
 
 This is what is known as **True Concurrency.**
 Here you have many processors that are bound by an interconnect which can be a bus across processors and so there are many processors running at the same time and not just multi threading.
+
+
+## Distributed Computing
+
+This is different to all the above variations of computing.
+
+You have **"Independent, self-sufficient, autonomous, heterogeneous machines"** which means there are lots of computers that are completely different working together on one thing.
+
+They usually will have to deal with problems like **spatial separation** and **network effects** since they are geographically separated and connected by a standard network (like Wi-Fi or Ethernet) and not a high speed bus.
+
+They also cannot share the a single address space.
+
+They are written against a "middleware API" which means that developers do not code directly to the OS but rather **Middleware** which is a layer of software that acts as a translator or manager that hides the ugly complexity of the network so the programmer can just focus on building the application.
