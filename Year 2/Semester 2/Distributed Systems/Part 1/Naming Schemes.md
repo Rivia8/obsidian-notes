@@ -65,6 +65,4 @@ The **IANA** delegates ranges of IP addresses to five **Regional Internet Regist
 Domain names were created since its hard for humans to read and remember IP addresses.
 The Domain Name System (DNS) is itself a distribute system built on top of the Internet, used to create associations between human-readable names and IP addresses.
 
-
-
-
+DNS cannot allocate 'batches' of names up-front and needs to respond in real-time to requests to translate names into IP addresses. It achieves this by in itself being a distributed system.
