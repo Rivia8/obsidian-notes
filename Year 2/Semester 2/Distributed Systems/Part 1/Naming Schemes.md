@@ -38,6 +38,11 @@ When an entity joins, it generates its own name locally without asking a server 
 - **No guarantee of uniqueness** and so there will be a massive risk of collision.
 
 
+### Delegating Naming Responsibilities
+
+ 
+
+
 
 
 
