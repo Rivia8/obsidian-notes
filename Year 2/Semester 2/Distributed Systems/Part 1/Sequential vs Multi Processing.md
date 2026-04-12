@@ -2,6 +2,10 @@
 
 Tags: [[Distributed Systems]]
 
+## A Simple Machine
+
+![[Pasted image 20260412175903.png|500]]
+
 
 
 
