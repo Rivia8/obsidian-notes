@@ -21,6 +21,24 @@ You then have different forms of [[Process Scheduling]] in order to make sure th
 
 **Multi-processing** is more of an addition to multi-tasking. This involves either **forking** or **threading** an existing process in order to create more processes.
 
+### By Forking
+
+Forking is done via an OS call. It causes two copies of itself to be active concurrently and the child process is given a copy of the parent's address space. 
+
+The address spaces however are distinct and so whatever the child process does is completely safe. This makes this method extremely safe.
+
+The drawback is that copying an entire memory space can be expensive.
+
+### By Threading
+
+Threading was invented as a lightweight alternative to forking.
+Instead of cloning the entire program, threading on the other hand creates a new execution path within the *same* program.
+
+Threads share the exact same address space.
+
+This makes threading threading a lot **faster** and more **efficient** compared to forking they can also communicate instantly since they are utilising the same variables.
+
+However, this is fundamentally unsafe, 
 
 
 ## Parallel Computing
