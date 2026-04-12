@@ -17,7 +17,8 @@ Because entities are constantly interacting with each other across a network, th
 
 This naming system also has to be distributed, this is because if the network relies on one single service to translate the names, there will be:
 1. **Bottlenecking**
-2. **Single**
+2. **Single Point of Failure**
+
 
 
 
