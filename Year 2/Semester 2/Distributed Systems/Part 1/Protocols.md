@@ -43,5 +43,10 @@ This is done with things like browser **Cookies** or **Tokens**.
 ## Email
 
 The way email works is more complicated than it seems.
-The expectation of
+The expectation of emails is that an email has to be in exactly **one place** at any **one time**.
+	If its in two places it has been duplicated.
+	If its in no places then its been 'lost in the system'
+
+
+
 
