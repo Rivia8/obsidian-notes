@@ -15,10 +15,27 @@ Because entities are constantly interacting with each other across a network, th
 
 **Name Resolution** is the translation process, it converts human friendly names into something that the network can actually use.
 
-This naming system also has to be distributed, this is because if the network relies on one single service to translate the names, there will be:
-1. **Bottlenecking**
-2. **Single Point of Failure**
+### Centralised Naming Approach
 
+One single central "authority" (usually a server). 
+When an entity joins, it must contact the central server and it verifies that the name the entity  wants isn't already taken, or it generates a brand-new unique name and hands it over.
+
+**Advantage:**
+- Absolute certain, you are 100% guaranteed that no two entities in your system will ever have the same name
+
+**Disadvantage:**
+- If lots of entities try to join, the single server will be overwhelmed and crash. It cannot scale to the size of the something big (like the internet)
+
+### Free-for-All Naming Approach
+
+With this approach, there is no central authority. 
+When an entity joins, it generates its own name locally without asking a server for permission.
+
+**Advantage:**
+- This is infinitely scalable
+
+**Disadvantage:**
+- **No guarantee of uniqueness** and so there will be a massive risk of collision.
 
 
 
