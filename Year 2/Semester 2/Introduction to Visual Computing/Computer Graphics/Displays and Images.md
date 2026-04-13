@@ -9,6 +9,9 @@ A human has two types of photo receptors, these are what detect light and its co
 One type are **rods** and the other **cones**.
 **Rods** are highly sensitive to light so allow for low-light vision but do not detect colour whilst **cones** are *less* sensitive but detect colour. 
 
-when it comes to light and how sensitive we are to them, our *cones* are more sensitive to **green** light.
+when it comes to light and how sensitive we are to them, our *cones* are more sensitive to **green** light, as you can see in the graph.
+
+![[Pasted image 20260413183204.png]]
+
 
 
