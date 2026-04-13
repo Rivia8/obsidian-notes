@@ -21,3 +21,8 @@ In our eye we have something called the **fovea**, this is a small area within t
 ![[Pasted image 20260413183701.png]]
 
 The **foveal** handles the object that we are focusing on, so our direct vision rather than peripheral vision.
+
+![[Pasted image 20260413184049.png]]
+
+Cameras have something called a Bayer filter that is placed on-top of the sensor. it matches the human eye by having twice as many green filters than red and blue. A cameras sensor only detects the **intensity** of light, the filter sits on top only allowing certain colours to pass and the camera then re-adds the missing colours
+
