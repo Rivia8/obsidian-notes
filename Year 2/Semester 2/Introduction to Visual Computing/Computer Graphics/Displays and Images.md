@@ -26,3 +26,8 @@ The **foveal** handles the object that we are focusing on, so our direct vision 
 
 Cameras have something called a Bayer filter that is placed on-top of the sensor. it matches the human eye by having twice as many green filters than red and blue. A cameras sensor only detects the **intensity** of light, the filter sits on top only allowing certain colours to pass and the camera then re-adds the missing colours
 
+When it comes to creating colours, it is RGB additive which means adding different combinations of Red, Green and Blue together (different to the primary colours).
+
+**Rasterization** is the computer graphics process of converting vector-based images (mathematical shapes, lines, and curves) into a raster format (a grid of pixels, dots, or lines) for display on screens or printers.
+
+Each **Pixel** (Picture element) contains RGB data for all 3 colour channels in \[0,1].
