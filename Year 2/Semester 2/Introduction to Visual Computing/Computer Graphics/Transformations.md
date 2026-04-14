@@ -11,6 +11,7 @@ In a 2D plane you want to:
 
 To do this, we use Linear Algebra, specifically, **Linear Transformations**.
 
+**Linear Transformations**a are the process of applying a function to a vector to get a new vector.
 
 
 
