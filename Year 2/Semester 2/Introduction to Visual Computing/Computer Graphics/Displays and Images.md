@@ -50,4 +50,12 @@ Distance between pixels are usually constant, it is known as **PPI** (Pixels Per
 Higher PPI = Higher Quality
 
 Pictures that are displayed with pixels are called **Raster Images**.
+Raster images need each pixel to store RGB data stored for each pixel.
+
+Pixels in this forma are read in **scanline order** and stored in a **1D array** in memory.
+
+![[Pasted image 20260414131623.png]]
+
+*These come came from old cathode-ray televisions where they used scan lines*
+
 
