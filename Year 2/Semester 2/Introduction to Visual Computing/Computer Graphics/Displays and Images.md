@@ -143,3 +143,15 @@ The reason for this is that human perception with light intensity is *not* linea
 ![[Pasted image 20260414162129.png]]
 
 In order to fix this discrepancy between "visible" light and what is represented we apply a correction.
+
+![[Pasted image 20260414162446.png]]
+
+The gamma correction is a value of 2.2:
+
+$$V_{out} = V^{\gamma}_{in}$$
+When a camera saves an image, it **encodes**, what it does is that it applies a gamma encoding of $\gamma = 0.45$ in order to brighten the image and give shadows detail.
+When **decoding** to show an image to humans, it applies $\gamma = 2.2$ to crush it back down to physically look correct.
+
+A $\gamma$ of 1.0 is linear.
+
+**Increasing** gamma value = making it darker, **decreasing** gamma value = making it brighter.
