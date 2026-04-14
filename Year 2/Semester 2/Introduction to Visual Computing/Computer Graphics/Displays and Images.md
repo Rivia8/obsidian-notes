@@ -37,3 +37,17 @@ $$C_\text{s-bit} = round(C_\text{float} \times 255$$This means that multiple flo
 
 $$\textbf{Resolution} = \textbf{height} \times \textbf{width} $$
 A pixel isn't actually a square
+![[Pasted image 20260414130942.png]]
+
+Its something called a **Dimensionless Point Sample**. 
+In the continuous math of rendering, a pixel has no area, no width and no boundaries, it is simply a **discrete**, **infinitely small** coordinate in 2D space.
+
+They only look square since we take that sample and we paint it with **box filters**, operations with squares is just easier to compute.
+
+Distance between pixels are usually constant, it is known as **PPI** (Pixels Per Inch)
+![[Pasted image 20260414131233.png]]
+
+Higher PPI = Higher Quality
+
+Pictures that are displayed with pixels are called **Raster Images**.
+
