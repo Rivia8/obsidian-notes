@@ -56,6 +56,7 @@ Whenever you multiply the above with your vector you'll get something like this:
 
 ![[Pasted image 20260414231450.png]]
 
+![[Pasted image 20260414231740.png]]
 
-
+We use the trigonometric identity as shown above to do this.
 
