@@ -62,6 +62,9 @@ Another way of reading the images is ***Swizzling*** or **Z-Order Curves**.
 
 ![[Pasted image 20260414132809.png]]
 
+This better for *clustered items* since instead of just rendering images in a scan-line you render for the tendency of objects to be clustered together, this is known as **Spatial Coherency**.
+
+![[Pasted image 20260414133246.png]]
 
 
 If you had a 1080p display: $1920 \times 1080~ \textbf{pixels}~ = 2,073,600$ and since each pixel has 3 colour channels it has to store $6,220,800$ individual numbers just to hold a single frame.
@@ -73,4 +76,25 @@ For **Interleaved** all the data for each pixel is kept together, the Red, Green
 
 For **non-interleaved** (or **Planar**) you store every single Red value for the entire image first, then Green, and then Blue. This is preferred for image processing as you can isolate and adjust individual colour channels.
 
+When it comes to lighting, the difference between the brightest and darkest parts of the scene is known as **Dynamic Range**.
+
+**Low DR (LDR)** - White is the maximum
+	1, 8, 16, 24 (rare) bits Colour channels
+
+**High DR (HDR)** -  We can go beyond white
+	16, 32 bits Colour channels
+
+This information is useful for making images look realistic
+
+When it comes to *how* images are stored, there are different formats.
+
+1. PPM
+![[Pasted image 20260414133724.png]]
+This format has very large file sizes
+
+Bitmap files are similar but a bit more space efficient.
+
+2. PNG
+
+![[Pasted image 20260414133835.png]]
 
