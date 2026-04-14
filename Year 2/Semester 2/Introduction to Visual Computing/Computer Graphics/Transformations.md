@@ -47,4 +47,15 @@ Non-Uniform scale is quite similar to uniform scale, the main difference being i
 When rotating an object, you will end up with different values for the axes.
 ![[Pasted image 20260414225840.png]]
 
-You **can** use trigonometry to work these values out, but it can be tedious so we use a different method.
+You **can** use trigonometry like the above to work these values out, but it can be tedious so we use a different method.
+
+![[Pasted image 20260414231348.png]]
+Its kind of similar to how you do Scale transformations but instead of a simple scalar number, you use trigonometry. You use the above matrix.
+
+Whenever you multiply the above with your vector you'll get something like this:
+
+![[Pasted image 20260414231450.png]]
+
+
+
+
