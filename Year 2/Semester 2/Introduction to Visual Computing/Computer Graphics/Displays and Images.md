@@ -36,3 +36,4 @@ To quantise the float, you multiple the $[0,1]$ value by the maximum integer val
 $$C_\text{s-bit} = round(C_\text{float} \times 255$$This means that multiple floating-point numbers will map to the same hardware pixel value.
 
 $$\textbf{Resolution} = \textbf{height} \times \textbf{width} $$
+A pixel isn't actually a square
