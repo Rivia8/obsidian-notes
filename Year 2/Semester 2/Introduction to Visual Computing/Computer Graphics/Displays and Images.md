@@ -108,3 +108,6 @@ A PNG file has 'chunks' of data. Every PNG has three chunks:
 
 PNG uses **Filtering**, this is a process of looking at adjacent pixels row by row and stores the *difference* between the pixel and its neighbours.
 
+3. JPEG
+
+
