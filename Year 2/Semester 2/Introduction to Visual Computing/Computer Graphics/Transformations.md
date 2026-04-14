@@ -68,5 +68,8 @@ We use the trigonometric identity as shown above to do this.
 Rotation matrices are **orthogonal** which means that the **transpose** equals the **inverse**.
 In linear algebra, if you apply a transformation $M$ to a vector, to get the vector back you need to multiply it by the inverse matrix $M^{-1}$.
 $$M^{-1} \times M = I$$
-Where $I$ is the identity matrix which does nothing
+Where $I$ is the identity matrix which does nothing and so you get the back the original vector. However, for larger matrices, even a $3 \times 3$ matrix, it involves long and expensive calculations.
+***But*** the **Transpose** ($M^T$), which is the vector flipped over its diagonal line causing its rows to become columns and columns to be rows, happen to be the same as the inverse of matrices.
+
+
 
