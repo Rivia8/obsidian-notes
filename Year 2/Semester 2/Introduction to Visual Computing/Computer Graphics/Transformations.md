@@ -85,5 +85,8 @@ A Sheer is **Rotating** the vector *then* **Scaling Non-Uniformly** and *then* *
 ![[Pasted image 20260414233730.png]]
 
 **ORDER MATTERS**.
+
+![[Pasted image 20260414234003.png]]
+
 The reason for this is that **matrix multiplication** is *not* **commutative.**
 
