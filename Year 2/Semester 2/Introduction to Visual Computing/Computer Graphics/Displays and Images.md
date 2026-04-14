@@ -142,3 +142,4 @@ The reason for this is that human perception with light intensity is *not* linea
 
 ![[Pasted image 20260414162129.png]]
 
+In order to fix this discrepancy between "visible" light and what is represented we apply a correction.
