@@ -47,4 +47,4 @@ Non-Uniform scale is quite similar to uniform scale, the main difference being i
 When rotating an object, you will end up with different values for the axes.
 ![[Pasted image 20260414225840.png]]
 
-You **can** use trigonometry to work these values out, but i can be tedious.
+You **can** use trigonometry to work these values out, but it can be tedious so we use a different method.
