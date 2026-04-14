@@ -58,4 +58,4 @@ Pixels in this forma are read in **scanline order** and stored in a **1D array**
 
 *These come came from old cathode-ray televisions where they used scan lines*
 
-
+If you had a 1080p display: $1920 \times 1080~ \textbf{pixels}~ = 2,073,600$ and since each pixel has 3 colour channels it has to store $6,220,800$ individual numbers just to store 
