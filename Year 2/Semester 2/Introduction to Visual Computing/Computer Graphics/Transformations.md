@@ -6,8 +6,8 @@ In a 2D plane you want to:
 - Scale (Uniform and Non-uniform), 
 - Rotate,
 - Reflect
-- Translate
 - Sheer
+- Translate
 
 To do this, we use Linear Algebra, specifically, **Linear Transformations**.
 
@@ -79,3 +79,11 @@ Where $I$ is the identity matrix which does nothing and so you get the back the 
 Reflections are also **orthogonal** but they are **not** rotation matrices
 
 ## Sheer
+
+A Sheer is **Rotating** the vector *then* **Scaling Non-Uniformly** and *then* **Rotating** back.
+
+![[Pasted image 20260414233730.png]]
+
+**ORDER MATTERS**.
+The reason for this is that **matrix multiplication** is *not* **commutative.**
+
