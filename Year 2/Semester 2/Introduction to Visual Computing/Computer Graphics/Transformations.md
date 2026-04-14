@@ -17,7 +17,23 @@ There are some rules that need to be upheld for linear transformations:
 
 ![[Pasted image 20260414222220.png]]
 
+Matrix vector multiplication can be used to describe linear transformations since the rules uphold when using them. 
+
+Remember that the last point shows that any change to the origin/zero vector ($\vec{0}$) results in itself.
+
+## Scale
+
+There are two forms of Scale, **Uniform** and **Non-Uniform** as we have said.
+
+### Uniform Scale
+
+If you have a vector $\vec{v}$ and apply a scalar to it:
+![[Pasted image 20260414222841.png]]
+
+The operation *can* indeed be represented as a matrix multiplication as follows:
+![[Pasted image 20260414222920.png]]
+
+### Non-Uniform Scale
 
 
-
-
+![[Pasted image 20260414223109.png]]
