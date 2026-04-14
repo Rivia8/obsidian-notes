@@ -58,4 +58,19 @@ Pixels in this forma are read in **scanline order** and stored in a **1D array**
 
 *These come came from old cathode-ray televisions where they used scan lines*
 
-If you had a 1080p display: $1920 \times 1080~ \textbf{pixels}~ = 2,073,600$ and since each pixel has 3 colour channels it has to store $6,220,800$ individual numbers just to store 
+Another way of reading the images is ***Swizzling*** or **Z-Order Curves**.
+
+![[Pasted image 20260414132809.png]]
+
+
+
+If you had a 1080p display: $1920 \times 1080~ \textbf{pixels}~ = 2,073,600$ and since each pixel has 3 colour channels it has to store $6,220,800$ individual numbers just to hold a single frame.
+
+You can order the data into ways,
+**Interleaved** or **Non-Interleaved**
+
+For **Interleaved** all the data for each pixel is kept together, the Red, Green and Blue values for the first pixel are followed by the second etc. This allows for the CPU/GPU to be able to fetch an entire pixel in one read which maximises cache efficiency.
+
+For **non-interleaved** you store every single Red value for the entire image first, then Green, and then Blue. This is preferred for image processing as you can isolate and adjust individual colour channels.
+
+
