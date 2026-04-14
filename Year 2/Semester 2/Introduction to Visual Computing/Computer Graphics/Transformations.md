@@ -44,3 +44,6 @@ Non-Uniform scale is quite similar to uniform scale, the main difference being i
 
 ## Rotation
 
+When rotating an object, you will end up with different values for the axes.
+
+**You**
