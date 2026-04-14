@@ -98,3 +98,11 @@ Bitmap files are similar but a bit more space efficient.
 
 ![[Pasted image 20260414133835.png]]
 
+A PNG file has 'chunks' of data. Every PNG has three chunks:
+- IHDR (Image Header)
+	- Tells the computer the width, height and bit depth and colour type (can support RGBA if it has transparency).
+- IDAT (Image Data)
+	- Actual pixel data, a larger image can split this into multiple IDAT chunks.
+- IEND (Image End)
+	- A marker that indicates the end of the file.
+
