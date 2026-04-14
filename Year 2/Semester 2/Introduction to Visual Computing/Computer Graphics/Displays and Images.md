@@ -106,3 +106,5 @@ A PNG file has 'chunks' of data. Every PNG has three chunks:
 - IEND (Image End)
 	- A marker that indicates the end of the file.
 
+PNG uses **Filtering**, this is a process of looking at adjacent pixels row by row and stores the *difference* between the pixel and its neighbours.
+
