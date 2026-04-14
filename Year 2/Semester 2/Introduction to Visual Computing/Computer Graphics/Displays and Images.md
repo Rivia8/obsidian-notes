@@ -38,7 +38,7 @@ When it comes to creating colours, it is RGB additive which means adding differe
 
 Each **Pixel** (Picture element) contains RGB data for all 3 colour channels in $[0,1]$.  We cannot display the infinite range of $[0,1]$ so we quantise the values and we use 8-bits to contain the colour information of each pixel.
 To quantise the float, you multiple the $[0,1]$ value by the maximum integer value (here it would be 255) and rounds it to the nearest whole number:
-$$C_\text{s-bit} = round(C_\text{float} \times 255$$This means that multiple floating-point numbers will map to the same hardware pixel value.
+$$C_\text{s-bit} = round(C_\text{float} \times 255)$$This means that multiple floating-point numbers will map to the same hardware pixel value.
 
 $$\textbf{Resolution} = \textbf{height} \times \textbf{width} $$
 A pixel isn't actually a square
