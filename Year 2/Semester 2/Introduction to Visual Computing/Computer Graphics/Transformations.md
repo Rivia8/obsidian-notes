@@ -40,7 +40,7 @@ The operation *can* indeed be represented as a matrix multiplication.
 
 ![[Pasted image 20260414223109.png]]
 
-Non-Uniform scale is quite similar to unifrom scale, the main difference being is that the 
+Non-Uniform scale is quite similar to uniform scale, the main difference being is that the 
 
 ## Rotation
 
