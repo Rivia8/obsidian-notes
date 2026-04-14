@@ -71,6 +71,6 @@ You can order the data into ways,
 
 For **Interleaved** all the data for each pixel is kept together, the Red, Green and Blue values for the first pixel are followed by the second etc. This allows for the CPU/GPU to be able to fetch an entire pixel in one read which maximises cache efficiency.
 
-For **non-interleaved** you store every single Red value for the entire image first, then Green, and then Blue. This is preferred for image processing as you can isolate and adjust individual colour channels.
+For **non-interleaved** (or **Planar**) you store every single Red value for the entire image first, then Green, and then Blue. This is preferred for image processing as you can isolate and adjust individual colour channels.
 
 
