@@ -2,6 +2,8 @@
 
 Tags: [[Introduction to Visual Computing]]
 
+# Humans vs Cameras on Colours
+
 When it comes to how humans view an object, a light source, lets say a lightbulb will emit light and the object will reflect the light to the person's eye.
 
 ![[Pasted image 20260413182716.png|300]]
@@ -28,7 +30,10 @@ Cameras have something called a Bayer filter that is placed on-top of the sensor
 
 When it comes to creating colours, it is RGB additive which means adding different combinations of Red, Green and Blue together (different to the primary colours).
 
+# Pixels
+
 **Rasterization** is the computer graphics process of converting vector-based images (mathematical shapes, lines, and curves) into a raster format (a grid of pixels, dots, or lines) for display on screens or printers.
+
 ![[Pasted image 20260413185033.png]]
 
 Each **Pixel** (Picture element) contains RGB data for all 3 colour channels in $[0,1]$.  We cannot display the infinite range of $[0,1]$ so we quantise the values and we use 8-bits to contain the colour information of each pixel.
@@ -86,6 +91,8 @@ When it comes to lighting, the difference between the brightest and darkest part
 
 This information is useful for making images look realistic
 
+# Storing Images
+
 When it comes to *how* images are stored, there are different formats.
 
 1. PPM
@@ -131,11 +138,14 @@ Something that *doesn't* experience that is called **Vector Graphics**
 
 6. **Scalable Vector Graphics** (SVG)
 
-This uses mathematical functions in order to draw lines.
-
 ![[Pasted image 20260414161915.png]]
 
+This uses mathematical functions in order to draw:
+
+# Gamma Correction
+ 
  ![[Pasted image 20260414162021.png]]
+
 
 Compared to a very light scene with a very dark scene, you can see that we can still see quite a bit of detail in the dark.
 The reason for this is that human perception with light intensity is *not* linear.
