@@ -27,13 +27,17 @@ There are two forms of Scale, **Uniform** and **Non-Uniform** as we have said.
 
 ### Uniform Scale
 
-If you have a vector $\vec{v}$ and apply a scalar to it:
+
 ![[Pasted image 20260414222841.png]]
 
-The operation *can* indeed be represented as a matrix multiplication as follows:
+If you have a vector $\vec{v}$ and apply a scalar to it:
+
 ![[Pasted image 20260414222920.png]]
+
+The operation *can* indeed be represented as a matrix multiplication.
 
 ### Non-Uniform Scale
 
-
 ![[Pasted image 20260414223109.png]]
+
+Non-Uniform scale is quite similar to unifrom scale, the main difference being is that 
