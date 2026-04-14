@@ -13,6 +13,11 @@ To do this, we use Linear Algebra, specifically, **Linear Transformations**.
 
 **Linear Transformations**a are the process of applying a function to a vector to get a new vector.
 
+There are some rules that need to be upheld for linear transformations:
+
+![[Pasted image 20260414222220.png]]
+
+
 
 
 
