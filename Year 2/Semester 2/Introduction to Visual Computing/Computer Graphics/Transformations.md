@@ -9,7 +9,7 @@ In a 2D plane you want to:
 - Translate
 - Sheer
 
-To do this, we 
+To do this, we use Linear Algebra, specifically, **Linear Transformations**.
 
 
 
