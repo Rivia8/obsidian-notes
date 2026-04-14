@@ -58,5 +58,15 @@ Whenever you multiply the above with your vector you'll get something like this:
 
 ![[Pasted image 20260414231740.png]]
 
+![[Pasted image 20260414232008.png]]
+
 We use the trigonometric identity as shown above to do this.
+
+
+![[Pasted image 20260414232132.png]]
+
+Rotation matrices are **orthogonal** which means that the **transpose** equals the **inverse**.
+In linear algebra, if you apply a transformation $M$ to a vector, to get the vector back you need to multiply it by the inverse matrix $M^{-1}$.
+$$M^{-1} \times M = I$$
+Where $I$ is the identity matrix which does nothing
 
