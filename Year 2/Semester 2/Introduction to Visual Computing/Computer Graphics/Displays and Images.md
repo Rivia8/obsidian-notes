@@ -94,7 +94,7 @@ This format has very large file sizes
 
 Bitmap files are similar but a bit more space efficient.
 
-2. PNG
+2. PNG - Portable Graphics Format
 
 ![[Pasted image 20260414133835.png]]
 
@@ -108,6 +108,37 @@ A PNG file has 'chunks' of data. Every PNG has three chunks:
 
 PNG uses **Filtering**, this is a process of looking at adjacent pixels row by row and stores the *difference* between the pixel and its neighbours.
 
-3. JPEG
+3. JPEG - Joint Photographic Experts Group
 
+![[Pasted image 20260414161359.png]]
+
+JPEG uses the human anatomy to increase efficiency - knows that human can detect edges wells so makes sure that edges remain crisp.
+![[Pasted image 20260414161527.png]]
+
+![[Pasted image 20260414161536.png]]
+
+4. GIF - Graphics Interchange Format
+![[Pasted image 20260414161638.png]]
+
+5. HDR10 / OpenEXR
+
+![[Pasted image 20260414161701.png]]
+
+
+
+The problem with these images is that when you zoom in, lowering the PPI, you can notice that there a significant in clarity.
+Something that *doesn't* experience that is called **Vector Graphics**
+
+6. **Scalable Vector Graphics** (SVG)
+
+This uses mathematical functions in order to draw lines.
+
+![[Pasted image 20260414161915.png]]
+
+ ![[Pasted image 20260414162021.png]]
+
+Compared to a very light scene with a very dark scene, you can see that we can still see quite a bit of detail in the dark.
+The reason for this is that human perception with light intensity is *not* linear.
+
+![[Pasted image 20260414162129.png]]
 
