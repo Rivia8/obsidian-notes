@@ -74,3 +74,8 @@ Where $I$ is the identity matrix which does nothing and so you get the back the 
 
 ## Reflection
 
+![[Pasted image 20260414233437.png]]
+
+Reflections are also **orthogonal** but they are **not** rotation matrices
+
+## Sheer
