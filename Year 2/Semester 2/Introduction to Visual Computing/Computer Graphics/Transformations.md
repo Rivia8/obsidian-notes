@@ -109,4 +109,9 @@ And the order that you arrange these matrices depends on what you inevitably wan
 ![[Pasted image 20260415114502.png]]
 
 Translation is **not** a linear transformation. 
+
+In **Linear Algebra** a linear transformation must obey the rule that the origin $(0, 0)$ can never move.
+
+
+
 An **affine** transformation, is like a linear transformation but has the ability to shift the origin
