@@ -50,7 +50,7 @@ Graphical Processing Units are multi-core processing units that are optimised fo
 What is this data?
 The main 'data' or input that the graphics card takes is **vertices** which are used to create shapes, specifically triangles which are used to compose other shapes.
 
-## Fixed Graphics Pipelines
+## Fixed Graphics Pipeline
 
 This is one way that maths gets turned into an image on the screen
 
@@ -76,5 +76,7 @@ After this, the fragment reaches the end of the data flow and is output as the f
 
 ![[Pasted image 20260415193644.png]]
 
+The **Programmable Graphics Pipeline** showcases a huge shift.
 
+The main difference this and [[Graphics Pipeline and APIs#Fixed Graphics Pipeline|Fixed Graphics Pipelines]] is **control**. In fixed, you pretty much just flick 'switches' that turn on certain features. In the *Programmable* version you *write* custom software 
 
