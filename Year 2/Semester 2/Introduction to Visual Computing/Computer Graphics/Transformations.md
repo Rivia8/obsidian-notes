@@ -124,10 +124,11 @@ $${\vec{v}}_{final} = (M \times \vec{v}_{original}) + t$$
 It guarantees that straight lines remain straight and parallel lines remain parallel, but does not guarantee that the origin stays put.
 
 Technically the formula is correct but doing this is isn't good for graphics pipelines, since tensor cores are optimised for matrix multiplications.
-To **force** translation to act as a multiplication, you do something called **Homogenous Coordinates**. 
+To **force** translation to act as a multiplication, you do something called **Homogeneous Coordinates**. 
 
 How this works is that you add **another dimension**. You pretend the 2D space is actually a flat plane hovering exactly 1 unit high in 3D space by adding a new component, $w$ and setting it to 1, $(x, y, 1)$
 
 Then you perform the multiplication and it works out:
 ![[Pasted image 20260415120119.png]]
 
+ 
