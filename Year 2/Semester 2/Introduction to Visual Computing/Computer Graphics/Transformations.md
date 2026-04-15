@@ -101,3 +101,12 @@ In standard notation, the matrix closest to the vector comes first:
 
 $$v_{\textbf{final}} = M_3 \times M_2 \times M_1 \times v_{\textbf{originak}} $$
 And the order that you arrange these matrices depends on what you inevitably want to accomplish with the transformation.
+
+# Translation
+
+![[Pasted image 20260415114645.png]]
+
+![[Pasted image 20260415114502.png]]
+
+Translation is **not** a linear transformation. 
+An **affine** transformation, is like a linear transformation but has the ability to shift the origin
