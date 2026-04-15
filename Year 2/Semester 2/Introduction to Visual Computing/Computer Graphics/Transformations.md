@@ -138,4 +138,4 @@ You can actually perform all transformations like this and you can easily find f
 
 # Homogeneous Coordinates Expanded
 
-The homogeneous coordinates concept 
+The homogeneous coordinates concept can be taken further to 3D vectors by utilisig a n
