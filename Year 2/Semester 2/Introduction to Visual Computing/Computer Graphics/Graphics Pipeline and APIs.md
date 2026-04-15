@@ -72,4 +72,9 @@ The GPU is fed lots of raw data in the form of vertices, they are just independe
 
 After this, the fragment reaches the end of the data flow and is output as the final **Pixel Colours** into the memory buffer that the monitor reads to display the frame.
 
+## Programmable Graphics Pipeline
+
+![[Pasted image 20260415193644.png]]
+
+
 
