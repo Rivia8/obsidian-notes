@@ -82,5 +82,11 @@ The main difference this and [[Graphics Pipeline and APIs#Fixed Graphics Pipelin
 
 **Vertex Shader Program:** Your custom code is responsible for taking raw local coordinates and doing matrix multiplication $Projection \times View \times Model$ to figure out where it belongs on the screen. Since you have control, you don't just have to do standard transmissions you can just write math to make the vertices wobble to simulate wind etc.
 
-**Geometry Shader / Tesselation**: 
+**Geometry Shader / Tessellation**: Whilst the Vertex Shader only *moves* vertices, this stage can create *new* geometry on the fly.
+- **Tesselation** takes a low-polygon model and dynamically subdivides it into thousands of tiny triangles right on the GPU.
+- **Geometry Shader** takes a primitive and can emit a brand new shape e.g. takes a dimensionless point and generate a 2D square.
+
+**Rasterisation**: This is the same as Fixed Graphics Pipeline. This step is mathematically standardised and requires such extreme hardware optimisation that it remains a fixed hardwired process on the GPU.
+
+**Fragment Shader Program**: This is also known as Pixel Shader, it runs for every single fragment that the Rasterizer spits out.
 
