@@ -9,7 +9,9 @@ This is the entire rendering pipeline
 
 Will be focusing on this part.
 
-In order to
+![[Pasted image 20260415170028.png]]
+
+In order to speak to hardware you need a Graphic API, an example is **OpenGL** which
 
 
 
