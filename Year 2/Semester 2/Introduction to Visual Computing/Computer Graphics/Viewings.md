@@ -12,5 +12,14 @@ We can define $p$ with one set of basis vectors and $p$ with **another** coordin
 > [!NOTE] Basis Vector
 >A Basis Vector, $B$, is called a *Basis* if every element of a vector space $V$ can be written in a unique way as a linear combination of the components of $B$
 
+# Hierarchical Modelling
+
+![[Pasted image 20260415153848.png]]
+
+This is a technique of building complex 3D objects out of simpler, smaller piece by linking them together in a parent-child relationship.
+
+The entire system operates with one fundamental principle:
+**Transformations applied to a parent are automatically inherited by its children, but transformations applied to a child do not affect the parent**
+
 
 
