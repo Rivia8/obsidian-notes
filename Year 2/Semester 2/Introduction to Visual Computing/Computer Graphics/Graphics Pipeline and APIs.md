@@ -78,5 +78,9 @@ After this, the fragment reaches the end of the data flow and is output as the f
 
 The **Programmable Graphics Pipeline** showcases a huge shift.
 
-The main difference this and [[Graphics Pipeline and APIs#Fixed Graphics Pipeline|Fixed Graphics Pipelines]] is **control**. In fixed, you pretty much just flick 'switches' that turn on certain features. In the *Programmable* version you *write* custom software 
+The main difference this and [[Graphics Pipeline and APIs#Fixed Graphics Pipeline|Fixed Graphics Pipelines]] is **control**. In fixed, you pretty much just flick 'switches' that turn on certain features. In the *Programmable* version you *write* custom software called **Shaders** that get compiled and executed on the GPUs cores.
+
+**Vertex Shader Program:** Your custom code is responsible for taking raw local coordinates and doing matrix multiplication $Projection \times View \times Model$ to figure out where it belongs on the screen. Since you have control, you don't just have to do standard transmissions you can just write math to make the vertices wobble to simulate wind etc.
+
+**Geometry Shader / Tesselation**: 
 
