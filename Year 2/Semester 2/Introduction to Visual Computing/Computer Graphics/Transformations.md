@@ -82,6 +82,11 @@ Reflections are also **orthogonal** but they are **not** rotation matrices
 
 A Sheer is **Rotating** the vector *then* **Scaling Non-Uniformly** and *then* **Rotating** back.
 
+However a basic sheer *does* have a single, fundamental operation on its own  dedicated matrix:
+![[Pasted image 20260415112500.png]]
+
+Where this is a sheer on the X-axis by a factor of $k$.
+
 ![[Pasted image 20260414233730.png]]
 
 **ORDER MATTERS**.
