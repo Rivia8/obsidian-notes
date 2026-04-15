@@ -21,5 +21,7 @@ This is a technique of building complex 3D objects out of simpler, smaller piece
 The entire system operates with one fundamental principle:
 **Transformations applied to a parent are automatically inherited by its children, but transformations applied to a child do not affect the parent**
 
+# 3D Viewing
+
 
 
