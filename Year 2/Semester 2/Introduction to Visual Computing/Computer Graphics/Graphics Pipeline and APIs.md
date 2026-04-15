@@ -66,4 +66,10 @@ The GPU is fed lots of raw data in the form of vertices, they are just independe
 
 **Rasterisation:** 3D vector math is stopped and the rasterizer looks at the 2D screen coordinates of a triangle and determines which **dimensionless point samples (pixels)** on your monitor falls inside the triangle's borders. It converts the continuous geometric triangle into a discrete grid of "potential pixels" which are called **Fragments**. 
 
+**Fragment Operations**: Before a fragment is allowed to become an actual pixel colour on your screen, it has to pass some test based on your API parameters.
+- **Depth Testing**: checks overlapping triangles and gets rid of the deeper one
+- **Alpha Blending**: If the fragment is transparent, the GPU blends its colour with the colour of the pixel sitting behind it.
+
+After this, the fragment reaches the end of the data flow and is output as the final **Pixel Colours** into the memory buffer that the monitor reads to display the frame.
+
 
