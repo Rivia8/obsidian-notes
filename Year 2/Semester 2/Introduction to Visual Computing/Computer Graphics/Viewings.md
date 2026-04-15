@@ -23,5 +23,5 @@ The entire system operates with one fundamental principle:
 
 # 3D Viewing
 
-
+![[Pasted image 20260415154548.png]]
 
