@@ -11,7 +11,8 @@ Will be focusing on this part.
 
 ![[Pasted image 20260415170028.png]]
 
-In order to speak to hardware you need a Graphic API, an example is **OpenGL** which
+In order to speak to hardware you need a Graphic API, an example is **OpenGL** which is free and open source.
+Its quite old but is still quite powerful.
 
 
 
