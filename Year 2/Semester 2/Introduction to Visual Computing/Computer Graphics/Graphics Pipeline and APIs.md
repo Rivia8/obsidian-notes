@@ -20,7 +20,9 @@ You also have **WebGL** which is a continuation of **OpenGL** but for browsers.
 
 **WebGL** is still powerful and the browser can still talk to hardware and since it used in browsers, it utilises JavaScript and wrappers were made utilising **three.js**.
 
+![[Pasted image 20260415171157.png]]
+
 The **Khronos Group** are the ones who support these APIs and companies like Intel and Nvidia.
-They also contributed to the creationof 
+They also contributed to the creation of Vulkan.
 
 
