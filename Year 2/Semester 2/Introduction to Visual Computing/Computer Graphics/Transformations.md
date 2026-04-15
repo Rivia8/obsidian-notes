@@ -136,3 +136,6 @@ You can actually perform all transformations like this and you can easily find f
 
 ![[Pasted image 20260415130147.png]]
 
+# Homogeneous Coordinates Expanded
+
+The homogeneous coordinates concept 
