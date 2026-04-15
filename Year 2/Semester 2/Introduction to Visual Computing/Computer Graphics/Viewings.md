@@ -60,4 +60,8 @@ Since rotations are orthogonal, to calculate the inverse rotation you just use t
 
 
 
-Orthographic projection
+## Projection
+
+This is the mathematical process of taking a perfectly aligned 3D world and squashing it so that it fits onto a 2D plane (a monitor screen).
+
+**Perspective Projection:** Mimics how human eyes work, things that are further away from the camera are drawn smaller (**foreshortening**). Parallel lines (like train tracks) appear to converge at a vanishing point.
