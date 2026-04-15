@@ -9,6 +9,8 @@ This is the entire rendering pipeline
 
 Will be focusing on this part.
 
+# Graphics APIs
+
 ![[Pasted image 20260415170028.png]]
 
 In order to speak to hardware you need a Graphic API, an example is **OpenGL** which is free and open source.
@@ -25,4 +27,14 @@ You also have **WebGL** which is a continuation of **OpenGL** but for browsers.
 The **Khronos Group** are the ones who support these APIs and companies like Intel and Nvidia.
 They also contributed to the creation of Vulkan.
 
+Their APIs are cross-platform.
 
+Another example is Microsoft's **DirectX**.
+
+Apple has their own called **Metal.**
+
+## How Graphics APIs Work
+
+![[Pasted image 20260415171548.png]]
+
+Above is the high level view of how graphics APIs work
