@@ -34,3 +34,5 @@ The **View Transform** is how we then *see* the objects.
 **The Duality of Modelling and Viewing** is how we can rotate either our *world* or *camera* to achieve the same outcome.
 
 It is convenient for your camera to be at the origin of the world.
+
+Orthographic projection
