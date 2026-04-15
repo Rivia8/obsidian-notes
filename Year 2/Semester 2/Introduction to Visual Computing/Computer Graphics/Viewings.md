@@ -65,3 +65,5 @@ Since rotations are orthogonal, to calculate the inverse rotation you just use t
 This is the mathematical process of taking a perfectly aligned 3D world and squashing it so that it fits onto a 2D plane (a monitor screen).
 
 **Perspective Projection:** Mimics how human eyes work, things that are further away from the camera are drawn smaller (**foreshortening**). Parallel lines (like train tracks) appear to converge at a vanishing point.
+
+**Orthographic Projection:** Ignores Distance. An object very far away is drawn at the exact same size as an object 1 inch from the lens and parallel lines remain perfectly parallel.
