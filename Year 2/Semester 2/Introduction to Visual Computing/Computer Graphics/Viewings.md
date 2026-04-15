@@ -31,3 +31,5 @@ To build a 3D scene, you need shared global environment, which is called **World
 ![[Pasted image 20260415155234.png]]
 
 The **View Transform** is how we then *see* the objects.
+**The Duality of Modelling and Viewing** is how we can rotate either our *world* or *camera* to achieve the same outcome.
+
