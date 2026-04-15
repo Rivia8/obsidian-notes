@@ -130,5 +130,6 @@ How this works is that you add **another dimension**. You pretend the 2D space i
 
 Then you perform the multiplication and it works out:
 ![[Pasted image 20260415120119.png]]
+ ![[Pasted image 20260415125948.png]]
 
- 
+You can actually perform all
