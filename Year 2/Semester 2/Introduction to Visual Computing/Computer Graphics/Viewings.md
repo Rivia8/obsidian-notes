@@ -6,7 +6,7 @@ Viewing things in the virtual environment can be complicated.
 
 ![[Pasted image 20260415152751.png]]
 
-A 
+At the top you can see the property that 
 
 
 
