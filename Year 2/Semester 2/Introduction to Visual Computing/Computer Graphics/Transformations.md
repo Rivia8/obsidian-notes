@@ -132,4 +132,7 @@ Then you perform the multiplication and it works out:
 ![[Pasted image 20260415120119.png]]
  ![[Pasted image 20260415125948.png]]
 
-You can actually perform all
+You can actually perform all transformations like this and you can easily find find the inverse of transformations.
+
+![[Pasted image 20260415130147.png]]
+
