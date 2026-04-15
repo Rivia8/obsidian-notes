@@ -39,7 +39,9 @@ To figure out how to move the world, you first have to calculate how the virtual
 - Right $r$ - the direction point out of the right side of the camera
 - Up $u$ - the direction pointing straight out of the top of the camera
 
-If the virtual camera moved 10 units forward and rotated 45 degrees to the right to look at the cheese, you have to do the exact opposite to the world: rotate the world 45 degrees to the left and translate 10 units back.
+Cameras do **Rotate** then **Translate**.
+$$ M_{\textbf{camera}}= T \times R$$ *Read right to left*
+
 
 The **View Transform** is the **Inverse** of the camera's theoretical **Model Transform**:
 $$V = M^{-1}_{\textbf{camera}} $$
