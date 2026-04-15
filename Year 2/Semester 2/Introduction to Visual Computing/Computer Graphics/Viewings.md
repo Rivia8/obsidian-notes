@@ -32,7 +32,32 @@ To build a 3D scene, you need shared global environment, which is called **World
 
 The **View Transform** is how we then *see* the objects.
 **The Duality of Modelling and Viewing** is how we can rotate either our *world* or *camera* to achieve the same outcome.
-
 It is convenient for your camera to be at the origin of the world.
+
+To figure out how to move the world, you first have to calculate how the virtual camera is orientated. This is done by calculating three **Orthonormal Basis Vectors**.
+- Forward $f$ - the direction the camera lens is pointing
+- Right $r$ - the direction point out of the right side of the camera
+- Up $u$ - the direction pointing straight out of the top of the camera
+
+If the virtual camera moved 10 units forward and rotated 45 degrees to the right to look at the cheese, you have to do the exact opposite to the world: rotate the world 45 degrees to the left and translate 10 units back.
+
+The **View Transform** is the **Inverse** of the camera's theoretical **Model Transform**:
+$$V = M^{-1}_{\textbf{camera}} $$
+
+To build this you break it into two steps, an **Inverse Translation** and an **Inverse Rotation**
+
+1. Inverse Translation, $T^{-1}$:
+
+The camera's position is at $(p_x, p_y, p_z)$ and so we slide the entire world to be the opposite of that:
+![[Pasted image 20260415161448.png]]
+
+2. Inverse Rotation, $R^{-1}$
+
+The camera is then shifted to the origin after the translation then we need to twist the world so it aligns with the camera's lens.
+Since rotations are orthogonal, to calculate the inverse rotation you just use the **transpose**.
+
+![[Pasted image 20260415161815.png]]
+
+
 
 Orthographic projection
