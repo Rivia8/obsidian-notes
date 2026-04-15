@@ -61,7 +61,7 @@ Since rotations are orthogonal, to calculate the inverse rotation you just use t
 So the the view equation is:
 
 $$\textbf{View} = R^{-1} \times T^{-1} $$
-*Note that matrix multiplications are read right to left so the*
+*Note that matrix multiplications are read right to left so the translation inverse is done first then the rotation*
 
 ## Projection
 
