@@ -112,6 +112,22 @@ Translation is **not** a linear transformation.
 
 In **Linear Algebra** a linear transformation must obey the rule that the origin $(0, 0)$ can never move.
 
+If you take a standard $2 \times 2$ transformation matrix and try to multiply it by the origin coordinate, the math guarantees that the result will always be zero:
 
+![[Pasted image 20260415115329.png]]
 
-An **affine** transformation, is like a linear transformation but has the ability to shift the origin
+This can be applied to scaling, rotating and shearing. Translation however, shifts the entire coordinate system (origin included) so you can't use a $2 \times 2$ matrix to represent it.
+
+An **affine** transformation, is like a linear transformation but *has* the ability to shift the origin, its written algebraically as:
+
+$${\vec{v}}_{final} = (M \times \vec{v}_{original}) + t$$
+It guarantees that straight lines remain straight and parallel lines remain parallel, but does not guarantee that the origin stays put.
+
+Technically the formula is correct but doing this is isn't good for graphics pipelines, since tensor cores are optimised for matrix multiplications.
+To **force** translation to act as a multiplication, you do something called **Homogenous Coordinates**. 
+
+How this works is that you add **another dimension**. You pretend the 2D space is actually a flat plane hovering exactly 1 unit high in 3D space by adding a new component, $w$ and setting it to 1, $(x, y, 1)$
+
+Then you perform the multiplication and it works out:
+![[Pasted image 20260415120119.png]]
+
