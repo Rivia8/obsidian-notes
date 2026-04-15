@@ -50,6 +50,20 @@ Graphical Processing Units are multi-core processing units that are optimised fo
 What is this data?
 The main 'data' or input that the graphics card takes is **vertices** which are used to create shapes, specifically triangles which are used to compose other shapes.
 
+## Fixed Graphics Pipelines
 
+This is one way that maths gets turned into an image on the screen
+
+![[Pasted image 20260415191327.png]]
+
+The GPU is fed lots of raw data in the form of vertices, they are just independent mathematical points that have no form or structure at the moment.
+
+**[[Transformations]] and [[Year 2/Semester 1/Database Systems/Views|Viewing]]**: it applies the maths we have looked at for **Model Transform**, **View Transform** and **Projection Transform**.
+
+**Lighting** in a *fixed* pipeline, lighting is calculated per-vertex. The GPU takes the light source parameters set in the API, calculates dot products against the surface normals and assigns a colour/brightness value to each individual vertex.
+
+**Primitive Assembly or Clipping**: The GPU here groups isolated dots into 'primitive' structures, usually triangles. 'Clipping' is where the GPU finds out whether an object falls outside the field of view, if it does, it is mathematically clipped.
+
+**Rasterisation:** 3D vector math is stopped and the rasterizer looks at the 2D screen coordinates of a triangle and determines which **dimensionless point samples (pixels)** on your monitor falls inside the triangle's borders. It converts the continuous geometric triangle into a discrete grid of "potential pixels" which are called **Fragments**. 
 
 
