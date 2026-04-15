@@ -25,3 +25,4 @@ The entire system operates with one fundamental principle:
 
 ![[Pasted image 20260415154548.png]]
 
+When you create a 3D object, 
