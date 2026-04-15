@@ -25,4 +25,6 @@ The entire system operates with one fundamental principle:
 
 ![[Pasted image 20260415154548.png]]
 
-When you create a 3D object, 
+When you create a 3D object, it has its own **Local Coordinate System** (that you can see above **Suzanne** and the **Cheese**).
+To build a 3D scene, you need shared global environment, which is called **World Space** and to move the objects from their isolated spaces into the shared world space, you **Modelling Transform** which a $4 \times 4$ Scale, Rotate and Translate matrix (SRT hierarchy).
+
