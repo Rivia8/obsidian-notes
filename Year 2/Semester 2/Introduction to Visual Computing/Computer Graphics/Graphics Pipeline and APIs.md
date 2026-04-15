@@ -37,4 +37,19 @@ Apple has their own called **Metal.**
 
 ![[Pasted image 20260415171548.png]]
 
-Above is the high level view of how graphics APIs work
+Above is the high level view of how graphics APIs work.
+
+We go from input device where the user with some sort of input (keyboard most likely) interacts with the Graphics API (usually through some programming language) where the Application Program deals with those to implement it into the Application Model that presents a fancy scene, this goes back down where Graphics API will decide how to render it on the screen.
+
+# GPUs
+
+Graphical Processing Units are multi-core processing units that are optimised for parallel operations.
+
+![[Pasted image 20260415190859.png]]
+
+What is this data?
+The main 'data' or input that the graphics card takes is **vertices** which are used to create shapes, specifically triangles which are used to compose other shapes.
+
+
+
+
