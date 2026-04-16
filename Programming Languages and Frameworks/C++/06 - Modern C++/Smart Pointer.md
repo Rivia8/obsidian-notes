@@ -26,7 +26,6 @@ void processPlayer() {
 	std::unique_ptr<Player> p2 = std::move<p1>; // This will work.
 
 }
-
 ```
 ## Commuter `std::shared_ptr<T>`
 
@@ -38,6 +37,17 @@ When the counter hits exactly `0`, the memory is deleted.
 
 Because it has to maintain this counter, it is slightly slower and uses slightly more memory than a [[Smart Pointer#Loner `std unique_ptr<T>`|unique pointer]].
 
+```C++
+#include <memory>
+
+void processItems() {
+	
+	std::shared_ptr<Item> item1 = std::make_shared<Item>("Sword"); // Created a shared pointer
+	std::shared<Item> item2 = item1; // item2 now points to item 2
+
+}
+```
+
 ### Observer `std::weak_ptr<T>`
 
 This is a specialised 'sidekick' to `shared_ptr`.
@@ -45,5 +55,16 @@ The problem with `shared_ptr`s is the fact that **Cyclic Dependencies** can occu
 Rule: a `weak_ptr` allows you to look at data owned by `shared_ptr` **without** increasing the reference count. It observes, but it does not own. Before you use a `weak_ptr` you have to ask it, "does the data you are pointing to exist or has it been deleted"
 
 
+```C++
+#include <memory>
+
+void processItems() {
+	
+	std::shared_ptr<Item> item1 = std::make_shared<Item>("Sword"); // Created a shared pointer
+	std::shared<Item> item2 = item1; // item2 now points to item 2
+
+	std::shared_ptr<Item> item1 = std::make_shared<item>("Sword");
+	std::weak_ptr<Item> item3 = item1
+}
 
 
