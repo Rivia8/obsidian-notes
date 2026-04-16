@@ -89,4 +89,5 @@ The main difference this and [[Graphics Pipeline and APIs#Fixed Graphics Pipelin
 **Rasterisation**: This is the same as Fixed Graphics Pipeline. This step is mathematically standardised and requires such extreme hardware optimisation that it remains a fixed hardwired process on the GPU.
 
 **Fragment Shader Program**: This is also known as Pixel Shader, it runs for every single fragment that the Rasterizer spits out.
+Instead of the GPU doing basic vertex lighting *your* code dictates exactly what the colour is supposed to be. You can create algorithms that to calculate complex physics-based lighting (PBR), create shiny reflections or use the dot products to generate procedural shadows.
 
