@@ -126,5 +126,11 @@ Vertices are like containers for various attributes: it can talk about things li
 
 ![[Pasted image 20260416161018.png]]
 
+GLSL = OpenGL Shader Languge
+HLSL = DirectX Shader Language
+
 ![[Pasted image 20260416161033.png]]
 
+![[Pasted image 20260416161402.png]]
+
+You define attributes with `uniform`  to define a global variable who's value remains exactly the same, it is ***uniform***.
