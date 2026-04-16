@@ -56,15 +56,61 @@ Rule: a `weak_ptr` allows you to look at data owned by `shared_ptr` **without** 
 
 
 ```C++
+#include <iostream>
 #include <memory>
+#include <string>
+
+// A simple Item class so we can track when it is created and destroyed
+struct Item {
+    std::string name;
+    
+    Item(std::string n) : name(n) {
+        std::cout << name << " was created in memory.\n";
+    }
+    
+    ~Item() {
+        std::cout << name << " was destroyed and memory was freed.\n";
+    }
+};
 
 void processItems() {
-	
-	std::shared_ptr<Item> item1 = std::make_shared<Item>("Sword"); // Created a shared pointer
-	std::shared<Item> item2 = item1; // item2 now points to item 2
+    // 1. Create the master shared pointer. (Reference Count = 1)
+    std::shared_ptr<Item> item1 = std::make_shared<Item>("Sword");
 
-	std::shared_ptr<Item> item1 = std::make_shared<item>("Sword");
-	std::weak_ptr<Item> item3 = item1
+    // 2. Create a second shared pointer. (Reference Count = 2)
+    std::shared_ptr<Item> item2 = item1; 
+
+    // 3. Create a weak pointer observing the sword. (Reference Count is STILL 2!)
+    std::weak_ptr<Item> weakSword = item1;
+
+    // --- USING THE WEAK POINTER ---
+    
+    // We try to access the sword by calling .lock()
+    // This temporarily creates a shared_ptr named 'tempItem' inside the if-statement
+    if (std::shared_ptr<Item> tempItem = weakSword.lock()) {
+        std::cout << "Success! The weak pointer sees the: " << tempItem->name << "\n";
+    } else {
+        std::cout << "Failed. The item no longer exists.\n";
+    }
+
+    // --- DESTROYING THE ITEM ---
+    
+    std::cout << "\nDropping shared pointers...\n";
+    item1.reset(); // item1 lets go of the sword
+    item2.reset(); // item2 lets go of the sword. The sword is now destroyed!
+
+    // --- USING THE WEAK POINTER AGAIN ---
+    
+    std::cout << "Trying to look at the sword again...\n";
+    if (std::shared_ptr<Item> tempItem = weakSword.lock()) {
+        std::cout << "Success! The weak pointer sees the: " << tempItem->name << "\n";
+    } else {
+        std::cout << "Failed. The item no longer exists.\n";
+    }
 }
 
-
+int main() {
+    processItems();
+    return 0;
+}
+```
