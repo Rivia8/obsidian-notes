@@ -120,3 +120,10 @@ Programmable has a steeper learning curve but allows far more control and is mor
 The main takeaway is that it contains information **per vertex** to be processed by the **Vertex Shader**.
 Vertices are like containers for various attributes: it can talk about things like positions, colours, texture coordinates or even time - you can decide based on your application.
 
+## Coding Shaders
+
+![[Pasted image 20260416161011.png]]
+
+![[Pasted image 20260416161018.png]]
+
+![[Pasted image 20260416161033.png]]
