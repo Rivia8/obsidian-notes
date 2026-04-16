@@ -11,7 +11,36 @@ C++ has three main types of smart pointers.
 
 ## Loner `std::unique_ptr<T>`
 
-This is most common and fastest smart pointer.
+This is most common and fastest smart pointer. It works on the principle of **exclusive ownership**.
+Rule: **Only one** unique pointer can point to a specific block of memory at a time.
+
+```C++
+#include <memory>
+
+void processPlayer() {
+
+	std::unique_ptr<Player> p1 = std::make_unique<Player>("Alice"); // Created a unique player
+	
+	std::unique_ptr<Player> p2 = p1; // This will cause an error.
+	
+	std::unique_ptr<Player> p2 = std::move<p1>; // This will work.
+
+}
+
+```
+## Commuter `std::shared_ptr<T>`
+
+Sometimes multiple parts need to share access to the same data.
+Rule: Multiple `shared_ptr`s can point to the exact same block of memory. 
+
+The way it works is that it has a counter and every time you copy the counter, the counter goes up by 1 and every time one is destroyed, the counter goes down by 1.
+When the counter hits exactly `0`, the memory is deleted.
+
+Because it has to maintain this counter, it is slightly slower and uses slightly more memory than a [[Smart Pointer#Loner `std unique_ptr<T>`|unique pointer]].
+
+### Observer `std::weak_ptr<T>`
+
+This is a 
 
 
 

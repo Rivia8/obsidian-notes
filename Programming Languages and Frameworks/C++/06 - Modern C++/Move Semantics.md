@@ -11,10 +11,12 @@ Before modern C++, if you had a `std::vector<std::string>` that contained lots o
 C++ distinguishes between data you want to keep using and temporary data that is about to die anyway.
 It does this by categorising expressions into L and R values.
 
-- **L-Value (Locator value)**: is something that occupies a persistent memory address. It has a name, you can use it on the left side of an equal sign:
-	- `int x = 5` - `x` is the L value
+`int x = 5` 
 
-- **R-Value (Read value):** A temporary value. It has no persistent memory address. It exists for a fleeing moment on the *right* side of an equals sign and then destroyed.
+- **L-Value (Locator value)**: is something that occupies a persistent memory address. It has a name, you can use it on the left side of an equal sign:
+	- `x` is the L value
+
+- **R-Value (Read value):** A temporary value. It has no persistent memory address. It exists for a fleeting moment on the *right* side of an equals sign and then destroyed.
 	- `5` is an r-value of the above example
 
 ## Stealing Resources
