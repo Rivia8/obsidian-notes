@@ -10,3 +10,13 @@ The magic keyword `constexpr` explicitly tells the compiler to evaluate somethin
 - For variables, it guarantees that the variable is read-only (`const`) **AND** its value is definitely calculated before the program runs.
 - For Functions it says: "if you feed this function arguments that are known at compile-time, it will return a compile-time constant."
 
+Look at this example that can be done via 'Runtime' or 'Compile' time solutions:
+
+```C++
+auto cube = [](int x) {return x * x * x;};
+std::vector<int> v(cube(3)); 
+std::iota(v.begin(), v.end(), 0);
+return v[fibonacci(8)];
+```
+
+This generates a massive amount of machine code, due to 
