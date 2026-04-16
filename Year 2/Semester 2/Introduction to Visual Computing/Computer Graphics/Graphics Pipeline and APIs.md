@@ -141,4 +141,4 @@ HLSL = DirectX Shader Language
 ![[Pasted image 20260416161915.png]]
 
 
-**Varying**, Vertex Shader  
+- `varying` variables are used to pass data from the vertex shaders to the fragment shaders
