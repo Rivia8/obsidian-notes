@@ -40,7 +40,8 @@ Because it has to maintain this counter, it is slightly slower and uses slightly
 
 ### Observer `std::weak_ptr<T>`
 
-This is a 
+This is a specialised 'sidekick' to `shared_ptr`.
+The problem with `shared_ptr`s is the fact that **Cyclic Dependencies** can occur. The reason this happens is because
 
 
 
