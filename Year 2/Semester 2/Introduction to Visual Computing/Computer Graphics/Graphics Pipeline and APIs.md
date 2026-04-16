@@ -127,3 +127,4 @@ Vertices are like containers for various attributes: it can talk about things li
 ![[Pasted image 20260416161018.png]]
 
 ![[Pasted image 20260416161033.png]]
+
