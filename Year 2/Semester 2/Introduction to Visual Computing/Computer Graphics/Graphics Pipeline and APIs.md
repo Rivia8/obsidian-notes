@@ -90,4 +90,9 @@ The main difference this and [[Graphics Pipeline and APIs#Fixed Graphics Pipelin
 
 **Fragment Shader Program**: This is also known as Pixel Shader, it runs for every single fragment that the Rasterizer spits out.
 Instead of the GPU doing basic vertex lighting *your* code dictates exactly what the colour is supposed to be. You can create algorithms that to calculate complex physics-based lighting (PBR), create shiny reflections or use the dot products to generate procedural shadows.
+If a triangle covers 1,000 pixels, the Fragment Shader code executes 1,000 separate times.
+
+**Per Sample Operations:** This is the same as **Fixed**.
+
+
 
