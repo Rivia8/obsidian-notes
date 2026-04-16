@@ -41,7 +41,8 @@ Because it has to maintain this counter, it is slightly slower and uses slightly
 ### Observer `std::weak_ptr<T>`
 
 This is a specialised 'sidekick' to `shared_ptr`.
-The problem with `shared_ptr`s is the fact that **Cyclic Dependencies** can occur. The reason this happens is because
+The problem with `shared_ptr`s is the fact that **Cyclic Dependencies** can occur. Two shared pointers can point to each other and their reference counters will never reach zero. To fix this you can have a `weak_ptr<T>`
+Rule: a `weak_ptr` allows you to look at data owned by `shared_ptr` **without** increasing the reference count. It observes, but it does not own. Before you use a `weak_ptr` you have to ask it, "does the data you are pointing to exist or has it been deleted"
 
 
 
