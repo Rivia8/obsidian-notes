@@ -133,8 +133,11 @@ HLSL = DirectX Shader Language
 
 ![[Pasted image 20260416161402.png]]
 
+- You define attributes with `uniform`  to define a global variable who's value remains exactly the same, it is ***uniform***. 
+
+- `attribute` variables change every **execution**. When the shader runs Vertex 1, `g1_Vertex` contains the coordinates of Vertex 1, when it runs for Vertex 2, `g1_Vertex` updates to the coordinates of Vertex 2.
+
+
 ![[Pasted image 20260416161915.png]]
-You define attributes with `uniform`  to define a global variable who's value remains exactly the same, it is ***uniform***.
-`attribute` variables change every **execution**.
 
 
