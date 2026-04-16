@@ -120,7 +120,7 @@ Programmable has a steeper learning curve but allows far more control and is mor
 The main takeaway is that it contains information **per vertex** to be processed by the **Vertex Shader**.
 Vertices are like containers for various attributes: it can talk about things like positions, colours, texture coordinates or even time - you can decide based on your application.
 
-## Coding Shaders
+## Coding Vertex Shaders
 
 ![[Pasted image 20260416161011.png]]
 
@@ -133,4 +133,8 @@ HLSL = DirectX Shader Language
 
 ![[Pasted image 20260416161402.png]]
 
+![[Pasted image 20260416161915.png]]
 You define attributes with `uniform`  to define a global variable who's value remains exactly the same, it is ***uniform***.
+`attribute` variables change every **execution**.
+
+
