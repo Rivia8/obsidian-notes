@@ -72,6 +72,9 @@ The GPU is fed lots of raw data in the form of vertices, they are just independe
 
 After this, the fragment reaches the end of the data flow and is output as the final **Pixel Colours** into the memory buffer that the monitor reads to display the frame.
 
+Fixed is easier, but slightly deprecated and isn't as modern.
+
+
 ## Programmable Graphics Pipeline
 
 ![[Pasted image 20260415193644.png]]
@@ -94,5 +97,26 @@ If a triangle covers 1,000 pixels, the Fragment Shader code executes 1,000 separ
 
 **Per Sample Operations:** This is the same as **Fixed**.
 
+---
 
+![[Pasted image 20260416114751.png]]
+
+*The image above is what is relevant to the course: Vertex Shader Program, Rasterisation and Fragment Shader Program:*
+
+- The Graphics API is written in JS which receives data from memory that is ran on the CPU.
+- The application figures out what we are trying to achieve and sends relevant information to our GPU's memory
+- GPU will take relevant scene data and run operations on it.
+
+---
+
+Programmable has a steeper learning curve but allows far more control and is more modern.
+
+### What is Scene Data?
+
+**Scene Data** can be a variety of things. 
+
+![[Pasted image 20260416115227.png]]
+
+The main takeaway is that it contains information **per vertex** to be processed by the **Vertex Shader**.
+Vertices are like containers for various attributes: it can talk about things like positions, colours, texture coordinates or even time - you can decide based on your application.
 
