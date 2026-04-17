@@ -37,3 +37,14 @@ When the program is compiled, the compiler sees `cube(3)` and calculates 27. It 
 You cannot evaluate absolutely everything at compile-time.
 `constexpr` only works with **Literal Types**.
 
+- It works with things like standard numbers (`int`, `float`), pointers, enums and simple classes where the destructors are trivial.
+- It **doesn't** work with anything that requires dynamic heap allocation (like `std::vector` or `std::string`) or virtual functions.
+
+
+## Replacing C-Macros
+
+There's a crucial C++ guideline, ES.31: **Don't use macros for constants or functions**.
+
+In C, developers used `#define MAX_SIZE 100` or `#define CUBE(x) (x*x*x)` to force compile-time text replacement.
+`constexpr` completely replaces this dangerous practice and it gives you the exact same zero-overhead performance as a macro, but with full C++ type-safety and debugging support.
+
