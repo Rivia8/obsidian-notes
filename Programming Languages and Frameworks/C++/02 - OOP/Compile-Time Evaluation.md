@@ -19,4 +19,21 @@ std::iota(v.begin(), v.end(), 0);
 return v[fibonacci(8)];
 ```
 
-This generates a massive amount of machine code, due to 
+This generates a massive amount of machine code, due to `std::vector` and `fibonacci(8)`.
+- `std::vector` relies on dynamic memory allocation (`new`) which must happen at runtime on the heap
+- `fibonacci(8)` is evaluated at runtime, meaning the CPU physically pushes and pops frames onto the call stack to execute the recursive `fibonacci` function every single time the program runs.
+
+
+```C++
+constexpr int fibonacci(int num) { ... }
+
+std::array<int, cube(3)> v;
+```
+To make this ***faster***, we can make `fibonacci` with `constexpr` and switch to using a `std::array` (a `std::array` lives on the stack and requires its size to be known at compile-time).
+When the program is compiled, the compiler sees `cube(3)` and calculates 27. It sees `fibonacci(8)` and runs the recursion during compilation. This causes the machine code to be a lot smaller and instead of recursive calls and heap allocations, the final machine code just returns a pre-calculated value `move eax, 21`.
+
+## Rules of `constexpr`
+
+You cannot evaluate absolutely everything at compile-time.
+`constexpr` only works with **Literal Types**.
+
