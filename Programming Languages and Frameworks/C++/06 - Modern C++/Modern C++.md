@@ -91,6 +91,20 @@ This aligns with the C++ Core Guideline F.21 mentioned.
 C++17 Features
 
 Accessing a data inside the pair used to be tedious. You had to use `.first` and `.second`.
+``
+
+```C++
+#include <utility> // Where pair actually lives
+
+std::pair<int, int> f1() {
+    int val1 = 5;
+    int val2 = 10;
+    
+    // You can use std::make_pair, but modern C++ allows you to 
+    // just return a braced list, and it will figure it out!
+    return {val1, val2}; 
+}
+```
 
 ```C++
 std::pair<int, int> result = f1();
@@ -106,4 +120,6 @@ It allowed to unpack a tuple, pair or struct directly into variables using squar
 // The brackets [] unpack the pair into two brand new variables: ret1 and ret2.
 auto [ret1, ret2] = f1();
 ```
+
+`ret1` holds the first integer and `ret2` holds the second integer.
 
