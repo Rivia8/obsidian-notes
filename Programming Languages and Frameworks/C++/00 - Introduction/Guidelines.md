@@ -27,7 +27,17 @@ Furthermore `clang-tidy` isn't just one check it has a suite of tests for a vari
 
 **Style Guides** are about **consistency**.
 
+They are heavily restrictive and sometimes make arbitrary choices (like always use 2 spaces for indentation or class names must start with a capital letter).
 
+Large organisations use them so that code written by thousands of different engineers all look it was written by one person. **Google C++ Style Guide** and **Bloomberg's standards** as prime examples.
+
+## Professional Ecosystem
+
+Writing good C++ means utilising the surrounding ecosystem of tools. Even with modern C++ the classic C tools are still very relevant.
+
+- **Memory Checkers:** tools like **Valgrind** and **Sanitizers** run your code and watch for memory leaks or accessing arrays out of bounds
+
+- **Unit Testers:** Professional C++ relies heavily on testing frameworks like **Google Test (GTest)**, **Boost.Test** and **Catch2** to verify that individual functions behave correctly.
 
 
 
