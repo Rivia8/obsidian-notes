@@ -23,6 +23,10 @@ Furthermore `clang-tidy` isn't just one check it has a suite of tests for a vari
 - `bugprone`: Spots patterns that usually lead to crashes.
 - `performance`: Flags slow code (like accidental deep copies
 
+## Style Guides
+
+**Style Guides** are about **consistency**.
+
 
 
 
