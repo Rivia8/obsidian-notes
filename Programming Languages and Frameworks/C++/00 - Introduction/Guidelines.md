@@ -37,7 +37,7 @@ Writing good C++ means utilising the surrounding ecosystem of tools. Even with m
 
 - **Memory Checkers:** tools like **Valgrind** and **Sanitizers** run your code and watch for memory leaks or accessing arrays out of bounds
 
-- **Unit Testers:** Professional C++ relies heavily on testing frameworks like **Google Test (GTest)**, **Boost.Test** and **Catch2** to verify that individual functions behave correctly.
+- **Unit Testing:** Professional C++ relies heavily on testing frameworks like **Google Test (GTest)**, **Boost.Test** and **Catch2** to verify that individual functions behave correctly.
 
 
 
