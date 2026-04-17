@@ -63,4 +63,6 @@ This is bad since it has unclear expectations and no agreed convention (programm
 The fix is to use `std::pair` and `std::tuple`.
 Modern C++ bundles the data together.
 
-`std::pair<Type1, Type2>`: A simple container that holds exactly two values, they don't have to be the same type (e.g. `std::pair<int, std::string>)`.
+- `std::pair<Type1, Type2>`: A simple container that holds exactly two values, they don't have to be the same type (e.g. `std::pair<int, std::string>)`.
+- `std::tupler<Type1, Type2, ...>`: This is `pair`s big brother. It can hold as many elements as you want.
+
