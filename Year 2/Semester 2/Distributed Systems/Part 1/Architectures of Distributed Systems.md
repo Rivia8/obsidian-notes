@@ -25,6 +25,12 @@ A **connector** is a mechanism that mediates communication or cooperation amongs
 
 Components are organised in a layered fashion, where components at the level $L_j$ request downwards to components $L_i$ where $i \lt j$. Requests go downwards and responses go upwards.
 
+### Object-Based Architectural Style
+
+![[Pasted image 20260419175829.png#invert|400]]
+
+Each object corresponds to a component and these components are connected through a procedure called a **mechanism** that can take place over a network (if the calling machine is not on the same machine as the called object).
+
 
 
 
