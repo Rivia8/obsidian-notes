@@ -30,7 +30,7 @@ Components are organised in a layered fashion, where components at the level $L_
 ![[Pasted image 20260419175829.png#invert|400]]
 
 Each object corresponds to a component and these components are connected through a procedure called a **mechanism** that can take place over a network (if the calling machine is not on the same machine as the called object).
-
+This provides a way of **encapsulating** data and the operations that can be performed on that data into a **single entity**.
 
 
 
