@@ -7,3 +7,4 @@ date: 2026-04-24
 completed: false
 type: single
 ---
+Draft is done need to do final checks with phase 3: run through Claude.
