@@ -11,7 +11,19 @@ Here are types:
 
 *"The final instantiation of the software components of a distributed system is what we call **system architecture***"
 
+## Software Architectural Styles
 
+A software architectural style is formulated in terms of **components**: how the components are connected to each other, the data exchanged between components and how these elements are configured *jointly* within a system.
+
+***Component**: A modular unit, with well-required and provided interfaces that is replaceable within its environment*
+
+A **connector** is a mechanism that mediates communication or cooperation amongst components - it allows for the flow of control and data between components.
+
+### Layered Architectural Style
+
+![[Pasted image 20260419172051.png#invert|400]]
+
+Components are organised in a layered fashion, where components at the level $L_j$ request downwards to components $L_i$ where $i \lt j$. Requests go downwards and responses go upwards.
 
 
 
