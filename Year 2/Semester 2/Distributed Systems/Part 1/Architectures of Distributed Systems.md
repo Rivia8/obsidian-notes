@@ -31,7 +31,6 @@ An example of this is **networking**, the web browser doesn't know how to send e
 
 ![[Pasted image 20260419175829.png#invert|400]]
 
-Each object corresponds to a component and these components are connected through a procedure called a **mechanism** that can take place over a network (if the calling machine is not on the same machine as the called object).
 
 > [!Note] Object
 >  **Object**: An object is a self-contained unit that holds both its own data (state) and the functions needed to manipulate that data (methods).
@@ -40,7 +39,13 @@ Each object corresponds to a component and these components are connected throug
 
 This provides a way of **encapsulating** data and the operations that can be performed on that data into a **single entity**.
 
+Objects communicate by calling each other's methods. If object A needs data from Object B, it just calls `ObjectB.getData()`.
+
+A normal program will have all the objects in memory but  in a **Distributed System** these objects may be split over a network on different 
+
+
 ### Resource-Centred Architectural Style
+
 
 ### Event-Based Architectural Style
 
