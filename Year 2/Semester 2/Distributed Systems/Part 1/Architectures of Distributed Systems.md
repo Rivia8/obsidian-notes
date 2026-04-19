@@ -24,13 +24,25 @@ A **connector** is a mechanism that mediates communication or cooperation amongs
 ![[Pasted image 20260419172051.png#invert|400]]
 
 Components are organised in a layered fashion, where components at the level $L_j$ request downwards to components $L_i$ where $i \lt j$. Requests go downwards and responses go upwards.
+This is similar to a corporate hierarchy.
 
+An example of this is **networking**, the web browser doesn't know how to send electrical signals over Wi-Fi, it just hands requests down to the Operating System layer which then hands it over to the physical hardware.
 ### Object-Based Architectural Style
 
 ![[Pasted image 20260419175829.png#invert|400]]
 
 Each object corresponds to a component and these components are connected through a procedure called a **mechanism** that can take place over a network (if the calling machine is not on the same machine as the called object).
+
+> [!Note] Object
+>  **Object**: An object is a self-contained unit that holds both its own data (state) and the functions needed to manipulate that data (methods).
+
+***Object:** An object is a self-contained unit that holds both its own data (state) and the functions needed to manipulate that data (methods).*
+
 This provides a way of **encapsulating** data and the operations that can be performed on that data into a **single entity**.
+
+### Resource-Centred Architectural Style
+
+### Event-Based Architectural Style
 
 
 
