@@ -41,8 +41,8 @@ This provides a way of **encapsulating** data and the operations that can be per
 
 Objects communicate by calling each other's methods. If object A needs data from Object B, it just calls `ObjectB.getData()`.
 
-A normal program will have all the objects in memory but  in a **Distributed System** these objects may be split over a network on different 
-
+A normal program will have all the objects in memory but  in a **Distributed System** these objects may be split over a network on different  devices.
+This is where **Remote Procedure Calls** **(RPC)**  comes into place. RPC is the *connector* (type of middleware) that makes calling a method on a computer 200 miles away look and act like calling a method on your machine.
 
 ### Resource-Centred Architectural Style
 
