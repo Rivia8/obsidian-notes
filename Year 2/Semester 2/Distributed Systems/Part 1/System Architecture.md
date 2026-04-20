@@ -72,5 +72,9 @@ Two types of overlay networks exist, characterising peer-to-peer systems as:
 Nodes are organised in an overlay that adheres to a **specific**, **deterministic** **topology**: a ring, a binary tree, a grid etc.
 The topology is used to efficiently look up data that is maintained by the system.
 
-When an item (a file) is added to the system, the data is ran through a mathematical formula called a **hash function** which outputs a unique ID number (a key).
+When an item (a file) is added to the system, the data is ran through a mathematical formula called a **hash function** which outputs a unique ID number (a key). The key is then used as an **index** since it identifies a node in the system.
+
+Because the network is arranged in a strict manner, it allows for **Deterministic Routing**. Every node is assigned a range of keys to look after, if you are searching for a file with the key `14` the network's geometry allows your request to take the most direct, efficient path straight to the exact node holding `14`.
+
+
 
