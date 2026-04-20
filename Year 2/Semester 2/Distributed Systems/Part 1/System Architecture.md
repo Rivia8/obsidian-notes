@@ -20,7 +20,7 @@ A **Client** is the machine waiting to be asked, it **initiates** the conversati
 
 The interaction is known as **request-reply** behaviour.
 
-### Multi-Tired Client-Server Architectures
+### Multi-Tiered Client-Server Architectures
 
 ![[Pasted image 20260420111433.png#invert|400]]
 
