@@ -102,6 +102,13 @@ To fix it, you can have 3 or 4 separate 'walks' that each go in different direct
 
 ### Making Data Search More Scalable in Unstructured P2P Systems
 
+#### Abandoning Symmetry
+
+You can make use of special nodes that maintain and index of data items which abandons the **symmetric nature**.
+The **special nodes** often called **super nodes** are connected to normal nodes of whom want to find out where exactly is the file they want.
+
+#### Hybrid Architectures
+
 
 
 
