@@ -46,6 +46,9 @@ This is where **Remote Procedure Calls** **(RPC)**  comes into place. RPC is the
 
 ### Resource-Centred Architectural Style
 
+![[Pasted image 20260420103805.png#invert|500]]
+
+Instead of viewing a **distributed** **system** as a collection of functions or objects, this style views the system as a giant warehouse of **data resources** (like user profiles, images, or documents)
 
 ### Event-Based Architectural Style
 
