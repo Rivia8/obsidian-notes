@@ -61,4 +61,10 @@ This behaviour can be defined as **Symmetric Behaviour (Everyone is equal)**.
 
 Due to the **Symmetric Behaviour** of processes in peer-to-peer architectures, processes are organised in **Overlay Networks**:
 - A virtual network is placed on top of the physical one, 
-- 
+- The networks nodes are formed by the processes and its links represents communication channels with other nodes.
+
+Two types of overlay networks exist, characterising peer-to-peer systems as: 
+- Structured
+- Unstructured
+
+
