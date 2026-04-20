@@ -90,8 +90,18 @@ An issuing node $u$ will pass a request of data to its list of neighbours, if *t
 
 It is fast and guarantees you will find the file if it exists. However, it is **disastrous** and **overwhelming** for the network since it creates a tsunami of duplicate messages that can crash the system.
 
-As a fix, you can implement **TTL** which means **Time to Live**.
+As a fix, you can implement **TTL** (**Time to Live**), what this does is is stops a request from bouncing around the network for a long and sets a limit to the number of bounces e.g. 5 so after 5 bounces, the 5th node will just delete it instead of passing it on, killing the flood.
 
 #### Searching Method: Random Walks
+
+An issuer $u$ will pass the request to *one* of its neighbours $v$ who then passes it to *one* of **its** neighbours etc. until the file is found.
+
+This generates very little network traffic but is very slow because the "walker" might wander in the completely wrong direction.
+
+To fix it, you can have 3 or 4 separate 'walks' that each go in different directions to speed it up, this in turn increases traffic and will need a **TTL** so they expire.
+
+#### Making Data Search More Scalable
+
+
 
 
