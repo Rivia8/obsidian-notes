@@ -100,7 +100,9 @@ This generates very little network traffic but is very slow because the "walker"
 
 To fix it, you can have 3 or 4 separate 'walks' that each go in different directions to speed it up, this in turn increases traffic and will need a **TTL** so they expire.
 
-#### Making Data Search More Scalable
+### Making Data Search More Scalable in Unstructured P2P Systems
+
+
 
 
 
