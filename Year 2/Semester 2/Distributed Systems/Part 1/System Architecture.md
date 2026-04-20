@@ -67,4 +67,6 @@ Two types of overlay networks exist, characterising peer-to-peer systems as:
 - Structured
 - Unstructured
 
+### Structured P2P Systems
+
 
