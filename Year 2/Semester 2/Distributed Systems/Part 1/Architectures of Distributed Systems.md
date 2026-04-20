@@ -48,10 +48,18 @@ This is where **Remote Procedure Calls** **(RPC)**  comes into place. RPC is the
 
 ![[Pasted image 20260420103805.png#invert|500]]
 
-Instead of viewing a **distributed** **system** as a collection of functions or objects, this style views the system as a giant warehouse of **data resources** (like user profiles, images, or documents)
+Instead of viewing a **distributed** **system** as a collection of functions or objects, this style views the system as a giant warehouse of **data resources** (like user profiles, images, or documents). Everything is treated as a resource.
+
+*This is widely adopted for the internet and websites, specifically how the HTTP protocol functions.*
+
+The advantage of this is that it is simple and standardised. Any application can interact with the system as long as it knows how to request or modify the central resources.
 
 ### Event-Based Architectural Style
 
+![[Pasted image 20260420104531.png#invert|400]]
+
+
+This style abandons point-to-point communication.
 
 
 
