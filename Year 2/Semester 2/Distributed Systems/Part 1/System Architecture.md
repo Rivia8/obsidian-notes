@@ -117,7 +117,14 @@ The **special nodes** often called **super nodes** are connected to normal nodes
 
 *BitTorrent* is the ultimate example of Hybrid Architecture because it splits the process into two distinct phases, one centralised and the other decentralised.
 
+1. You first download a small `.torrent` file that holds the list of IP addresses of all the other active users currently download or uploading that specific file.
+2. Once the tracker gives you a list of peers, the centralised part is over, your computer establishes direct TCP connection with those other users, you begin downloading different "chunks" of the file from them whilst simultaneously uploading the chunks you already have to others.
+
+With this method, the central tracker never gets overwhelmed.
+
 #### Edge-Server Systems
+
+![[Pasted image 20260420143418.png#invert|400]]
 
 
 
