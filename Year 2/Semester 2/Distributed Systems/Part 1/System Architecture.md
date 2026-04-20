@@ -25,3 +25,15 @@ The interaction is known as **request-reply** behaviour.
 ![[Pasted image 20260420111433.png#invert|400]]
 
 This typically presents ***three*** **logical tiers**.
+
+This distinction of having *tiers* makes it so that there can be numerous possibilities for physically distributing a client-server application but the simplest way to do so is to have only two-types of machines:
+- A client machine (this contains only the user-interface level)
+- A server machine
+
+Many distributed applications are divided into the three layers:
+- User Interface Layer
+- Processing Layer
+- Data Layer
+
+The main challenge to clients and servers is to distribute these layers across different machines.
+
