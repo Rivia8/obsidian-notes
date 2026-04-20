@@ -80,6 +80,18 @@ Because the network is arranged in a strict manner, it allows for **Deterministi
 
 ![[Pasted image 20260420124322.png#invert]]
 
-In an unstructured system, there is no mathematical shape. Nodes are just connected to whichever other nodes they happen to find.
+In an unstructured system, there is no mathematical shape. Nodes are just connected to whichever other nodes they happen to find. Each node maintains an **ad hoc list of neighbours**. When a node joins it will contact a well-known node to get a starting list of other peers in the system and this list can be used to find more peers and ignore others etc - a node generally changes its **local list almost continuously**.
+
+Looking up data cannot follow a pre-determined route, so instead searching for data is necessary.
+
+#### Searching Method: Flooding
+
+An issuing node $u$ will pass a request of data to its list of neighbours, if *they* don't have the file, the original nodes neighbours will pass the request to their neighbours etc.
+
+It is fast and guarantees you will find the file if it exists. However, it is **disastrous** and **overwhelming** for the network since it creates a tsunami of duplicate messages that can crash the system.
+
+As a fix, you can implement **TTL** which means **Time to Live**.
+
+#### Searching Method: Random Walks
 
 
