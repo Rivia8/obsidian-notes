@@ -24,11 +24,15 @@ The interaction is known as **request-reply** behaviour.
 
 ![[Pasted image 20260420111433.png#invert|400]]
 
-This typically presents ***three*** **logical tiers**.
 
-This distinction of having *tiers* makes it so that there can be numerous possibilities for physically distributing a client-server application but the simplest way to do so is to have only two-types of machines:
+This distinction of having *tiers* makes it so that there can be numerous possibilities for physically distributing a client-server application. 
+
+The simplest way to do so is to have only two-types of machines (2-Tiered "Dumb Terminal"):
 - A client machine (this contains only the user-interface level)
 - A server machine
+
+You can also have a similar setup (2-Tiered "Fat client"):
+- A client machine (runs the the user interface *and* the Processing logic only contacts the server when it needs to retrieve or save something to the Data Layer.)
 
 The main challenge to clients and servers is to distribute these layers across different machines which is called the **Vertical Distribution**.
 
