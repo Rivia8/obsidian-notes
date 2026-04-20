@@ -55,4 +55,10 @@ The most famous setup is the three-tiered architecture, the code is split across
 In Decentralised Architectures, there is a bigger shift towards distributing client and server functionality **more evenly** across machines to achieve better workload balance.
 To achieve this we utilise **Horizontal Distribution** (as opposed to **Vertical Distribution)**: You split up the workload/data and each machine has the exact same capabilities.
 
-In a **Centralised Architecture** 
+In a **Centralised Architecture** a Client asks and a Server replies, in a P2P system, that is removed.
+- **Classic Example (BitTorrent):** When you download a file via BitTorrent, your computer asks other peers for pieces of the file (acting as a **client**). At the exact same time, your computer is uploading the pieces you already have to other people who are asking for them (acting as a **server**).
+This behaviour can be defined as **Symmetric Behaviour (Everyone is equal)**.
+
+Due to the **Symmetric Behaviour** of processes in peer-to-peer architectures, processes are organised in **Overlay Networks**:
+- A virtual network is placed on top of the physical one, 
+- 
