@@ -126,9 +126,15 @@ With this method, the central tracker never gets overwhelmed.
 
 ![[Pasted image 20260420143418.png#invert|400]]
 
+These have the following properties:
+- Are deployed on the internet,
+- Their servers are placed "at the edge" of the network
 
+If an **Origin Server** of a website is very far away, it will use its **Edge Servers** that are placed all over the world where the high-demand content are replicated on these servers to mitigate latency from the **Origin Server**.
 
+If you are accessing content from **California** it may have an edge server in **London** that you will be redirected for the in high demand content.
 
+**Fog Computing:** This is where even the end-user devices from part of the system and are used as a miniature, decentralised extension of the cloud.
 
 
 
