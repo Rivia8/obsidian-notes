@@ -2,7 +2,7 @@
 
 Tags: [[Distributed Systems]]
 
-One way to distinguish between distributed systems in on the organisation of their **software components** and how they interact. This refers to their [[Software Architecture|software architecture]]
+One way to distinguish between distributed systems is on the organisation of their **software components** and how they interact. This refers to their [[Software Architecture|software architecture]]
 
 *"The final instantiation of the software components of a distributed system is what we call [[Year 2/Semester 2/Distributed Systems/Part 1/System Architecture|System Architecture]]"
 
