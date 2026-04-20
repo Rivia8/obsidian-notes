@@ -27,6 +27,13 @@ The interaction is known as **request-reply** behaviour.
 
 This distinction of having *tiers* makes it so that there can be numerous possibilities for physically distributing a client-server application. 
 
+Many distributed applications are divided into the three layers:
+- User Interface Layer
+- Processing Layer
+- Data Layer
+
+The main challenge to clients and servers is to distribute these layers across different machines which is called the **Vertical Distribution**.
+
 The simplest way to do so is to have only two-types of machines (2-Tiered "Dumb Terminal"):
 - A client machine (this contains only the user-interface level)
 - A server machine
@@ -34,12 +41,10 @@ The simplest way to do so is to have only two-types of machines (2-Tiered "Dumb 
 You can also have a similar setup (2-Tiered "Fat client"):
 - A client machine (runs the the user interface *and* the Processing logic only contacts the server when it needs to retrieve or save something to the Data Layer.)
 
-The main challenge to clients and servers is to distribute these layers across different machines which is called the **Vertical Distribution**.
-
-Many distributed applications are divided into the three layers:
-- User Interface Layer
-- Processing Layer
-- Data Layer
+The most famous setup is the three-tiered architecture, the code is split across three entirely separate machines:
+- **Tier 1:** The user's laptop (runs the User Interface).
+- **Tier 2:** An application server (runs the Processing logic). It acts as a server to the user, but acts as a _client_ to the database.
+- **Tier 3:** A dedicated database server (runs the Data layer)
 
 A server may sometimes need to act as a client, typically leading to a physically three-tiered architecture.
 
