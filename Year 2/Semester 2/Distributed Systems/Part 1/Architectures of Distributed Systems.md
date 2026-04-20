@@ -62,7 +62,7 @@ The advantage of this is that it is simple and standardised. Any application can
 This style abandons point-to-point communication.
 Instead of **System A** directly calling **System B** they communicate through a **Publish/Subscribe** **(Pub/Sub)** model.
 
-
+Processes running on the various components are both **Referentially Decoupled** and **Temporally Coupled**
 
 
 
