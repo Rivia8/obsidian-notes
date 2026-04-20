@@ -30,10 +30,14 @@ This distinction of having *tiers* makes it so that there can be numerous possib
 - A client machine (this contains only the user-interface level)
 - A server machine
 
+The main challenge to clients and servers is to distribute these layers across different machines which is called the **Vertical Distribution**.
+
 Many distributed applications are divided into the three layers:
 - User Interface Layer
 - Processing Layer
 - Data Layer
 
-The main challenge to clients and servers is to distribute these layers across different machines.
+A server may sometimes need to act as a client, typically leading to a physically three-tiered architecture.
+
+![[Pasted image 20260420114717.png#invert|400]]
 
