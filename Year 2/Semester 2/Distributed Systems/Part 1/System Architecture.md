@@ -49,4 +49,10 @@ The most famous setup is the three-tiered architecture, the code is split across
 - **Tier 2:** An application server (runs the Processing logic). It acts as a server to the user, but acts as a _client_ to the database.
 - **Tier 3:** A dedicated database server (runs the Data layer)
 
+## Decentralised System Architecture
+
+![[Pasted image 20260420121751.png#invert]]
+In Decentralised Architectures, there is a bigger shift towards distributing client and server functionality **more evenly** across machines to achieve better workload balance.
+To achieve this we utilise **Horizontal Distribution** (as opposed to **Vertical Distribution)**: You split up the workload/data and each machine has the exact same capabilities.
+
 
