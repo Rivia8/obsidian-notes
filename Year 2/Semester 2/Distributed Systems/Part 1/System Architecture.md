@@ -55,4 +55,4 @@ The most famous setup is the three-tiered architecture, the code is split across
 In Decentralised Architectures, there is a bigger shift towards distributing client and server functionality **more evenly** across machines to achieve better workload balance.
 To achieve this we utilise **Horizontal Distribution** (as opposed to **Vertical Distribution)**: You split up the workload/data and each machine has the exact same capabilities.
 
-
+In a **Centralised Architecture** 
