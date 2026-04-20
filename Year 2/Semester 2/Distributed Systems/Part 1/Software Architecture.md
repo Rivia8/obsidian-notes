@@ -25,10 +25,8 @@ An example of this is **networking**, the web browser doesn't know how to send e
 > [!Note] Object
 >  **Object**: An object is a self-contained unit that holds both its own data (state) and the functions needed to manipulate that data (methods).
 
-***Object:** An object is a self-contained unit that holds both its own data (state) and the functions needed to manipulate that data (methods).*
 
-This provides a way of **encapsulating** data and the operations that can be performed on that data into a **single entity**.
-
+This way provides a way of **encapsulating** data and the operations that can be performed on that data into a **single entity**.
 Objects communicate by calling each other's methods. If object A needs data from Object B, it just calls `ObjectB.getData()`.
 
 A normal program will have all the objects in memory but  in a **Distributed System** these objects may be split over a network on different  devices.
