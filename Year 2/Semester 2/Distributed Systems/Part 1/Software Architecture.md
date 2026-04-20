@@ -2,7 +2,6 @@
 
 Tags: [[Distributed Systems]]
 
-
 A **software architectural style** is formulated in terms of **components**: how the components are connected to each other, the data exchanged between components and how these elements are configured *jointly* within a system.
 
 ***Component**: A modular unit, with well-required and provided interfaces that is replaceable within its environment*
