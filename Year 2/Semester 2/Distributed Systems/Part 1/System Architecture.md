@@ -102,12 +102,23 @@ To fix it, you can have 3 or 4 separate 'walks' that each go in different direct
 
 ### Making Data Search More Scalable in Unstructured P2P Systems
 
+We can make use of **Hybrid Architectures** in order to fix the problems that Client-Server and P2P networks face:
+- Scalability problems of unstructured P2P systems,
+- Workload balancing in traditional client-server architectures
+
 #### Abandoning Symmetry
 
 You can make use of special nodes that maintain and index of data items which abandons the **symmetric nature**.
 The **special nodes** often called **super nodes** are connected to normal nodes of whom want to find out where exactly is the file they want.
 
-#### Hybrid Architectures
+#### Collaborative Distributed Systems
+
+
+
+
+#### Edge-Server Systems
+
+
 
 
 
