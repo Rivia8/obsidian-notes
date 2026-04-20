@@ -113,8 +113,9 @@ The **special nodes** often called **super nodes** are connected to normal nodes
 
 #### Collaborative Distributed Systems
 
+![[Pasted image 20260420143009.png#invert]]
 
-
+*BitTorrent* is the ultimate example of Hybrid Architecture because it splits the process into two distinct phases, one centralised and the other decentralised.
 
 #### Edge-Server Systems
 
