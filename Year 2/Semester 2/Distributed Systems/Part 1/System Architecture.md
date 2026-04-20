@@ -76,5 +76,10 @@ When an item (a file) is added to the system, the data is ran through a mathemat
 
 Because the network is arranged in a strict manner, it allows for **Deterministic Routing**. Every node is assigned a range of keys to look after, if you are searching for a file with the key `14` the network's geometry allows your request to take the most direct, efficient path straight to the exact node holding `14`.
 
+### Unstructured P2P Systems
+
+![[Pasted image 20260420124322.png#invert]]
+
+In an unstructured system, there is no mathematical shape. Nodes are just connected to whichever other nodes they happen to find.
 
 
