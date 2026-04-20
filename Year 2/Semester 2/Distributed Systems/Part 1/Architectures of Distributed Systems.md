@@ -4,14 +4,10 @@ Tags: [[Distributed Systems]]
 
 One way to distinguish between distributed systems in on the organisation of their **software components** and how they interact. This refers to their [[Software Architecture|software architecture]]
 
-Here are types:
-- **Centralised Architectures**: traditional client-server - single server implements most of the software components (and thus functionality)
-- **Decentralised Architectures**: peer-to-peer architectures in which all nodes more or less play equal roles
-- **Hybrid Architectures**: combining elements from centralised and decentralised architectures.
+*"The final instantiation of the software components of a distributed system is what we call [[Year 2/Semester 2/Distributed Systems/Part 1/System Architecture|System Architecture]]"
 
-*"The final instantiation of the software components of a distributed system is what we call **system architecture***"
-
-
+You can think of **Software Architecture** as the logical instantiation of a system. The way you organise the actual code you write.
+**System Architecture** is which physical machine you install the code into.
 
 
 

@@ -1,6 +1,6 @@
 30-03-2026 21:24
 
-Tags: [[System Architecture]]
+Tags: [[2 - Tags/System Architecture]]
 
 The Instruction Processing Cycle is a simple repetitive fetch-execute cycle.
 

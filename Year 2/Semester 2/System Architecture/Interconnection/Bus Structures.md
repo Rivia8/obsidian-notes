@@ -1,6 +1,6 @@
 09-02-2026 15:36
 
-Tags: [[System Architecture]]
+Tags: [[2 - Tags/System Architecture]]
 
 # Bus Structures
 

@@ -1,7 +1,7 @@
 
 01-04-2026 16:24
 
-Tags: [[System Architecture]]
+Tags: [[2 - Tags/System Architecture]]
 
 *Recall that there are 5 fundamental ways of handling data dependencies:*
 

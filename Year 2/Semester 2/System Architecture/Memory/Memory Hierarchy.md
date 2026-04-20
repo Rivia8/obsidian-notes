@@ -1,6 +1,6 @@
 11-02-2026 13:24
 
-Tags [[System Architecture]]
+Tags [[2 - Tags/System Architecture]]
 
 # Memory Hierarchy
 
