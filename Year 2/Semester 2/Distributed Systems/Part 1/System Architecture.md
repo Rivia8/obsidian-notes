@@ -69,4 +69,8 @@ Two types of overlay networks exist, characterising peer-to-peer systems as:
 
 ### Structured P2P Systems
 
+Nodes are organised in an overlay that adheres to a **specific**, **deterministic** **topology**: a ring, a binary tree, a grid etc.
+The topology is used to efficiently look up data that is maintained by the system.
+
+When an item (a file) is added to the system, the data is ran through a mathematical formula called a **hash function** which outputs a unique ID number (a key).
 
