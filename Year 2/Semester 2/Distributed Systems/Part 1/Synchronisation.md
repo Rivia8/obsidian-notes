@@ -72,12 +72,12 @@ Since $LC_Y > LC_X$, $LC_Y = LC_Y$, nothing happens
 
 Another Example:
 
-|**Step**|**Process**|**Action**|**Local Clock**|**Explanation**|
-|---|---|---|---|---|
-|1|**P1**|Internal Event|**1**|P1 starts working.|
-|2|**P1**|**Sends Message**|**2**|P1 ticks to 2 and sends message `(Msg, Time=2)` to P2.|
-|3|**P2**|Internal Event|**1**|P2 is working independently.|
-|4|**P2**|**Receives Message**|**3**|P2 receives `(Msg, Time=2)`.<br><br>  <br><br>P2's clock is currently 1.<br><br>  <br><br>Comparison: Is $1 < (2 + 1)$? Yes.<br><br>  <br><br>Update: Set P2's clock to $2 + 1 = \mathbf{3}$.|
+| **Step** | **Process** | **Action**           | **Local Clock** | **Explanation**                                                                                                                                                                               |
+| -------- | ----------- | -------------------- | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1        | **P1**      | Internal Event       | **1**           | P1 starts working.                                                                                                                                                                            |
+| 2        | **P1**      | **Sends Message**    | **2**           | P1 ticks to 2 and sends message `(Msg, Time=2)` to P2.                                                                                                                                        |
+| 3        | **P2**      | Internal Event       | **1**           | P2 is working independently.                                                                                                                                                                  |
+| 4        | **P2**      | **Receives Message** | **3**           | P2 receives `(Msg, Time=2)`.<br><br>  <br><br>P2's clock is currently 1.<br><br>  <br><br>Comparison: Is $1 < (2 + 1)$? Yes.<br><br>  <br><br>Update: Set P2's clock to $2 + 1 = \mathbf{3}$. |
 One thing to note is that we cannot infer a causal relationship just by looking at timestamps: just because $LC_A \lt LC_B$ then $a \rightarrow b$.
 
 
