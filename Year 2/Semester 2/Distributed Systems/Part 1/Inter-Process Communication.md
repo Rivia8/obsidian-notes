@@ -113,4 +113,6 @@ This means that no component is ever stalled. If a massive database (the consume
 Because MOM relies on these holding queues, it is not built for fast response times like video game servers.
 
 MOM is designed for transfers that might take second or even minutes.
-The system 
+The system does not guarantee *when* a message will arrive, just that it will *eventually* be inserted into the recipient's queue.
+
+MOM is heavily used in Publish-Su
