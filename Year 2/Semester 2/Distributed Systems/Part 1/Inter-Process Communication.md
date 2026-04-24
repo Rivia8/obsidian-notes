@@ -69,4 +69,6 @@ It's the exact same concept, instead of calling a standalone *procedure* on a re
 Like we said the the function of the client stub is to take its parameters, pack them into a message and send them to the server stub.
 **Packing parameters** into a message is called **Parameter Marshalling**.
 
-**Parameter Marshalling** is *NOT* straightforward. The server just sees a series of bytes coming which constitute the original message sent by the client, there is no additional information on how those bytes should be interpreted is provided with the message.
+Network cables just pass strings of 1s and 0s there is nothing more to bridge context. To further add on to the complexity, different computers read binary differently: A Windows machine with an Intel processor might read binary number from left-to-right, while a Sun SPARC server might read the other way around (Little Endian vs Big Endian). The solution is ***Parameter Marshalling***
+
+**Parameter Marshalling** is *NOT* straightforward. The server just sees a series of bytes coming which make up the original message sent by the client, there is no additional information on how those bytes should be interpreted is provided with the message. 
