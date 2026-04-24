@@ -64,5 +64,9 @@ Java is an Object-Orientated Language, they don't use the term "Remote Procedure
 
 It's the exact same concept, instead of calling a standalone *procedure* on a remote machine, you are invoking a method on an object that physically exists in RAM of a different server. Java RMI automatically handles creating the client and server stubs for you, so you can write code that seamlessly interacts with objects across a network.
 
+## Parameter Passing in RPCs
 
+Like we said the the function of the client stub is to take its parameters, pack them into a message and send them to the server stub.
+**Packing parameters** into a message is called **Parameter Marshalling**.
 
+**Parameter Marshalling** is *NOT* straightforward. The server just sees a series of bytes coming which constitute the original message sent by the client, there is no additional information on how those bytes should be interpreted is provided with the message.
