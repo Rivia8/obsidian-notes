@@ -115,4 +115,4 @@ Because MOM relies on these holding queues, it is not built for fast response ti
 MOM is designed for transfers that might take second or even minutes.
 The system does not guarantee *when* a message will arrive, just that it will *eventually* be inserted into the recipient's queue.
 
-MOM is heavily used in Publish-Su
+MOM is heavily used in [[Software Architecture#Event-Based Architectural Style|Publish-Subscribe systems]] 
