@@ -83,4 +83,8 @@ So essentially, the Client Stub sends its machine dependent routines that are tr
 ![[Pasted image 20260424130123.png#invert]]
 
 We need to look at how pointers (or in general, references) are passed.
-A [[Pointers|pointer]] is a physical address in a machines RAM. 
+A [[Pointers|pointer]] is a physical address in a machines RAM and of course if you send that address to another machine, the machine will be looking at something completely different than as to what is intended, lets say we have a piece of data stored at `0x4FA2` in Machine A, if Machine B were to look at said memory address in *its* own memory space, something completely different will be there.
+
+The solution to this is **Copy-by-Value/Restore**.
+- The server cannot look inside the client's memory, so instead of sending the address, the **entire data structure** needs to be sent over the network.
+- If the remote procedure is supposedly to **modify** the data, the server does the work on its local copy and then sends the *entire* modified data structure back.
