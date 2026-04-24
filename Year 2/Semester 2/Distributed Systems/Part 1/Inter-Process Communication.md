@@ -72,3 +72,6 @@ Like we said the the function of the client stub is to take its parameters, pack
 Network cables just pass strings of 1s and 0s there is nothing more to bridge context. To further add on to the complexity, different computers read binary differently: A Windows machine with an Intel processor might read binary number from left-to-right, while a Sun SPARC server might read the other way around (Little Endian vs Big Endian). The solution is ***Parameter Marshalling***
 
 **Parameter Marshalling** is *NOT* straightforward. The server just sees a series of bytes coming which make up the original message sent by the client, there is no additional information on how those bytes should be interpreted is provided with the message. 
+In Parameter Marshalling, we take the local data out of the machine specific memory structure, and convert it to a strictly agree-upon, machine and network-independent format
+
+For this to work properly, both the client and the server must be programmed to expect the same data type - if the client is sending an integer, the server's function must be expecting an integer too
