@@ -107,3 +107,10 @@ When a client sends the request, the server receives it and instantly fires back
 - It's **Asynchronous** which means that just like the RPCs the sender does not block or wait for a reply. It fires off the message and continues its own process.
 - It's **Persistent**, in an RPC, if the network drops while message is in transit, the message is lost. In MOM, the middleware has **intermediate-term storage capacity**, where the message is physically saved to a hard drive (the queue) and if the network goes down, the middleware just holds onto the message safetly until the connection is restored.
 
+In practise the way it works is that the Producers (senders) generate data and dump it into the queue. The Consumers (receivers) look at the queue and pull messages out at their own pace.
+This means that no component is ever stalled. If a massive database (the consumer) suddenly goes offline the web servers (producers) don't crash or freeze.
+
+Because MOM relies on these holding queues, it is not built for fast response times like video game servers.
+
+MOM is designed for transfers that might take second or even minutes.
+The system 
