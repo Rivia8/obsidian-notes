@@ -74,4 +74,7 @@ Network cables just pass strings of 1s and 0s there is nothing more to bridge co
 **Parameter Marshalling** is *NOT* straightforward. The server just sees a series of bytes coming which make up the original message sent by the client, there is no additional information on how those bytes should be interpreted is provided with the message. 
 In Parameter Marshalling, we take the local data out of the machine specific memory structure, and convert it to a strictly agree-upon, machine and network-independent format
 
-For this to work properly, both the client and the server must be programmed to expect the same data type - if the client is sending an integer, the server's function must be expecting an integer too
+For this to work properly, both the client and the server must be programmed to expect the same data type - if the client is sending an integer, the server's function must be expecting an integer too.
+
+So essentially, the Client Stub sends its machine dependent routines that are translated into a **neutral format** and then the **Server Stub** translates the *neutral* format into something *it* can understand.
+
