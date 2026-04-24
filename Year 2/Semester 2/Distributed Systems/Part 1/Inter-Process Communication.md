@@ -95,3 +95,10 @@ The solution to this is **Copy-by-Value/Restore**.
 
 ![[Pasted image 20260424132814.png#invert|400]]
 
+
+We have established previously that once the Client Stubs sends the data over the network that the main program is suspended until the server finishes the job and sends it back. This is what is known as **Synchronous RPC**. This is *if* the Client actually needs the data to be modified. If it doesn't then we can use **Asynchronous RPC**.
+
+When a client sends the request, the server receives it and instantly fires back a tiny, automated reply to the client that says "Message Received..." and the Client Stub unblocks (it *does* block but just for a very short time to see if the message was received). In the meantime whilst the Client is doing its own thing, the server is working on the request.
+
+## Message-Orientated Middleware (MOM)
+
