@@ -102,3 +102,8 @@ When a client sends the request, the server receives it and instantly fires back
 
 ## Message-Orientated Middleware (MOM)
 
+***MOM*** relies on **message-queuing mechanisms** to provide **Persistent Asynchronous Communication**. 
+
+- It's **Asynchronous** which means that just like the RPCs the sender does not block or wait for a reply. It fires off the message and continues its own process.
+- It's **Persistent**, in an RPC, if the network drops while message is in transit, the message is lost. In MOM, the middleware has **intermediate-term storage capacity**, where the message is physically saved to a hard drive (the queue) and if the network goes down, the middleware just holds onto the message safetly until the connection is restored.
+
