@@ -22,14 +22,21 @@ g :: (b -> Bool) -> Bool
 g h = (h 7) && (h False)
 ```
 
+And another:
 
+```Haskell
+p :: (a, a)
+p = (1,1)
+```
 
+`p :: (a,a)` is a promise that "*I am a pair of absolutely **any** type you want"* but `1,1` is strictly a pair of numbers. If a programmer asks `p` to be a pair of `String` it fails. 
+You essentially cannot hard code specific values into a universally quantifiable variable.
 # Ad-hoc Polymorphism
 
 Often called *"Overloading"*
 
 This is where the same function name could refer to a different function based on the input parameters.
-
+Ad-Hoc polymorphism is achieved through **Typeclasses**
 
 
 
