@@ -11,6 +11,9 @@ class Descriptive a where
 	desribe :: a -> String
 ```
 
+This says "*To belong to the `Descriptive` club, a type `a` must provide a function called `desctibe` that turns it into a string*".
+
+When it comes to the **implementation**, you can make specific types join the club by writing an `instance`. This is where the ad-hoc "overloading" happens.
 
 
 
