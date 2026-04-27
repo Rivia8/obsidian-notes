@@ -94,3 +94,10 @@ instance Show Pcolours where
   show B = "Blue"
 ```
 
+But writing `show` manually for massive data structures is incredibly tedious and because converting data to a string is such a common task Haskell provides a magic shortcut: the `deriving` keyword:
+
+```Haskell
+data Colour = RGB Int Int Int | HSV Int Int Int deriving (Show)
+```
+
+Adding `deriving (Show)` at the end makes the Haskell compiler write the `instance Show Colour` *for you*.
