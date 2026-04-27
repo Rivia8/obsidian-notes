@@ -13,8 +13,20 @@ class Descriptive a where
 
 This says "*To belong to the `Descriptive` club, a type `a` must provide a function called `desctibe` that turns it into a string*".
 
-When it comes to the **implementation**, you can make specific types join the club by writing an `instance`. This is where the ad-hoc "overloading" happens.
+When it comes to the **implementation**, you can make specific types join the 'club' by writing an `instance`. This is where the ad-hoc "overloading" happens, you write different logic for different types:
 
+```Haskell
+
+instance Descriptive Bool where
+	describe False = "Wouldn't bet on it!"
+	describe True = "This actually holds!"
+	
+instance Descrptive Int where
+	describe 1 = "The lonliest number"
+	desrive _ = "A boring number"
+```
+
+`describe True` would bring up the `Bool` instance and `desribe 1` would bring the `Int` instance.
 
 
 
