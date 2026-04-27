@@ -47,7 +47,7 @@ You essentially cannot hard code specific values into a universally quantifiable
 Often called *"Overloading"*
 
 This is where the same function name could refer to a different function based on the input parameters.
-Ad-Hoc polymorphism is achieved through **Typeclasses**.
+Ad-Hoc polymorphism is achieved through [[Typeclasses]].
 
 ```Haskell
 length :: [a] -> int -- Parametric
