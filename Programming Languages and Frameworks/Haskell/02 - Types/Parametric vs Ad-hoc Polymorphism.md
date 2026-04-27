@@ -22,6 +22,11 @@ g :: (b -> Bool) -> Bool
 g h = (h 7) && (h False)
 ```
 
+`(b -> Bool)` is a single argument, its saying that the first argument of `g` is a function itself, `h` and `h` will take an input `b` (that can be anything) and will output a boolean.
+`-> Bool` after taking `h` as an argument, the main function `g` will return a bool.
+
+
+
 And another:
 
 ```Haskell
