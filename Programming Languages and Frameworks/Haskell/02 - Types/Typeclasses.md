@@ -28,7 +28,10 @@ instance Descrptive Int where
 
 `describe True` would bring up the `Bool` instance and `desribe 1` would bring the `Int` instance.
 
+## Type Constraints
 
+With Typeclasses you can write powerful generic functions that only accept types belonging to specific 'clubs'. 
+You do this with `=>`. 
 
 
 
