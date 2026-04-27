@@ -102,4 +102,4 @@ data Colour = RGB Int Int Int | HSV Int Int Int deriving (Show)
 
 Adding `deriving (Show)` at the end makes the Haskell compiler write the `instance Show Colour` *for you*. If you call `print(RGB 10 11 12)`, it will print the string `"RGB 10 11 12"`.
 
-You can derive multiple built-in typeclasses at once by putting them in a tuple.
+You can derive multiple built-in typeclasses at once by putting them in a tuple e.g. `... deriving (Eq, Show)` means that the datatype is able to be printed *and* evaluted to see if its equal.
