@@ -40,5 +40,30 @@ descrLen x = length (describe x)
 
 Usually the compiler wouldn't know whether the generic type `a` has a describe function. The constraint guarantees to the compiler *"I will only ever pass types into this function that have implemented `Descriptive` blueprint"*.
 
+## Conditional Instances
 
+If we want to describe a list of Booleans you need an instance of lists.
+A list of functions `[a -> b]` can't be described, we only want to allows lists to be described *if* the items inside them can be described.
+Haskell allows you to put a constraint on an instance itself:
+
+```Haskell
+instance (Descriptive b) => Descriptive [b] where
+	describe [] = "Nothing left!"
+	describe (x:xs) = (describe x) ++ ", then" ++ (describe xs)
+```
+
+_"**IF** the inner type `b` is Descriptive, **THEN** a list of `[b]` is automatically Descriptive too."_ It then uses recursion to call `describe` on the head (`x`) and the tail (`xs`).
+
+## Custom Operations and Default Implementations
+
+In Haskell, operators like `+`, `*` or `==` are standard functions whose names are made entirely of symbols, to define them you just wrap the symbols in parantheses:
+
+```Haskell
+class MyEq a where
+	(===) :: a -> a -> Bool
+	(/==) :: a -> a -> Bool
+	
+	-- a default implementation
+	x /== y = not(x === y)
+```
 
