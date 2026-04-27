@@ -80,3 +80,17 @@ ifEqD w x y z = if w === x then (describe y) else (describe z)
 
 The compiler will strictly enforce that whatever type `a` is, it must have implemented both `===` and `desribe`.
 
+## Built-in Typeclasses
+
+In Haskell, the `print` function relies on the built-in `Show` typeclass. If a type isn't a member of the `show` 'club', Haskell simply refuses to print it.
+You can manually add it:
+
+```Haskell
+data Pcolours = R | G | B
+
+instance Show Pcolours where
+  show R = "Red"
+  show G = "Green"
+  show B = "Blue"
+```
+
