@@ -31,7 +31,14 @@ instance Descrptive Int where
 ## Type Constraints
 
 With Typeclasses you can write powerful generic functions that only accept types belonging to specific 'clubs'. 
-You do this with `=>`. 
+You do this with `=>`, it acts as a filter or constraint on your type variables.
+
+```Haskell
+descrLen :: Descriptive a => a -> Int
+descrLen x = length (describe x)
+```
+
+Usually the compiler wouldn't know whether the generic type `a` has a describe function. The constraint guarantees to the compiler *"I will only ever pass types into this function that have implemented `Descriptive` blueprint"*.
 
 
 
