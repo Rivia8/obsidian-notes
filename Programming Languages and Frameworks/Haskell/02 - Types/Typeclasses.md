@@ -67,3 +67,16 @@ class MyEq a where
 	x /== y = not(x === y)
 ```
 
+What's happening is that 'not equal' is just the opposite of equal and so the typeclass is automatically generated for `/==` (you only have to make the `===` Haskell does `/==` for you).
+
+## Multiple Constraints
+
+You aren't limited to one constraint, you can have multiple constraints e.g. if two things are equal AND It needs to print out their descriptions, you list both typeclasses in a tuple before the fat arrow:
+
+```Haskell
+ifEqD :: (MyEq a, Descriptive a) => a -> a -> a -> a -> String
+ifEqD w x y z = if w === x then (describe y) else (describe z)
+```
+
+The compiler will strictly enforce that whatever type `a` is, it must have implemented both `===` and `desribe`.
+
