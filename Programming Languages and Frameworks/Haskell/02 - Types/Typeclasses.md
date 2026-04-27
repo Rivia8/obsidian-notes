@@ -100,4 +100,6 @@ But writing `show` manually for massive data structures is incredibly tedious an
 data Colour = RGB Int Int Int | HSV Int Int Int deriving (Show)
 ```
 
-Adding `deriving (Show)` at the end makes the Haskell compiler write the `instance Show Colour` *for you*.
+Adding `deriving (Show)` at the end makes the Haskell compiler write the `instance Show Colour` *for you*. If you call `print(RGB 10 11 12)`, it will print the string `"RGB 10 11 12"`.
+
+You can derive multiple built-in typeclasses at once by putting them in a tuple.
