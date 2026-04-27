@@ -27,6 +27,12 @@ g h = (h 7) && (h False)
 
 `g h = (h 7) && (h False)` is the body of the function, it takes `h 7` and `h False` and `&&` (ands) them together.
 
+Although logically this should work since `b` indicates that the input of `h` can be anything, it will cause a compile error. The reason for this is because of two things:
+
+1. `b` can only be *one* thing. When `h 7` occurs, `b` is an `Int` and when it is called again it is expected for `b` to be an `Int` again and *not* a `Bool`.
+2. The *caller* decides `b` not `g`, because `b` is a lowercase letter it means "for all types", it means the ***caller*** of the function, `h` gets to decide what type to pass in.
+
+
 And another:
 
 ```Haskell
@@ -41,7 +47,7 @@ You essentially cannot hard code specific values into a universally quantifiable
 Often called *"Overloading"*
 
 This is where the same function name could refer to a different function based on the input parameters.
-Ad-Hoc polymorphism is achieved through **Typeclasses**
+Ad-Hoc polymorphism is achieved through **Typeclasses**.
 
 
 
