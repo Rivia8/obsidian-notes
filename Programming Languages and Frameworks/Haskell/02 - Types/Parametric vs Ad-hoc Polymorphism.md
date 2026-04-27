@@ -49,6 +49,13 @@ Often called *"Overloading"*
 This is where the same function name could refer to a different function based on the input parameters.
 Ad-Hoc polymorphism is achieved through **Typeclasses**.
 
+```Haskell
+length :: [a] -> int -- Parametric
+
+sum :: Num a => [a] -> a -- ad-hoc
+```
+
+The `sum` signature uses a specific Typeclass `num` so it knows how to do the math.
 
 
 
